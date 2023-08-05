@@ -7,3 +7,22 @@
 a {
     text-decoration: none;
 }
+
+/*-------------------------Nav Bar*/
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#navbar li {
+    list-style-type: none;
+    margin: 0 50px ;
+}
+
+#navbar a {
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+}
