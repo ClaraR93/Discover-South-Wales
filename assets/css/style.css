@@ -113,7 +113,7 @@ footer {
 }
 
 #connect-with-us {
-    margin-top: 30px;
+    margin: 30px 30px 0 30px;
 }
 
 footer h4 {
@@ -190,6 +190,10 @@ footer a {
     font-weight: 400;
     background-color: #096A2E;
     color: #E8E9DA;
+}
+
+.quiz-button:hover {
+    background-color: #79804F;
 }
 
 /*-------------------------Media Queries 600px*/
