@@ -196,6 +196,12 @@ footer a {
     background-color: #79804F;
 }
 
+/*-------------------------Quiz questions*/
+
+.quiz-container {
+    
+}
+
 /*-------------------------Media Queries 600px*/
 
 @media screen and (min-width: 551px) {
