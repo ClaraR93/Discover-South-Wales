@@ -99,17 +99,21 @@ footer {
 }
 
 #connect-with-us {
-    margin: 20px;
+    margin-top: 30px;
 }
 
 footer h4 {
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
 }
 
 footer a {
     color: #000;
     font-size: 30px;
+}
+
+#instagram-icon {
+    margin-bottom: 25px;
 }
 
 /*-------------------------Logo on home page*/
@@ -164,7 +168,7 @@ footer a {
 
 .quiz-button {
     margin: 20px;
-    width: 100px;
+    width: 150px;
     text-align: center;
     padding: 10px;
     text-transform: uppercase;
