@@ -149,6 +149,7 @@ footer a {
     flex-direction: column;
     align-items: center;
     font-family: 'Lato', sans-serif;
+    width: 550px;
 }
 
 #home-headings h1 {
@@ -199,7 +200,7 @@ footer a {
 /*-------------------------Quiz questions*/
 
 .quiz-container {
-    
+
 }
 
 /*-------------------------Media Queries 600px*/
@@ -217,6 +218,11 @@ footer a {
 
     #navbar-large {
         display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    #home-heading {
+        width: 330px;
     }
 }
 
