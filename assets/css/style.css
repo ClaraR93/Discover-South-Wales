@@ -199,17 +199,27 @@ footer a {
 
 /*-------------------------Quiz questions*/
 
-.quiz-container {
-
+.outer-quiz-container {
+    display: flex;
+    justify-content: center;
+    width: 550px;
 }
 
-/*-------------------------Media Queries 600px*/
+.quiz-container {
+    background-color: #79804F;
+    width: 500px;
+    height: 700px;
+}
+
+/*-------------------------Media Queries 551px*/
 
 @media screen and (min-width: 551px) {
     .dropdown {
         display: none;
     }
 }
+
+/*-------------------------Media Queries 550px*/
 
 @media screen and (max-width: 550px) {
     .background-print {
@@ -220,11 +230,24 @@ footer a {
         display: none;
     }
 }
+
+/*-------------------------Media Queries 500px*/
+
 @media screen and (max-width: 500px) {
     #home-heading {
         width: 330px;
     }
+
+    .outer-quiz-container {
+        width: 330px;
+    }
+
+    .quiz-container {
+        width: 300px;
+    }
 }
+
+/*-------------------------Media Queries 350px*/
 
 @media screen and (max-width: 350px) {
     #south-wales-logo {
