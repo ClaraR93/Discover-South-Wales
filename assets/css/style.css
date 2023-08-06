@@ -57,14 +57,14 @@ nav {
 }
 
 #navbar a {
-    color: black;
+    color: #000;
     font-size: 30px;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
-/*-------------------------Logo*/
+/*-------------------------Logo on home page*/
 
 #south-wales-logo {
     width: 400px;
@@ -76,7 +76,7 @@ nav {
     max-height: 100%;
 }
 
-/*-------------------------Headings*/
+/*-------------------------Headings on home page*/
 
 #home-headings {
     display: flex;
@@ -88,9 +88,35 @@ nav {
 #home-headings h1 {
     margin-bottom: 20px;
     font-size: 25px;
+    color: #000;
 }
 
 #home-headings h2 {
     margin: 20px;
     font-size: 18px;
+    color: #000;
+}
+
+/*-------------------------Take quiz section on home page*/
+
+#take-quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#take-quiz h3 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.quiz-button {
+    margin: 20px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
