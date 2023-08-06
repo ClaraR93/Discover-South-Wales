@@ -46,9 +46,9 @@ section {
     min-height: 100vh;
 }
 
-hr {
+#content-divider {
     border-bottom: #000 solid 1px;
-    width: 30px;
+    width: 40px;
     margin: 20px;
 }
 
