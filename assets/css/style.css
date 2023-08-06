@@ -30,6 +30,13 @@ body {
     height: 100%;
     width: 100%;
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*-------------------------Nav Bar*/
 
 nav {
@@ -56,3 +63,6 @@ nav {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
+
+/*-------------------------Logo*/
+
