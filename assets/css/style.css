@@ -56,9 +56,11 @@ hr {
 
 header {
     background-color: #79804F;
+    height: 100px;
+    width: 100%;
 }
 
-nav {
+#navbar-large {
     height: 100px;
     display: flex;
     justify-content: center;
@@ -180,8 +182,19 @@ footer a {
 
 /*-------------------------Media Queries 600px*/
 
+@media screen and (min-width: 551px) {
+    .dropdown {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .background-print {
         display: none;
     }
+
+    #navbar-large {
+        display: none;
+    }
+
 }
