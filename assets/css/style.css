@@ -61,18 +61,20 @@ header {
 nav {
     height: 100px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 #navbar {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 #navbar li {
-    list-style-type: none;
-    margin: 0 50px ;
+    margin: 0;
 }
 
 #navbar a {
@@ -81,6 +83,8 @@ nav {
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
 /*-------------------------Footer*/
@@ -98,10 +102,6 @@ footer a {
     color: #000;
     font-size: 30px;
 }
-
-/*-------------------------Background leaf print images*/
-
-
 
 /*-------------------------Logo on home page*/
 
