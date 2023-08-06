@@ -37,6 +37,12 @@ section {
     align-items: center;
 }
 
+hr {
+    border-bottom: #000 solid 1px;
+    width: 30px;
+    margin: 20px;
+}
+
 /*-------------------------Nav Bar*/
 
 nav {
@@ -100,7 +106,7 @@ footer a {
 }
 
 #home-headings h1 {
-    margin-bottom: 20px;
+    margin: 20px;
     font-size: 25px;
     color: #000;
 }
@@ -123,6 +129,7 @@ footer a {
 #take-quiz h3 {
     font-size: 15px;
     font-weight: 300;
+    margin: 20px;
 }
 
 .quiz-button {
