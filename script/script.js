@@ -1,3 +1,6 @@
+//Wait for the DOM to finish loading before running quiz
+document.addEventListener('DOMContentLoaded', runQuiz);
+
 //Function to run through questions and answers 
 function askQuestions() {
 
