@@ -26,9 +26,15 @@ const questions = [
 
 ];
 
+//Set question index to 0 at start of quiz
+let currenQuestionIndex = 0;
+
 //Function to run through questions and answers 
 function askQuestions() {
-
+    const currentQuestion = questions[currenQuestionIndex];
+    const answerA = currentQuestion.answer[0];
+    const answerB = currentQuestion.answer[1];
+    const answerC = currentQuestion.answer[2];
 }
 
 //Function to check if user has selected a radio button before proceeding
