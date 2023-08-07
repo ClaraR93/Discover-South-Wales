@@ -1,5 +1,5 @@
 //Wait for the DOM to finish loading before running quiz
-document.addEventListener('DOMContentLoaded', runQuiz);
+document.addEventListener("DOMContentLoaded", runQuiz);
 
 //Define questions and multiple choice answers in an array 
 const questions = [
@@ -27,7 +27,7 @@ const questions = [
 ];
 
 //Add event listener to next button
-const nextButton = document.getElementsByClassName("quiz-button");
+const nextButton = document.getElementById("next-button");
 
 //Set question index to 0 at start of quiz
 let currenQuestionIndex = 0;
@@ -42,18 +42,23 @@ function askQuestions() {
     const answerC = currentQuestion.answer[2];
 
     //Update the form with new questions and answers
-    document.getElementById('question').textContent = currentQuestion.question;
-    document.getElementById('label-a').textContent = answerA;
-    document.getElementById('label-b').textContent = answerB;
-    document.getElementById('label-c').textContent = answerC;
+    document.getElementById("question").textContent = currentQuestion.question;
+    document.getElementById("label-a").textContent = answerA;
+    document.getElementById("label-b").textContent = answerB;
+    document.getElementById("label-c").textContent = answerC;
 
     //Increment through question index by one
     currenQuestionIndex ++;
 }
 
-//Function to check if user has selected a radio button before proceeding
+//Function to check if user has selected a radio button before proceeding to next question
 function validateUserInput () {
-
+    const radioAnswer = document.querySelectorAll("input[type='radio']:checked");
+    if (radioAnswer.length === 0) {
+        alert("Please select and answer!");
+    } else {
+        askQuestions();
+    }
 }
 
 //Function to check if user has selected the final radio button before submitting results
@@ -79,6 +84,8 @@ function showResults() {
 //Function to run quiz, calling other functions when required
 function runQuiz() {
 
+    //Event listener for next button to check if user has submitted an input
+    nextButton.addEventListener("click", validateUserInput);
     //Call function to start quiz
     askQuestions();
 }
