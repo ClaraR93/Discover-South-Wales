@@ -1,6 +1,31 @@
 //Wait for the DOM to finish loading before running quiz
 document.addEventListener('DOMContentLoaded', runQuiz);
 
+//Define questions and multiple choice answers in an array 
+const questions = [
+    {
+        question: "What is your preferred activity level?",
+        answer: ["Easy and leisurely", "Moderate with some challenges", "Strenuous and adventurous"],
+    },
+    {
+        question: "How do you feel about heights and steep terrains?",
+        answer: ["Not a fan; prefer flat and low-altitude landscapes", "I'm okay with some heights and moderate inclines", "Love them! Bring on the adrenaline and spectacular views"],
+    },
+    {
+        question: "How much time are you willing to spend on the activity?",
+        answer: ["A few hours for a rewarding experience", "Short outings or half-day trips", "Full-day out"],
+    },
+    {
+        question: "How often do you engage in physical activities or exercise?",
+        answer: ["Rarely or occasionally, but I enjoy leisurely walks", "I exercise moderately a few times a week", "I'm very active and exercise regularly"],
+    },
+    {
+        question: "What do you enjoy the most during outdoor activities? ",
+        answer: ["Taking in the scenery and enjoying the surroundings", "A mix of physical activity and sightseeing", "The physical challenge"],
+    },
+
+];
+
 //Function to run through questions and answers 
 function askQuestions() {
 
