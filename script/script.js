@@ -52,6 +52,7 @@ function askQuestions() {
 }
 
 //Function to check if user has selected a radio button before proceeding to next question
+//Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing
 function validateUserInput () {
     const radioAnswer = document.querySelectorAll("input[type='radio']:checked");
     if (radioAnswer.length === 0) {
