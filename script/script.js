@@ -18,6 +18,16 @@ function storeUserAnswers() {
 
 }
 
+//Function to tally up user selection points
+function calculateScore() {
+
+}
+
+//Function to display results on score outcome
+function showResults() {
+
+}
+
 //Function to run quiz, calling other functions when required
 function runQuiz() {
 
