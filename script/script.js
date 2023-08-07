@@ -31,10 +31,17 @@ let currenQuestionIndex = 0;
 
 //Function to run through questions and answers 
 function askQuestions() {
+
+    // Get current question and answers from questions array
     const currentQuestion = questions[currenQuestionIndex];
     const answerA = currentQuestion.answer[0];
     const answerB = currentQuestion.answer[1];
     const answerC = currentQuestion.answer[2];
+
+    document.getElementById('quetion').textContent = currentQuestion.question;
+    document.getElementById('label-a').textContent = answerA;
+    document.getElementById('label-b').textContent = answerB;
+    document.getElementById('label-c').textContent = answerC;
 }
 
 //Function to check if user has selected a radio button before proceeding
