@@ -197,7 +197,7 @@ footer a {
     background-color: #79804F;
 }
 
-/*-------------------------Quiz questions*/
+/*-------------------------Quiz questions on quiz page*/
 
 .outer-quiz-container {
     display: flex;
@@ -216,6 +216,20 @@ footer a {
     background-color: #79804F;
     width: 500px;
     height: 500px;
+}
+
+#question {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+label {
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /*-------------------------Media Queries 551px*/
