@@ -38,10 +38,14 @@ function askQuestions() {
     const answerB = currentQuestion.answer[1];
     const answerC = currentQuestion.answer[2];
 
+    //Update the form with new questions and answers
     document.getElementById('quetion').textContent = currentQuestion.question;
     document.getElementById('label-a').textContent = answerA;
     document.getElementById('label-b').textContent = answerB;
     document.getElementById('label-c').textContent = answerC;
+
+    //Increment through question index by one
+    currenQuestionIndex ++;
 }
 
 //Function to check if user has selected a radio button before proceeding
