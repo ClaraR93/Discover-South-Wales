@@ -39,7 +39,7 @@ function askQuestions() {
     const answerC = currentQuestion.answer[2];
 
     //Update the form with new questions and answers
-    document.getElementById('quetion').textContent = currentQuestion.question;
+    document.getElementById('question').textContent = currentQuestion.question;
     document.getElementById('label-a').textContent = answerA;
     document.getElementById('label-b').textContent = answerB;
     document.getElementById('label-c').textContent = answerC;
@@ -75,5 +75,5 @@ function showResults() {
 
 //Function to run quiz, calling other functions when required
 function runQuiz() {
-
+    askQuestions();
 }
