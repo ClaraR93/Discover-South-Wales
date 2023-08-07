@@ -26,6 +26,9 @@ const questions = [
 
 ];
 
+//Add event listener to next button
+const nextButton = document.getElementsByClassName("quiz-button");
+
 //Set question index to 0 at start of quiz
 let currenQuestionIndex = 0;
 
@@ -75,5 +78,7 @@ function showResults() {
 
 //Function to run quiz, calling other functions when required
 function runQuiz() {
+
+    //Call function to start quiz
     askQuestions();
 }
