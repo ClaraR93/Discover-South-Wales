@@ -47,8 +47,6 @@ function askQuestions() {
     document.getElementById("label-b").textContent = answerB;
     document.getElementById("label-c").textContent = answerC;
 
-
-
     //Increment through question index by one
     currenQuestionIndex ++;
 }
@@ -64,10 +62,13 @@ function validateUserInput () {
     }
 }
 
-//Function to clear radio button after user moves onto next question
+//Function to clear radio button after user moves onto next question - Used code from Tutorials Point (see readme credits)
 function clearRadio () {
-    let radio = document.querySelectorAll("input[type='radio]");
-    radio.checked = false;
+    let radio = document.querySelectorAll("input[type='radio']");
+    radio.forEach((button) => {
+        button.checked = false;
+    });
+    
 }
 
 //Function to check if user has selected the final radio button before submitting results
@@ -95,6 +96,9 @@ function runQuiz() {
 
     //Event listener for next button to check if user has submitted an input
     nextButton.addEventListener("click", validateUserInput);
+
+    nextButton.addEventListener("click", clearRadio);
+
     //Call function to start quiz
     askQuestions();
 }
