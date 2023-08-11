@@ -47,6 +47,8 @@ function askQuestions() {
     document.getElementById("label-b").textContent = answerB;
     document.getElementById("label-c").textContent = answerC;
 
+
+
     //Increment through question index by one
     currenQuestionIndex ++;
 }
@@ -60,6 +62,12 @@ function validateUserInput () {
     } else {
         askQuestions();
     }
+}
+
+//Function to clear radio button after user moves onto next question
+function clearRadio () {
+    let radio = document.querySelectorAll("input[type='radio]");
+    radio.checked = false;
 }
 
 //Function to check if user has selected the final radio button before submitting results
