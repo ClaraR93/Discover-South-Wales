@@ -1,7 +1,7 @@
 //Wait for the DOM to finish loading before running quiz
 document.addEventListener("DOMContentLoaded", runQuiz);
 
-//Define questions and multiple choice answers in an array 
+//Define questions and multiple choice answers in an array container question/answer objects
 const questions = [
     {
         question: "What is your preferred activity level?",
@@ -30,13 +30,13 @@ const questions = [
 const nextButton = document.getElementById("next-button");
 
 //Set question index to 0 at start of quiz
-let currenQuestionIndex = 0;
+let currentQuestionIndex = 0;
 
 //Function to run through questions and answers 
 function askQuestions() {
 
     // Get current question and answers from questions array
-    const currentQuestion = questions[currenQuestionIndex];
+    const currentQuestion = questions[currentQuestionIndex];
     const answerA = currentQuestion.answer[0];
     const answerB = currentQuestion.answer[1];
     const answerC = currentQuestion.answer[2];
@@ -48,7 +48,9 @@ function askQuestions() {
     document.getElementById("label-c").textContent = answerC;
 
     //Increment through question index by one
-    currenQuestionIndex ++;
+    currentQuestionIndex ++;
+
+    updateButtonLabel();
 }
 
 //Function to check if user has selected a radio button before proceeding to next question
@@ -62,13 +64,21 @@ function validateUserInput () {
     }
 }
 
-//Function to clear radio button after user moves onto next question - Used code from Tutorials Point (see readme credits)
+//Function to clear radio button after user moves onto next question
+//Used code from Tutorials Point - See readme credits
 function clearRadio () {
     let radio = document.querySelectorAll("input[type='radio']");
     radio.forEach((button) => {
         button.checked = false;
     });
     
+}
+
+//Function to change text content of next button to 'Submit'
+function updateButtonLabel () {
+    if (currentQuestionIndex === questions.length) {
+        nextButton.innerHTML = "Submit";
+    }
 }
 
 //Function to check if user has selected the final radio button before submitting results
@@ -97,6 +107,7 @@ function runQuiz() {
     //Event listener for next button to check if user has submitted an input
     nextButton.addEventListener("click", validateUserInput);
 
+    //Event listener for next button to clear radio selection after each question is submitted 
     nextButton.addEventListener("click", clearRadio);
 
     //Call function to start quiz
