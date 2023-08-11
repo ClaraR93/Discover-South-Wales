@@ -50,6 +50,7 @@ function askQuestions() {
     //Increment through question index by one
     currentQuestionIndex ++;
 
+    //Call this function to replace the 'Next' button content with 'Submit
     updateButtonLabel();
 }
 
@@ -58,7 +59,7 @@ function askQuestions() {
 function validateUserInput () {
     const radioAnswer = document.querySelectorAll("input[type='radio']:checked");
     if (radioAnswer.length === 0) {
-        alert("Please select and answer!");
+        alert("Please select an answer!");
     } else {
         askQuestions();
     }
@@ -79,11 +80,6 @@ function updateButtonLabel () {
     if (currentQuestionIndex === questions.length) {
         nextButton.innerHTML = "Submit";
     }
-}
-
-//Function to check if user has selected the final radio button before submitting results
-function validateUserSubmission () {
-
 }
 
 //Function to store user inputs into an array
