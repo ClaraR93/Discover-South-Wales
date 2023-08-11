@@ -57,6 +57,7 @@ function askQuestions() {
 //Function to check if user has selected a radio button before proceeding to next question
 //Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing
 function validateUserInput () {
+    //Add event listener for checked radio buttons
     const radioAnswer = document.querySelectorAll("input[type='radio']:checked");
     if (radioAnswer.length === 0) {
         alert("Please select an answer!");
@@ -85,9 +86,12 @@ function updateButtonLabel () {
 //Empty array to store user answers
 let userAnswers = [];
 
-//Function to store user inputs into an array
+//Function to store user inputs into an array - **UNFINISHED FUNCTION**
 function storeUserAnswers() {
-
+    const userSelections = document.querySelectorAll("input[type='radio']:checked");
+    userSelections.forEach((selection) => {
+        userAnswers.push(selection.value);
+    });
 }
 
 //Function to tally up user selection points
@@ -109,6 +113,12 @@ function runQuiz() {
     //Event listener for next button to clear radio selection after each question is submitted 
     nextButton.addEventListener("click", clearRadio);
 
+    nextButton.addEventListener("click", () => {
+        storeUserAnswers();
+        console.log("Answers:", userAnswers);
+    });
+
     //Call function to start quiz
     askQuestions();
+
 }
