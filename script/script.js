@@ -82,6 +82,9 @@ function updateButtonLabel () {
     }
 }
 
+//Empty array to store user answers
+let userAnswers = [];
+
 //Function to store user inputs into an array
 function storeUserAnswers() {
 
