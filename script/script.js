@@ -89,7 +89,7 @@ let userAnswers = [];
 //Function to store user inputs into an array 
 function storeUserAnswers(event) {
     const selectedValue = event.target.value;
-    userAnswers[currentQuestionIndex - 1] = selectedValue;    
+    userAnswers.push(parseInt(selectedValue));   
     console.log("Answers", userAnswers);
 }
 
@@ -112,7 +112,7 @@ function runQuiz() {
     //Event listener for next button to clear radio selection after each question is submitted 
     nextButton.addEventListener("click", clearRadio);
 
-    //Event listener for next button to record user input values in userAnswers array 
+    //Event listener for radio button to record user input values in userAnswers array 
     const radioButtons = document.getElementsByName("answers");
     radioButtons.forEach(button => {
         button.addEventListener("click", storeUserAnswers);
