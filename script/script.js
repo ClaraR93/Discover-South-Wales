@@ -86,13 +86,10 @@ function updateButtonLabel () {
 //Empty array to store user answers
 let userAnswers = [];
 
-//Function to store user inputs into an array - **UNFINISHED FUNCTION**
-function storeUserAnswers() {
-    const userSelections = document.querySelectorAll("input[type='radio']:checked");
-    userSelections.forEach((selectedRadio) => {
-        const selectedValue = selectedRadio.value;
-        userAnswers.push(selectedValue);
-    });
+//Function to store user inputs into an array 
+function storeUserAnswers(event) {
+    const selectedValue = event.target.value;
+    userAnswers[currentQuestionIndex - 1] = selectedValue;    
     console.log("Answers", userAnswers);
 }
 
@@ -116,9 +113,10 @@ function runQuiz() {
     nextButton.addEventListener("click", clearRadio);
 
     //Event listener for next button to record user input values in userAnswers array 
-    nextButton.addEventListener("click", () => {
-        storeUserAnswers();
-    });
+    const radioButtons = document.getElementsByName("answers");
+    radioButtons.forEach(button => {
+        button.addEventListener("click", storeUserAnswers);
+    })
 
     //Call function to start quiz
     askQuestions();
