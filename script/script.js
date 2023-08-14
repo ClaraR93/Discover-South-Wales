@@ -89,9 +89,11 @@ let userAnswers = [];
 //Function to store user inputs into an array - **UNFINISHED FUNCTION**
 function storeUserAnswers() {
     const userSelections = document.querySelectorAll("input[type='radio']:checked");
-    userSelections.forEach((selection) => {
-        userAnswers.push(selection.value);
+    userSelections.forEach((selectedRadio) => {
+        const selectedValue = selectedRadio.value;
+        userAnswers.push(selectedValue);
     });
+    console.log("Answers", userAnswers);
 }
 
 //Function to tally up user selection points
@@ -113,9 +115,9 @@ function runQuiz() {
     //Event listener for next button to clear radio selection after each question is submitted 
     nextButton.addEventListener("click", clearRadio);
 
+    //Event listener for next button to record user input values in userAnswers array 
     nextButton.addEventListener("click", () => {
         storeUserAnswers();
-        console.log("Answers:", userAnswers);
     });
 
     //Call function to start quiz
