@@ -89,6 +89,7 @@ let userAnswers = [];
 //Function to store user inputs into an array 
 function storeUserAnswers(event) {
     const selectedValue = event.target.value;
+    //Convert user selection values to intergers and push to empty userAnswers array
     userAnswers.push(parseInt(selectedValue));   
     console.log("Answers", userAnswers);
 }
