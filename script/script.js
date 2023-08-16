@@ -158,6 +158,7 @@ function runQuiz() {
     //Event listener for submit button to check if user has submitted an input and store user answers in an array
     submitButton.addEventListener("click", validateUserInput);
 
+    // Event listener for submit button to check if user has submitted an input before hiding quiz form and revealing quiz results
     submitButton.addEventListener("click", hideQuiz);
 
 }
