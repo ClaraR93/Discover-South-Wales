@@ -58,7 +58,7 @@ function askQuestions() {
 //Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing
 function validateUserInput () {
     //Add event listener for checked radio buttons
-    const radioAnswer = document.querySelectorAll("input[type='radio']:checked");
+    const radioAnswer = document.querySelector("input[type='radio']:checked");
     //If no question is selected alert user to select answer
     if (!radioAnswer) {
         alert("Please select an answer!");
@@ -79,6 +79,12 @@ function clearRadio () {
     });
     
 }
+
+// Create a new button element for submission
+const submitButton = document.createElement("button");
+submitButton.setAttribute("type", "button");
+submitButton.setAttribute("id", "submit-button");
+submitButton.textContent = "Submit!";
 
 //Function to change text content of next button to 'Submit'
 function updateButtonLabel () {
