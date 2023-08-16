@@ -89,7 +89,7 @@ submitButton.textContent = "Submit!";
 //Function to change text content of next button to 'Submit'
 function updateButtonLabel () {
     if (currentQuestionIndex === questions.length) {
-        nextButton.innerHTML = "Submit";
+        nextButton.replaceWith(submitButton);
     }
 }
 
