@@ -134,4 +134,7 @@ function runQuiz() {
     //Call function to start quiz
     askQuestions();
 
+    //Event listener for submit button to check if user has submitted an input and store user answers in an array
+    submitButton.addEventListener("click", validateUserInput);
+
 }
