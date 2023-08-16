@@ -59,9 +59,13 @@ function askQuestions() {
 function validateUserInput () {
     //Add event listener for checked radio buttons
     const radioAnswer = document.querySelectorAll("input[type='radio']:checked");
-    if (radioAnswer.length === 0) {
+    //If no question is selected alert user to select answer
+    if (!radioAnswer) {
         alert("Please select an answer!");
+    //Else store user inputs into an array and call next question (askQuestion function)
     } else {
+        const selectedValue = radioAnswer.value;
+        storeUserAnswers(selectedValue);
         askQuestions();
     }
 }
@@ -87,8 +91,7 @@ function updateButtonLabel () {
 let userAnswers = [];
 
 //Function to store user inputs into an array 
-function storeUserAnswers(event) {
-    const selectedValue = event.target.value;
+function storeUserAnswers(selectedValue) {
     //Convert user selection values to intergers and push to empty userAnswers array
     userAnswers.push(parseInt(selectedValue));   
     console.log("Answers", userAnswers);
