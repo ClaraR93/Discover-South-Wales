@@ -238,6 +238,25 @@ footer a {
     display: none;
 }
 
+/*-------------------------Quiz results*/
+
+.quiz-answers-container {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show-quiz-answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #79804F;
+    width: 500px;
+    height: 500px;
+}
+
 /*-------------------------Buttons*/
 
 #next-button, #submit-button {
