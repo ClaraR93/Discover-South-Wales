@@ -199,7 +199,7 @@ footer a {
 
 /*-------------------------Quiz questions on quiz page*/
 
-.outer-quiz-container {
+#outer-quiz-container {
     display: flex;
     justify-content: center;
     width: 550px;
@@ -232,6 +232,10 @@ footer a {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 400;
+}
+
+.hidden-quiz-container {
+    display: none;
 }
 
 /*-------------------------Buttons*/

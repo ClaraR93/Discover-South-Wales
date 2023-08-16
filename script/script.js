@@ -117,8 +117,9 @@ function calculateScore() {
     console.log(sum);
 }
 
+//Function to hide quiz form and reveal quiz results container
 function hideQuiz() {
-    
+    // Check if the user has selected a radio button
 }
 
 //Function to display results on score outcome
