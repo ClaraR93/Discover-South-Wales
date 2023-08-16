@@ -120,6 +120,18 @@ function calculateScore() {
 //Function to hide quiz form and reveal quiz results container
 function hideQuiz() {
     // Check if the user has selected a radio button
+    const selectedRadio = document.querySelector("input[type='radio']:checked");
+    if (selectedRadio) {
+        // Hide quiz form and show quiz results div 
+        //Code used from w3schools - See readme credits
+        const revealQuizResults = document.getElementById("quiz-answers");
+        const hideQuiz = document.getElementById("quiz-form");
+        revealQuizResults.classList.add("show-quiz-answers");
+        hideQuiz.classList.add("hidden-quiz-container");
+
+        //Hide submit button when quiz results are displayed
+        submitButton.style.display = "none";
+    }
 }
 
 //Function to display results on score outcome
