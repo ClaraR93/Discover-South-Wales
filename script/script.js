@@ -131,6 +131,10 @@ function hideQuiz() {
 
         //Hide submit button when quiz results are displayed
         submitButton.style.display = "none";
+
+        // Proceed to calculate score and show results
+        calculateScore();
+        showResults();
     }
 }
 
@@ -153,5 +157,7 @@ function runQuiz() {
 
     //Event listener for submit button to check if user has submitted an input and store user answers in an array
     submitButton.addEventListener("click", validateUserInput);
+
+    submitButton.addEventListener("click", hideQuiz);
 
 }
