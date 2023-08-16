@@ -117,6 +117,10 @@ function calculateScore() {
     console.log(sum);
 }
 
+function hideQuiz() {
+    
+}
+
 //Function to display results on score outcome
 function showResults() {
 
