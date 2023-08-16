@@ -104,8 +104,17 @@ function storeUserAnswers(selectedValue) {
 }
 
 //Function to tally up user selection points
+// Used code from FreeCodeCamp - See readme credits
 function calculateScore() {
+    // create a variable for the sum and initialize it
+    let sum = 0;
 
+    // calculate sum using forEach() method
+    userAnswers.forEach(num => {
+        sum += num;
+    });
+
+    console.log(sum);
 }
 
 //Function to display results on score outcome
