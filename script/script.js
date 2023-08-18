@@ -53,6 +53,36 @@ const quizAnswers = [
         description: "The Sgwd Ddwli Uchaf is located on the Nedd Fechan and is one of three waterfalls along this section of the river. The falls has a drop of about 15 feet. It is best to approach the falls from the bottom which will entail leaving the main path a short distance from the falls.",
         image: "assets/images/sgwd-ddwli-uchaf-waterfall.jpg"
     },
+    {
+        name: "Fan Y Big",
+        description: "The walk to the top of Fan y Big takes in some of the most incredible ridge lines in the Brecon Beacons. It's a steep start, but then you have around 6km of easy ridge line walking, with simply sensational views all the way. Reaching the top is the icing on the cake, and if you luck out with good conditions, it's a hard spot to leave.",
+        image: "assets/images/fan-y-big.jpg"
+    },
+    {
+        name: "Gwaun Cerrig Llwydion",
+        description: "Starting with a short, but steep ascent from Blaen y Glyn Uchaf carpark, you are rewarded with spectacular views of Pen Y Fan and it's surrounding Mountains. In more of a secluded area, be sure to check out the river Caerfanell which begins flowing in from the topof Gwaun Cerrig Llwydion ridge",
+        image: "assets/images/gwaun-cerrig-llwydion.jpg"
+    },
+    {
+        name: "Pen Y Fan",
+        description: "Pen y Fan is the highest mountain in southern Britain. Deservedly popular with walkers, the views from the summit are truly incredible. Why not take a hike up at sunrise on a clear day, you will be rewarded for your efforts greatly",
+        image: "assets/images/pen-y-fan.jpg"
+    },
+    {
+        name: "Elidir Trail secret waterfall walk",
+        description: "A spellbinding in the Brecons, this trail offers endless crystal clear swimming holes and even a secret waterfall hidden off track. If you're up for the challenge to reach this, be mindful that you will have to cross the river twice and scamble up an offbeaten track to reach it, but its well worth the challenge.",
+        image: "assets/images/elidir-trail-waterfall.jpg"
+    },
+    {
+        name: "Fan Fawr",
+        description: "Enjoy this 7.7-km circular trail near Brecon, Powys. Generally considered a moderately challenging route, it takes an average of 2 h 40 min to complete. This trail is great for hiking, running, and walking, and it's unlikely you'll encounter many other people while exploring.",
+        image: "assets/images/fan-fawr.jpg"
+    },
+    {
+        name: "Horseshoe ride walk",
+        description: "If you're after a challenging but rewarding walk across wild Welsh moorland and up steep rocky peaks that offer commanding views over the Brecon Beacons, the Horseshoe Ridge hike is for you. At every step of the circular walk around the U-shaped Neuadd Valley and up the four peaks of Corn Du, Pen y Fan (the highest peak in southern Britain), Cribyn and Fan y Big, you'll be swept away by magnificent views stretching for miles in all directions.",
+        image: "assets/images/horseshoe-ridge-walk.jpg"
+    }
 ]
 
 //Add event listener to next button
