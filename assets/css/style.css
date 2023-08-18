@@ -328,6 +328,10 @@ footer a {
     height: 100%;
 }
 
+#maps-border {
+    padding: 10px;
+}
+
 /*-------------------------Media Queries 551px*/
 
 @media screen and (min-width: 551px) {

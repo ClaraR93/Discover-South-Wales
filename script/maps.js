@@ -1,3 +1,5 @@
+//Google maps API function 
+//Code used from Google maps documentation - See readme credits
 let map;
 
 async function initMap() {
