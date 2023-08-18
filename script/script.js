@@ -204,6 +204,9 @@ function showResults() {
     //Source and code inspired from stack overflow - See readme credits
     const answerIndex = Math.min(Math.max(score - 5), 10);
 
+    // Get the corresponding answer object based on the index
+    const finalResult = quizAnswers[answerIndex];
+
 }
 
 //Function to run quiz, calling other functions when required
