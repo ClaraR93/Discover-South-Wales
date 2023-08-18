@@ -200,6 +200,9 @@ function hideQuiz() {
 
 //Function to display results on score outcome
 function showResults() {
+    // Determine the index of the answer based on the score 
+    //Source and code inspired from stack overflow - See readme credits
+    const answerIndex = Math.min(Math.max(score - 5), 10);
 
 }
 
