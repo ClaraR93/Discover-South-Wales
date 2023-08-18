@@ -33,6 +33,26 @@ const quizAnswers = [
         description: "3 miles of sandy shore, encompassing one of Gower's most famous landmarks, Worms Head. The views are incomparable and are best enjoyed from one of the many walking routes, which feature the beach, Worm's Head and the cliffs, you may even see some basking seals or dolphins playing in the surf. And of course, Rhossili Bay is part of the Gower Coast Path.",
         image: "assets/images/rhossili-bay-beach.jpg"
     },
+    {
+        name: "Monknash Beach",
+        description: "Monknash Beach is a tranquil and hidden beach. However, getting there does require a little bit more effort than some of the other beaches in the region. To get to the beach, you need to take a short walk along a tree-lined path that follows Nash Brook all the way to the beach. The walk is very scenic; keep an eye out for the post-medieval ruins of the Blaen-y-cwm Corn Mill, which you can explore along the way.",
+        image: "assets/images/monknash-beach.jpg"
+    },
+    {
+        name: "Castle Coch taff trail",
+        description: "A fairly straightforward walk that starts with an incline, takes in Castell Coch, then heads out towards the Taff Trail, returning along this. This walk can be as long or as short as you wish, taking in the woodland and river scenery as you explore on.",
+        image: "assets/images/??"
+    },
+    {
+        name: "Saundersfoot to Monkstone point",
+        description: "Walk along the cliff side through the woods, or wait for low tide and take an easier stroll on the beach. Arriving at Monkstone point you will be greeted with breathtaking views of both Saundersfoot and Temby from either side. Enjoy the secluded beach Monkstone has to offer as well",
+        image: "assets/images/saundersfoot.jpg"
+    },
+    {
+        name: "Sgwd Ddwli Uchaf waterfall",
+        description: "The Sgwd Ddwli Uchaf is located on the Nedd Fechan and is one of three waterfalls along this section of the river. The falls has a drop of about 15 feet. It is best to approach the falls from the bottom which will entail leaving the main path a short distance from the falls.",
+        image: "assets/images/sgwd-ddwli-uchaf-waterfall.jpg"
+    },
 ]
 
 //Add event listener to next button
