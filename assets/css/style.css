@@ -240,7 +240,7 @@ footer a {
 
 /*-------------------------Quiz results*/
 
-.quiz-answers-container {
+#quiz-answers-container {
     display: flex;
     justify-content: center;
     width: 550px;
