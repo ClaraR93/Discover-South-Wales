@@ -207,6 +207,11 @@ function showResults() {
     // Get the corresponding answer object based on the index
     const finalResult = quizAnswers[answerIndex];
 
+    // Get the elements by their IDs
+    const answerNameElement = document.getElementById("answer-name");
+    const answerDescriptionElement = document.getElementById("answer-description");
+    const answerImageElement = document.getElementById("answer-image");
+
 }
 
 //Function to run quiz, calling other functions when required
