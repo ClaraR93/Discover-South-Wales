@@ -307,7 +307,7 @@ footer a {
     display: none;
 }
 
-/*-------------------------Buttons*/
+/*-------------------------Quiz Buttons*/
 
 #next-button, #submit-button {
     margin: 20px;
@@ -319,6 +319,13 @@ footer a {
     font-weight: 400;
     background-color: #096A2E;
     color: #E8E9DA;
+} 
+
+/*-------------------------Maps page*/
+
+#maps-container {
+    width: 600px;
+    height: 100%;
 }
 
 /*-------------------------Media Queries 551px*/
