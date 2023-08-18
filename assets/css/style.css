@@ -262,6 +262,10 @@ footer a {
     width: 450px;
 }
 
+#bottom-heading-results {
+    display: none;
+}
+
 /*-------------------------Buttons*/
 
 #next-button, #submit-button {
