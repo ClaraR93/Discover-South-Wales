@@ -254,7 +254,8 @@ footer a {
     justify-content: space-evenly;
     background-color: #79804F;
     width: 500px;
-    height: 500px;
+    height: 700px;
+    margin: 15px;
 }
 
 #answer-image {

@@ -223,6 +223,7 @@ function showResults(score) {
     //Display answer image after submitting quiz
     answerImageElement.style.display = "block";
 
+    //Display bottom headings after submitting quiz
     bottomHeadings.style.display = "block";
 }
 
