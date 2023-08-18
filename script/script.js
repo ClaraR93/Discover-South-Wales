@@ -173,7 +173,8 @@ function calculateScore() {
         sum += num;
     });
 
-    console.log(sum);
+    // Return the calculated sum
+    return sum;
 }
 
 //Function to hide quiz form and reveal quiz results container
