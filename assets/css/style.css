@@ -274,15 +274,19 @@ footer a {
     text-align: center;
 }
 
+#answer-image {
+    display: none;
+    width: 450px;
+}
+
 #bottom-heading-results p {
     font-family: 'Lato';
     text-align: center;
     font-size: 18px;
 }
 
-#answer-image {
-    display: none;
-    width: 450px;
+#bottom-heading-results a {
+    margin-left: 10px;
 }
 
 #bottom-heading-results {
