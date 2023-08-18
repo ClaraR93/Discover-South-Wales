@@ -193,13 +193,13 @@ function hideQuiz() {
         submitButton.style.display = "none";
 
         // Proceed to calculate score and show results
-        calculateScore();
-        showResults();
+        const score = calculateScore();
+        showResults(score);
     }
 }
 
 //Function to display results on score outcome
-function showResults() {
+function showResults(score) {
     // Determine the index of the answer based on the score 
     //Source and code inspired from stack overflow - See readme credits
     const answerIndex = Math.min(Math.max(score - 5), 10);
@@ -218,7 +218,6 @@ function showResults() {
     // Set the alt text and source for the image
     answerImageElement.src = finalResult.image;
     answerImageElement.alt = finalResult.name;
-
 }
 
 //Function to run quiz, calling other functions when required
