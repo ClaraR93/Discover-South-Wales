@@ -212,6 +212,13 @@ function showResults() {
     const answerDescriptionElement = document.getElementById("answer-description");
     const answerImageElement = document.getElementById("answer-image");
 
+    // Populate the elements with values from the answer object
+    answerNameElement.textContent = finalResult.name;
+    answerDescriptionElement.textContent = finalResult.description;
+    // Set the alt text and source for the image
+    answerImageElement.src = finalResult.image;
+    answerImageElement.alt = finalResult.name;
+
 }
 
 //Function to run quiz, calling other functions when required
