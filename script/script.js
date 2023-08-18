@@ -211,6 +211,7 @@ function showResults(score) {
     const answerNameElement = document.getElementById("answer-name");
     const answerDescriptionElement = document.getElementById("answer-description");
     const answerImageElement = document.getElementById("answer-image");
+    const topHeading = document.getElementById("top-heading-results");
     const bottomHeadings = document.getElementById("bottom-heading-results");
 
     // Populate the elements with values from the answer object
@@ -222,6 +223,9 @@ function showResults(score) {
 
     //Display answer image after submitting quiz
     answerImageElement.style.display = "block";
+
+    //Display top heading after submitting quiz
+    topHeading.style.display = "block";
 
     //Display bottom headings after submitting quiz
     bottomHeadings.style.display = "block";
