@@ -218,6 +218,9 @@ function showResults(score) {
     // Set the alt text and source for the image
     answerImageElement.src = finalResult.image;
     answerImageElement.alt = finalResult.name;
+
+    //Display answer image after submitting quiz
+    answerImageElement.style.display = "block";
 }
 
 //Function to run quiz, calling other functions when required

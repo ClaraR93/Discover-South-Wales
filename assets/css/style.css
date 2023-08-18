@@ -258,6 +258,7 @@ footer a {
 }
 
 #answer-image {
+    display: none;
     width: 450px;
 }
 
