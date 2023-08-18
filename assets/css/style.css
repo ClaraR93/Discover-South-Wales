@@ -264,6 +264,7 @@ footer a {
     font-size: 23px;
     font-weight: 400;
     text-transform: uppercase;
+    margin: 0;
 }
 
 #quiz-answers p {
@@ -271,6 +272,12 @@ footer a {
     font-size: 15px;
     margin: 15px;
     text-align: center;
+}
+
+#bottom-heading-results p {
+    font-family: 'Lato';
+    text-align: center;
+    font-size: 18px;
 }
 
 #answer-image {
