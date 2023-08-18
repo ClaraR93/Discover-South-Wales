@@ -26,6 +26,15 @@ const questions = [
 
 ];
 
+//Define 11 possible results as objects containing name, description and accompanied image
+const quizAnswers = [
+    {
+        name: "Rhossili Bay Beach",
+        description: "3 miles of sandy shore, encompassing one of Gower's most famous landmarks, Worms Head. The views are incomparable and are best enjoyed from one of the many walking routes, which feature the beach, Worm's Head and the cliffs, you may even see some basking seals or dolphins playing in the surf. And of course, Rhossili Bay is part of the Gower Coast Path.",
+        image: "assets/images/rhossili-bay-beach.jpg"
+    },
+]
+
 //Add event listener to next button
 const nextButton = document.getElementById("next-button");
 
