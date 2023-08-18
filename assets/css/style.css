@@ -261,6 +261,10 @@ footer a {
 
 #top-heading-results {
     display: none;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 25px;
+    font-weight: 300;
 }
 
 #quiz-answers h2 {
