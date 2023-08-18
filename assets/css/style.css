@@ -257,6 +257,10 @@ footer a {
     height: 500px;
 }
 
+#answer-image {
+    width: 450px;
+}
+
 /*-------------------------Buttons*/
 
 #next-button, #submit-button {
