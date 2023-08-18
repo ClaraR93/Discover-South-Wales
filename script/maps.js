@@ -6,9 +6,10 @@ async function initMap() {
     const { Map } = await google.maps.importLibrary("maps");
 
     map = new Map(document.getElementById("maps-container"), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8,
+        center: { lat: 51.840674510742, lng: -3.7255938139578 },
+        zoom: 9,
     });
 }
 
 initMap();
+
