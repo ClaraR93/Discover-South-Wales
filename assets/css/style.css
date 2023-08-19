@@ -104,13 +104,13 @@ header {
     color: #E8E9DA;
     font-family: 'Lato', sans-serif;
 }
-
 /*-------------------------Footer*/
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     background-color: #79804F;
     padding: 0;
@@ -351,6 +351,14 @@ footer a {
     padding: 10px;
 }
 
+/*-------------------------Media Queries 768px*/
+
+@media screen and (min-width: 768px) {
+    #maps-container {
+        height: 600px;
+    }
+}
+
 /*-------------------------Media Queries 551px*/
 
 @media screen and (min-width: 551px) {
@@ -374,7 +382,7 @@ footer a {
 /*-------------------------Media Queries 500px*/
 
 @media screen and (max-width: 500px) {
-    #home-heading {
+    #home-headings {
         width: 330px;
     }
 
