@@ -428,6 +428,10 @@ footer a:hover {
         display: none;
     }
 
+    #answer-image {
+        width: 350px;
+    }
+
     #error-container {
         width: 100%;
     }
