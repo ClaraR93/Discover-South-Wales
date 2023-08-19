@@ -197,12 +197,15 @@ footer a:hover {
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    font-size: 15px;
     background-color: #096A2E;
     color: #E8E9DA;
+    transition: 0.5s;
 }
 
 .quiz-button:hover {
     background-color: #79804F;
+    color: #000;
 }
 
 /*-------------------------Quiz questions on quiz page*/
