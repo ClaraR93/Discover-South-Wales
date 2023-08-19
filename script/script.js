@@ -222,15 +222,20 @@ function showResults(score) {
     const answerNameElement = document.getElementById("answer-name");
     const answerDescriptionElement = document.getElementById("answer-description");
     const answerImageElement = document.getElementById("answer-image");
+    const urlAnswers = document.getElementById("url-info")
     const topHeading = document.getElementById("top-heading-results");
     const bottomHeadings = document.getElementById("bottom-heading-results");
 
     // Populate the elements with values from the answer object
     answerNameElement.textContent = finalResult.name;
     answerDescriptionElement.textContent = finalResult.description;
+
     // Set the alt text and source for the image
     answerImageElement.src = finalResult.image;
     answerImageElement.alt = finalResult.name;
+
+    //Populate the anchor tag element with url values 
+    urlAnswers.href = finalResult.url;
 
     //Display answer image after submitting quiz
     answerImageElement.style.display = "block";
