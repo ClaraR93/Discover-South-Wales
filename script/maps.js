@@ -7,8 +7,8 @@ function initMap() {
     // Set LatLng and title text for the markers. The first marker (Rhossili)
     // receives the initial focus when tab is pressed. Use arrow keys to
     // move between markers; press tab again to cycle through the map controls.
-    const tourStops = [
-        [{ lat: 51.579958806850016, lng: -4.291999384202944 }, "Rhossili"],
+    const southWalesLocations = [
+        [{ lat: 51.579958806850016, lng: -4.291999384202944 }, "Rhossili", "https://www.visitswanseabay.com/inspirations/beach-guide/rhossili-bay-beach/"],
         [{ lat: 51.418522478498495, lng: -3.576441918485766 }, "Monknash"],
         [{ lat: 51.53696032335808, lng: -3.254880482895733 }, "Castle Coch Taff Trail"],
         [{ lat: 51.69749376467262, lng: -4.683001462694947 }, "Saundersfoot to Monkstone point"],
@@ -25,7 +25,7 @@ function initMap() {
     const infoWindow = new google.maps.InfoWindow();
 
     // Create the markers.
-    tourStops.forEach(([position, title], i) => {
+    southWalesLocations.forEach(([position, title, url], i) => {
         const marker = new google.maps.Marker({
             position,
             map,
@@ -39,6 +39,11 @@ function initMap() {
             infoWindow.close();
             infoWindow.setContent(marker.getTitle());
             infoWindow.open(marker.getMap(), marker);
+        });
+
+        // Add a click listener to open the specified URL when the marker is clicked.
+        marker.addListener("click", () => {
+            window.open(url, "_blank");
         });
     });
 }
