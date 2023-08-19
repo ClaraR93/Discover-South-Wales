@@ -89,6 +89,10 @@ header {
     padding: 10px 20px;
 }
 
+#navbar a:hover {
+    color: #E8E9DA;
+}
+
 .dropdown {
     display: flex;
     justify-content: center;
