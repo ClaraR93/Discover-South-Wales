@@ -225,6 +225,7 @@ footer a:hover {
 }
 
 #question {
+    margin: 0 10px;
     text-align: center;
     font-size: 25px;
     font-family: 'Lato', sans-serif;
