@@ -353,9 +353,17 @@ footer a {
 
 /*-------------------------Media Queries 768px*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     #maps-container {
         height: 600px;
+    }
+}
+
+/*-------------------------Media Queries 600px*/
+
+@media screen and (max-width: 600px) {
+    #maps-container {
+        width: 500px;
     }
 }
 
@@ -392,6 +400,10 @@ footer a {
 
     .quiz-container {
         width: 300px;
+    }
+
+    #maps-container {
+        width: 100%;
     }
 }
 
