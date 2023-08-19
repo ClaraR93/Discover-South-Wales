@@ -358,6 +358,17 @@ footer a:hover {
 
 /*-------------------------404 error page*/
 
+#error-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#error-message {
+
+}
+
 #error-image {
     width: 300px;
     height: 300px;
