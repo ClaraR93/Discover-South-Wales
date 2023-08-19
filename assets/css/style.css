@@ -398,11 +398,11 @@ footer a:hover {
         width: 330px;
     }
 
-    .outer-quiz-container {
+    #outer-quiz-container {
         width: 100%;
     }
 
-    .quiz-container {
+    #quiz-form {
         width: 100%;
     }
 
