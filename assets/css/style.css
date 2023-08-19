@@ -222,6 +222,7 @@ footer a:hover {
     background-color: #79804F;
     width: 500px;
     height: 500px;
+    align-items: center;
 }
 
 #question {
@@ -232,15 +233,23 @@ footer a:hover {
     font-weight: 300;
 }
 
-#answer-a, #answer-b, #answer-c {
-    margin-left: 10px;
-}
-
-#label-a, #label-b, #label-c {
+.quiz-container label {
     margin-left: 10px;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    margin-left: 10px;
+    padding: 4px 11px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.quiz-container input[type="radio"] {
+    display: none;
+}
+
+.quiz-container input[type="radio"]:checked+label {
+    background-color:#E8E9DA
 }
 
 .hidden-quiz-container {
