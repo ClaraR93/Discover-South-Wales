@@ -406,6 +406,14 @@ footer a:hover {
         width: 300px;
     }
 
+    #quiz-answers-container {
+        width: 100%;
+    }
+
+    #quiz-answers {
+        width: 100%;
+    }
+
     #maps-container {
         width: 100%;
     }
