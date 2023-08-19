@@ -225,6 +225,10 @@ footer a:hover {
     align-items: center;
 }
 
+.hidden-quiz-container {
+    display: none;
+}
+
 #question {
     margin: 0 10px;
     text-align: center;
@@ -244,16 +248,14 @@ footer a:hover {
     text-align: center;
 }
 
+/*Code used from Stack overflow - How to Style a Selected Radio Buttons Label - See readme credits */
+
 .quiz-container input[type="radio"] {
     display: none;
 }
 
 .quiz-container input[type="radio"]:checked+label {
     background-color:#E8E9DA
-}
-
-.hidden-quiz-container {
-    display: none;
 }
 
 /*-------------------------Quiz results*/
