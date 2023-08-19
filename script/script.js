@@ -170,7 +170,6 @@ let userAnswers = [];
 function storeUserAnswers(selectedValue) {
     //Convert user selection values to intergers and push to empty userAnswers array
     userAnswers.push(parseInt(selectedValue));   
-    console.log("Answers", userAnswers);
 }
 
 //Function to tally up user selection points
