@@ -291,6 +291,17 @@ footer a {
     display: none;
 }
 
+#answer-url {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+#answer-url:hover {
+    color: #E8E9DA;
+}
+
 #bottom-heading-results p {
     font-family: 'Lato';
     text-align: center;
