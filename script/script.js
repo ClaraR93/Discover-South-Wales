@@ -31,57 +31,68 @@ const quizAnswers = [
     {
         name: "Rhossili Bay Beach",
         description: "3 miles of sandy shore, encompassing one of Gower's most famous landmarks, Worms Head. The views are incomparable and are best enjoyed from one of the many walking routes, which feature the beach, Worm's Head and the cliffs, you may even see some basking seals or dolphins playing in the surf. And of course, Rhossili Bay is part of the Gower Coast Path.",
-        image: "assets/images/results/rhossili-bay-beach.jpg"
+        image: "assets/images/results/rhossili-bay-beach.jpg",
+        url: "https://www.visitswanseabay.com/inspirations/beach-guide/rhossili-bay-beach/"
     },
     {
         name: "Monknash Beach",
         description: "Monknash Beach is a tranquil and hidden beach. However, getting there does require a little bit more effort than some of the other beaches in the region. To get to the beach, you need to take a short walk along a tree-lined path that follows Nash Brook all the way to the beach. The walk is very scenic; keep an eye out for the post-medieval ruins of the Blaen-y-cwm Corn Mill, which you can explore along the way.",
-        image: "assets/images/results/monknash-beach.jpg"
+        image: "assets/images/results/monknash-beach.jpg",
+        url: "https://discovertheoutdoors.co.uk/monknash-beach/"
     },
     {
         name: "Castle Coch taff trail",
         description: "A fairly straightforward walk that starts with an incline, takes in Castell Coch, then heads out towards the Taff Trail, returning along this. This walk can be as long or as short as you wish, taking in the woodland and river scenery as you explore on.",
-        image: "assets/images/results??"
+        image: "assets/images/results??",
+        url: "http://edtechie.net/tonwalks/castell-coch/castell-coch-taff-trail/"
     },
     {
         name: "Saundersfoot to Monkstone point",
         description: "Walk along the cliff side through the woods, or wait for low tide and take an easier stroll on the beach. Arriving at Monkstone point you will be greeted with breathtaking views of both Saundersfoot and Temby from either side. Enjoy the secluded beach Monkstone has to offer as well",
-        image: "assets/images/results/saundersfoot.jpg"
+        image: "assets/images/results/saundersfoot.jpg",
+        url: "https://www.visitpembrokeshire.com/explore-pembrokeshire/beaches/monkstone"
     },
     {
-        name: "Sgwd Ddwli Uchaf waterfall",
+        name: "Sgwd Ddwli Uchaf Waterfall",
         description: "The Sgwd Ddwli Uchaf is located on the Nedd Fechan and is one of three waterfalls along this section of the river. The falls has a drop of about 15 feet. It is best to approach the falls from the bottom which will entail leaving the main path a short distance from the falls.",
-        image: "assets/images/results/sgwd-ddwli-uchaf-waterfall.jpg"
+        image: "assets/images/results/sgwd-ddwli-uchaf-waterfall.jpg",
+        url: "https://www.waymarking.com/waymarks/WMA9ZE_Sgwd_Ddwli_Uchaf_Upper_Gushing_Falls_Pontneddfechan_Powys_Wales"
     },
     {
         name: "Fan Y Big",
         description: "The walk to the top of Fan y Big takes in some of the most incredible ridge lines in the Brecon Beacons. It's a steep start, but then you have around 6km of easy ridge line walking, with simply sensational views all the way. Reaching the top is the icing on the cake, and if you luck out with good conditions, it's a hard spot to leave.",
-        image: "assets/images/results/fan-y-big.jpg"
+        image: "assets/images/results/fan-y-big.jpg",
+        url: "https://www.walkmyworld.com/posts/fan-y-big"
     },
     {
         name: "Gwaun Cerrig Llwydion",
         description: "Starting with a short, but steep ascent from Blaen y Glyn Uchaf carpark, you are rewarded with spectacular views of Pen Y Fan and it's surrounding Mountains. In more of a secluded area, be sure to check out the river Caerfanell which begins flowing in from the topof Gwaun Cerrig Llwydion ridge",
-        image: "assets/images/results/gwaun-cerrig-llwydion.jpg"
+        image: "assets/images/results/gwaun-cerrig-llwydion.jpg",
+        url: "https://www.themountainguide.co.uk/wales/gwaun-cerrig-llwydion.htm"
     },
     {
         name: "Pen Y Fan",
         description: "Pen y Fan is the highest mountain in southern Britain. Deservedly popular with walkers, the views from the summit are truly incredible. Why not take a hike up at sunrise on a clear day, you will be rewarded for your efforts greatly",
-        image: "assets/images/results/pen-y-fan.jpg"
+        image: "assets/images/results/pen-y-fan.jpg",
+        url: "https://www.visitwales.com/things-do/adventure-and-activities/walking/crowning-glory-4-ways-walk-pen-y-fan"
     },
     {
-        name: "Elidir Trail secret waterfall walk",
+        name: "Elidir Trail secret waterfall",
         description: "A spellbinding in the Brecons, this trail offers endless crystal clear swimming holes and even a secret waterfall hidden off track. If you're up for the challenge to reach this, be mindful that you will have to cross the river twice and scamble up an offbeaten track to reach it, but its well worth the challenge.",
-        image: "assets/images/results/elidir-trail-waterfall.jpg"
+        image: "assets/images/results/elidir-trail-waterfall.jpg",
+        url: "https://ohwhataknight.co.uk/blog/how-to-reach-sgwd-einion-gam-waterfall"
     },
     {
         name: "Fan Fawr",
         description: "Enjoy this 7.7-km circular trail near Brecon, Powys. Generally considered a moderately challenging route, it takes an average of 2 h 40 min to complete. This trail is great for hiking, running, and walking, and it's unlikely you'll encounter many other people while exploring.",
-        image: "assets/images/results/fan-fawr.jpg"
+        image: "assets/images/results/fan-fawr.jpg",
+        url: "https://www.alltrails.com/en-gb/trail/wales/powys/fan-fawr-and-beacons-reservoir"
     },
     {
-        name: "Horseshoe ride walk",
+        name: "Horseshoe Ridge",
         description: "If you're after a challenging but rewarding walk across wild Welsh moorland and up steep rocky peaks that offer commanding views over the Brecon Beacons, the Horseshoe Ridge hike is for you. At every step of the circular walk around the U-shaped Neuadd Valley and up the four peaks of Corn Du, Pen y Fan (the highest peak in southern Britain), Cribyn and Fan y Big, you'll be swept away by magnificent views stretching for miles in all directions.",
-        image: "assets/images/results/horseshoe-ridge-walk.jpg"
+        image: "assets/images/results/horseshoe-ridge-walk.jpg",
+        url: "https://www.nationaltrust.org.uk/visit/wales/brecon-beacons/brecon-beacons-horseshoe-ridge-walk"
     }
 ]
 
