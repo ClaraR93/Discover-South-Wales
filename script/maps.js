@@ -35,7 +35,7 @@ function initMap() {
         });
 
         // Add a click listener for each marker, and set up the info window.
-        marker.addListener("click", () => {
+        marker.addListener("mouseover", () => {
             infoWindow.close();
             infoWindow.setContent(marker.getTitle());
             infoWindow.open(marker.getMap(), marker);
