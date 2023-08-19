@@ -427,6 +427,10 @@ footer a:hover {
     #navbar-large {
         display: none;
     }
+
+    #error-container {
+        width: 100%;
+    }
 }
 
 /*-------------------------Media Queries 500px*/
