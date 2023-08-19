@@ -399,11 +399,11 @@ footer a:hover {
     }
 
     .outer-quiz-container {
-        width: 330px;
+        width: 100%;
     }
 
     .quiz-container {
-        width: 300px;
+        width: 100%;
     }
 
     #quiz-answers-container {
