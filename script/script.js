@@ -222,7 +222,8 @@ function showResults(score) {
     const answerNameElement = document.getElementById("answer-name");
     const answerDescriptionElement = document.getElementById("answer-description");
     const answerImageElement = document.getElementById("answer-image");
-    const urlAnswers = document.getElementById("url-info")
+    const urlAnswers = document.getElementById("answer-url")
+    const urlContainer = document.getElementById("url-info")
     const topHeading = document.getElementById("top-heading-results");
     const bottomHeadings = document.getElementById("bottom-heading-results");
 
@@ -239,6 +240,9 @@ function showResults(score) {
 
     //Display answer image after submitting quiz
     answerImageElement.style.display = "block";
+
+    //Display 'more info' url after submitting quiz
+    urlContainer.style.display = "block";
 
     //Display top heading after submitting quiz
     topHeading.style.display = "block";
