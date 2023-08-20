@@ -395,6 +395,8 @@ footer a:hover {
     font-family: 'Lato';
     text-align: center;
     margin: 10px;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 #maps-instructions i {
