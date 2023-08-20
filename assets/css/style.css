@@ -374,7 +374,13 @@ footer a:hover {
     font-weight: 400;
     background-color: #096A2E;
     color: #E8E9DA;
+    transition: 0.3s;
 } 
+
+#next-button:hover, #submit-button:hover {
+    background-color: #79804F;
+    color: #000;
+}
 
 /*-------------------------Maps page*/
 
