@@ -35,7 +35,7 @@ function initMap() {
         });
 
         // Add a click listener for each marker, and set up the info window.
-        marker.addListener("mouseover", () => {
+        marker.addListener("click", () => {
             infoWindow.close();
             infoWindow.setContent(marker.getTitle());
             infoWindow.open(marker.getMap(), marker);
@@ -43,7 +43,7 @@ function initMap() {
 
         // Add a click listener to open the specified URL when the marker is clicked.
         //Used window.open() method as explained in Stack overflows - See readme credits
-        marker.addListener("click", () => {
+        marker.addListener("dblclick", () => {
             window.open(url, "_blank");
         });
     });
