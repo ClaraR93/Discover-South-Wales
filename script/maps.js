@@ -1,4 +1,4 @@
-/*Wait for the DOM to finish loading before running maps
+//Wait for the DOM to finish loading before running maps
 document.addEventListener("DOMContentLoaded", function () {
     // Hide the loading span
     const loadingSpan = document.getElementById("loading");
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initialize Google Maps
     initMap();
-}); */
+}); 
 
 //Loading dots initiated if Google maps takes some time to load - Code used from stack overflow - See readme credits
 window.dotsGoingUp = true;
@@ -19,9 +19,9 @@ const dots = window.setInterval(function () {
         if (wait.innerHTML === "")
             window.dotsGoingUp = true;
     }
-    if (wait.innerHTML.length > 9)
+    if (wait.innerHTML.length > 5)
         window.dotsGoingUp = false;
-}, 100);
+}, 400);
 
 // Google maps function, including 11 markers corresponding to each quiz result 
 function initMap() {
