@@ -384,6 +384,15 @@ footer a:hover {
 
 #maps-border {
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#maps-instructions {
+    font-size: 25px;
+    font-family: 'Lato';
+    text-align: center;
+    margin: 10px;
 }
 
 /*-------------------------404 error page*/
