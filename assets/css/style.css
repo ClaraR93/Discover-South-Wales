@@ -251,6 +251,11 @@ footer a:hover {
     padding: 4px 11px;
     background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
+    transition: 0.3s;
+}
+
+.quiz-container label:hover {
+    background-color: #E8E9DA;
 }
 
 /*Code used from Stack overflow - How to Style a Selected Radio Buttons Label - See readme credits */
