@@ -229,7 +229,7 @@ footer a:hover {
     width: 500px;
     height: 500px;
     align-items: center;
-    /*Code used from Design Shack to assist with box shadow placement - See Read me Credits*/
+    /*Code used from Design Shack to assist with box shadow placement - See readme Credits*/
     box-shadow: 0px 0px 10px 10px #79804F;
 }
 
@@ -252,7 +252,7 @@ footer a:hover {
     font-weight: 400;
     margin-left: 10px;
     padding: 4px 11px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #fff;
     text-align: center;
 }
 
@@ -274,7 +274,7 @@ footer a:hover {
 }
 
 .quiz-container input[type="radio"]:checked+label {
-    background-color:#E8E9DA
+    background-color: #79804F;
 }
 
 /*-------------------------Quiz results*/
