@@ -29,6 +29,17 @@ body {
     background-position: center;
 }
 
+/*-------------------------Code used from ADG website, see readme credits*/
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .center-content {
     display: flex;
     flex-direction: column;
