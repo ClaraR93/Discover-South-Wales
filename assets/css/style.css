@@ -225,10 +225,12 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #79804F;
+    background-color: #E8E9DA;
     width: 500px;
     height: 500px;
     align-items: center;
+    /*Code used from Design Shack to assist with box shadow placement - See Read me Credits*/
+    box-shadow: 0px 0px 10px 10px #79804F;
 }
 
 .hidden-quiz-container {
