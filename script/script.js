@@ -140,6 +140,12 @@ function validateUserInput () {
     }
 }
 
+//Function to hide quiz instructions after first question
+function hideInstructions () {
+    const instructions = document.getElementById("select-answer");
+    instructions.style.display = "none";
+}
+
 //Function to clear radio button after user moves onto next question
 //Used code from Tutorials Point - See readme credits
 function clearRadio () {
@@ -252,6 +258,9 @@ function showResults(score) {
 
 //Function to run quiz, calling other functions when required
 function runQuiz() {
+
+    //Event listener for next button to hide quiz instructions after first question is submitted 
+    nextButton.addEventListener("click", hideInstructions);
 
     //Event listener for next button to check if user has submitted an input
     nextButton.addEventListener("click", validateUserInput);
