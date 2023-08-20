@@ -267,6 +267,10 @@ footer a:hover {
     font-family: 'lato';
 }
 
+#select-answer i {
+    margin: 0 10px;
+}
+
 /*Code used from Stack overflow - How to Style a Selected Radio Buttons Label - See readme credits */
 
 .quiz-container input[type="radio"] {
