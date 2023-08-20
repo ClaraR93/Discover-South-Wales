@@ -395,6 +395,10 @@ footer a:hover {
     margin: 10px;
 }
 
+#maps-instructions i {
+    margin-right: 10px;
+}
+
 /*-------------------------404 error page*/
 
 #error-container {
