@@ -252,7 +252,6 @@ footer a:hover {
     padding: 4px 11px;
     background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
-    transition: 0.3s;
 }
 
 .quiz-container label:hover {
@@ -261,8 +260,8 @@ footer a:hover {
 
 #select-answer {
     font-size: 15px;
-    font-weight: 100;
-    color: #E8E9DA;
+    font-weight: 300;
+    color: #000;
     font-family: 'lato';
 }
 
