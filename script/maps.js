@@ -1,3 +1,20 @@
+//Wait for the DOM to finish loading before running quiz
+document.addEventListener("DOMContentLoaded", initMap);
+
+window.dotsGoingUp = true;
+const dots = window.setInterval(function () {
+    const wait = document.getElementById("loading");
+    if (window.dotsGoingUp)
+        wait.innerHTML += ".";
+    else {
+        wait.innerHTML = wait.innerHTML.substring(1, wait.innerHTML.length);
+        if (wait.innerHTML === "")
+            window.dotsGoingUp = true;
+    }
+    if (wait.innerHTML.length > 9)
+        window.dotsGoingUp = false;
+}, 100);
+
 // Google maps function, including 11 markers corresponding to each quiz result 
 function initMap() {
     const map = new google.maps.Map(document.getElementById("maps-container"), {
