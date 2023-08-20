@@ -401,6 +401,11 @@ footer a:hover {
     margin-right: 10px;
 }
 
+#loading {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
 /*-------------------------404 error page*/
 
 #error-container {

@@ -1,6 +1,14 @@
-//Wait for the DOM to finish loading before running quiz
-document.addEventListener("DOMContentLoaded", initMap);
+/*Wait for the DOM to finish loading before running maps
+document.addEventListener("DOMContentLoaded", function () {
+    // Hide the loading span
+    const loadingSpan = document.getElementById("loading");
+    loadingSpan.style.display = "none";
 
+    // Initialize Google Maps
+    initMap();
+}); */
+
+//Loading dots initiated if Google maps takes some time to load - Code used from stack overflow - See readme credits
 window.dotsGoingUp = true;
 const dots = window.setInterval(function () {
     const wait = document.getElementById("loading");
