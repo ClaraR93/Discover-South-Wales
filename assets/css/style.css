@@ -370,17 +370,17 @@ footer a:hover {
     background-color: #fff;
 }
 
-#bottom-heading-results p {
-    font-family: 'Lato';
-    text-align: center;
+#bottom-heading-results a, #bottom-heading-results p {
     font-size: 18px;
-}
-
-#bottom-heading-results a {
-    margin-left: 10px;
-    font-size: 20px;
     color: black;
     transition: 0.3s;
+    font-family: 'Lato';
+    text-align: center;
+    text-decoration: none;
+}
+
+#bottom-heading-results i {
+    margin-left: 10px;
 }
 
 #bottom-heading-results a:hover {   
