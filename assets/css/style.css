@@ -66,7 +66,7 @@ section {
 /*-------------------------Nav Bar*/
 
 header {
-    background-color: #79804F;
+    background-color: #939972;
     height: 100px;
     width: 100%;
 }
@@ -109,7 +109,6 @@ header {
 
 .dot {
     font-size: 40px;
-        margin: 0 10px;
 }
 
 .dropdown {
@@ -131,7 +130,7 @@ footer {
     align-items: center;
     width: 100%;
     font-family: 'Lato', sans-serif;
-    background-color: #79804F;
+    background-color: #939972;
     padding: 0;
 }
 
@@ -229,7 +228,7 @@ footer a:hover {
 }
 
 .quiz-button:hover {
-    background-color: #79804F;
+    background-color: #939972;
     color: #000;
 }
 
@@ -252,7 +251,7 @@ footer a:hover {
     height: 500px;
     align-items: center;
     /*Code used from Design Shack to assist with box shadow placement - See readme Credits*/
-    box-shadow: 0px 0px 10px 10px #79804F;
+    box-shadow: 0px 0px 10px 10px #939972;
 }
 
 .hidden-quiz-container {
@@ -300,7 +299,7 @@ footer a:hover {
 }
 
 .quiz-container input[type="radio"]:checked+label {
-    background-color: #79804F;
+    background-color: #939972;
 }
 
 /*-------------------------Quiz results*/
@@ -323,7 +322,7 @@ footer a:hover {
     margin: 15px;
     align-items: center;
     /*Code used from Design Shack to assist with box shadow placement - See readme Credits*/
-    box-shadow: 0px 0px 10px 10px #79804F;
+    box-shadow: 0px 0px 10px 10px #939972;
 }
 
 #top-heading-results {
@@ -385,7 +384,7 @@ footer a:hover {
 }
 
 #bottom-heading-results a:hover {   
-    color: #79804F;
+    color: #939972;
 }
 
 #bottom-heading-results {
@@ -408,7 +407,7 @@ footer a:hover {
 } 
 
 #next-button:hover, #submit-button:hover {
-    background-color: #79804F;
+    background-color: #939972;
     color: #000;
 }
 
