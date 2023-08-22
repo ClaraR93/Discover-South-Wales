@@ -24,7 +24,7 @@ body {
     background-color: #E8E9DA;
     width: 100%;
     height: 100%;
-    background-image: url('../images/background-print-image.png');
+    background-image: url('../images/background-print-image-compressed.webp');
     background-size: cover;
     background-position: center;
 }
@@ -425,7 +425,7 @@ footer a:hover {
 }
 
 #maps-instructions {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Lato';
     text-align: center;
     margin: 10px;
