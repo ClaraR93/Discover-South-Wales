@@ -370,6 +370,10 @@ footer a:hover {
     background-color: #fff;
 }
 
+#bottom-heading-results {
+    margin: 20px;
+}
+
 #bottom-heading-results a, #bottom-heading-results p {
     font-size: 18px;
     color: black;
@@ -377,32 +381,54 @@ footer a:hover {
     font-family: 'Lato';
     text-align: center;
     text-decoration: none;
+    margin: 0;
 }
 
 #bottom-heading-results i {
-    margin: 10px;
     font-size: 30px;
     color: #096A2E;
+    margin: 15px;
 }
 
 #bottom-heading-results i:hover {   
     color: #939972;
 }
 
-#bottom-heading-results {
-    display: none;
-}
-
 #check-out-maps {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
 #start-over {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
+}
+
+#start-over-button {
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #096A2E;
+    color: #E8E9DA;
+    transition: 0.5s;
+}
+
+#start-over-button:hover {
+    background-color: #939972;
+    color: #000;
+}
+
+#bottom-heading-results {
+    display: none;
 }
 
 /*-------------------------Quiz Buttons*/
