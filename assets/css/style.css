@@ -381,11 +381,11 @@ footer a:hover {
 
 #bottom-heading-results i {
     margin: 10px;
-    font-size: 25px;
+    font-size: 30px;
     color: #096A2E;
 }
 
-#bottom-heading-results a:hover {   
+#bottom-heading-results i:hover {   
     color: #939972;
 }
 
