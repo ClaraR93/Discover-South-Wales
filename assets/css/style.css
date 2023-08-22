@@ -380,7 +380,8 @@ footer a:hover {
 }
 
 #bottom-heading-results i {
-    margin-left: 10px;
+    margin: 10px;
+    font-size: 25px;
 }
 
 #bottom-heading-results a:hover {   
@@ -389,6 +390,12 @@ footer a:hover {
 
 #bottom-heading-results {
     display: none;
+}
+
+#start-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*-------------------------Quiz Buttons*/
