@@ -43,7 +43,7 @@ const quizAnswers = [
     {
         name: "Castle Coch taff trail",
         description: "A fairly straightforward walk that starts with an incline, takes in Castell Coch, then heads out towards the Taff Trail, returning along this. This walk can be as long or as short as you wish, taking in the woodland and river scenery as you explore on.",
-        image: "assets/images/results??",
+        image: "assets/images/results/castle-coch.jpg",
         url: "http://edtechie.net/tonwalks/castell-coch/castell-coch-taff-trail/"
     },
     {
