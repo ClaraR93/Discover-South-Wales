@@ -382,6 +382,7 @@ footer a:hover {
 #bottom-heading-results i {
     margin: 10px;
     font-size: 25px;
+    color: #096A2E;
 }
 
 #bottom-heading-results a:hover {   
@@ -390,6 +391,12 @@ footer a:hover {
 
 #bottom-heading-results {
     display: none;
+}
+
+#check-out-maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #start-over {
