@@ -89,3 +89,19 @@ The [Seamless Pattern Leaves](assets/images/background-print-image-compressed.we
 ### Wireframes
 
 Wireframes were created for mobile, tablet and desktop.
+
+[Home Page - Desktop](docs/wireframes/home/home_page_desktop.png) |
+[Home Page - Tablet](docs/wireframes/home/home_tablet.png) |
+[Home Page - Mobile](docs/wireframes/home/home_mobile.png)
+
+[Quiz Page (Questions) - Desktop](docs/wireframes/quiz/quiz_questions_desktop_.png) |
+[Quiz Page (Questions) - Tablet](docs/wireframes/quiz/quiz_tablet_.png) |
+[Quiz Page (Questions) - Mobile](docs/wireframes/quiz/quiz_questions_mobile_.png)
+
+[Quiz Page (Answers) - Desktop](docs/wireframes/quiz/quiz_answers_desktop_.png) |
+[Quiz Page (Answers) - Tablet](docs/wireframes/quiz/quiz_answers_tablet_.png) |
+[Quiz Page (Answers) - Mobile](docs/wireframes/quiz/quiz_answers_mobile_.png)
+
+[Map Page - Desktop](docs/wireframes/maps/maps_desktop_.png) |
+[Map Page - Tablet](docs/wireframes/maps/maps_tablet_.png) |
+[Map Page - Mobile](docs/wireframes/maps/maps_mobile_.png)
