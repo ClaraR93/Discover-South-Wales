@@ -147,3 +147,7 @@ The quiz heading instructs  the user to take a short quiz on where to go. This i
 - This page features Google Maps, centered on South Wales with eleven markers numbered 1 - 11. Each marker, when clicked on once will display the name of the marker's location. When double clicked, this also takes the user to an external website in a separate window, with more details on the location. The user is able to zoom in and out, and move around the maps, to explore each marker available.
 - If, due to poor internet connection, the maps are loading slowly, I've implemented simple loading dots just below the navigation bar, to indicate to the user that the maps are loading.
 - Above the Google Maps are simple instructions, represented with an 'information' font awesome icon ('i'), telling the user to “Click the map markers to view place names, and double click them for more information”. This gives the user clarity on how to navigate through Google Maps.
+
+*404 Error Page:*
+
+- The 404 page Features a print of a figure walking through the hills with a couple of trees. This image is sandwiched between two informative headings reassuring the user that they can navigate back to the home page (featured at the bottom), to continue using the website.
