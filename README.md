@@ -21,6 +21,7 @@ This website aims to provide information on what stunning landscape to explore w
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
     - [Imagery](#imagery)
+    - [Wireframes](#wireframes)
 
 ## User Experience (UX)
 
@@ -84,3 +85,7 @@ I picked this particular font as it was suggested on [Figma](https://www.figma.c
 
 All digital images in the results section, (excluding two images referenced in the [credit](#credits) section), were taken by Clara Reynolds.
 The [Seamless Pattern Leaves](assets/images/background-print-image-compressed.webp) for the left and right border across all pages, and the [Hiking Trail Sketch](assets/images/background-hiking.webp) featured in the 404 error page, were both downloaded from [Pixabay](https://pixabay.com/). Content License allows users to use content for free and modify or adapt the content into new works.
+
+### Wireframes
+
+Wireframes were created for mobile, tablet and desktop.
