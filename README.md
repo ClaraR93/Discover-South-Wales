@@ -126,3 +126,17 @@ The website consists of three pages, all of which are accessible from the naviga
 - Underneath the logo are two heading titles with the questions “Visiting South Wales for the first time?” and “Ready to start exploring the great outdoors?”. These two headings are short and simple, designed to address the users needs of venturing to the area for the first time.
 - Below this I've added a simple div containing a discrete line that splits the page into 2 sections; the heading and quiz information.
 The quiz heading instructs  the user to take a short quiz on where to go. This is accompanied with a clear 'Start Quiz' button that navigates the user to the Quiz page. When hovered over the button creates a smooth transition from a green background to a mixture of green and brown, keeping in theme with the colour of the header and footer.
+
+*Quiz Page:*
+
+- When the user navigates to the quiz page they are greeted with the first question with instructions to select one of 3 answers below. When the answers are hovered over by the user the background colour disappears, and when the user selects an answer, it is highlighted in the green/brown mixture, indicating that this has been selected. This was put in place instead of radio buttons, so the user has a greater range to click on, rather than just aiming for a small radio button. A user may click between answers before deciding to move onto the next question. If a user doesn't select an answer and selects the 'next' button, an alert pops up urging the user to select an answer.
+- When the next button is hovered over, this too changes to a green/brown colour signifying to the user to click next.
+- Over the next set of questions, the initial instructions are removed. At the last question the user is greeted with a submit button, styled in the same way as the next button.
+- When the user submits their answers, the quiz questions are replaced all together with one of eleven possible results. These results are structured in the following order:
+    - A title featuring “Based on your recommendations, we recommend…”
+    - Place name title
+    - A brief description of what to expect
+    - An accompanying image of the location
+    - A link that opens up an external website in a separate window, giving the user more in depth detail about the hike and navigation. When the link is hovered over the background colour changes to white.
+- Beneath the results there are two short, but informative headlines. These signify to the user that if they're not happy with their recommended result they can navigate over to the maps page to explore more options. The navigation link is represented by a font awesome icon of a map/marker, which when hovered over changes from green to green/brown.
+- This is separated by a line divider, and underneath this there is an option for the user to start the quiz over if they wish to do so. This is represented in the familiar button style marked as 'Start over', keeping in theme with the rest of the website. By clicking this button, the user is taken to the first mutliple choice question again. 
