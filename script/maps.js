@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Loading dots initiated if Google maps takes some time to load - Code used from stack overflow - See readme credits
 window.dotsGoingUp = true;
-const dots = window.setInterval(function () {
+window.setInterval(function () {
     const wait = document.getElementById("loading");
     if (window.dotsGoingUp)
         wait.innerHTML += ".";
