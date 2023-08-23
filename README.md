@@ -22,6 +22,7 @@ This website aims to provide information on what stunning landscape to explore w
     - [Typography](#typography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
+    - [Features](#features)
 
 ## User Experience (UX)
 
@@ -105,3 +106,16 @@ Wireframes were created for mobile, tablet and desktop.
 [Map Page - Desktop](docs/wireframes/maps/maps_desktop_.png) |
 [Map Page - Tablet](docs/wireframes/maps/maps_tablet_.png) |
 [Map Page - Mobile](docs/wireframes/maps/maps_mobile_.png)
+
+The final website design has maintained the simple structure as shown in the wireframes, with a few minor changes here and there. I wanted to keep the design quite minimalistic as I wanted to focus more on implementing javascript code to the Quiz and Map page.
+
+### Features
+
+The website consists of three pages, all of which are accessible from the navigation menu throughout the website. A custom 404 error page is also available if a user were to land on it.
+
+*All pages on the website have:*
+
+- A responsive navigation bar and navigation links across the header from left to right as followed - Home, Quiz, Map. On a mobile device, the navigation bar switches to a dropdown menu, taken from [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/components/dropdowns/), so that it is easier to view and navigate on a smaller screen.
+- When hovered over, each navigation link will change colour from black to a cream colour (used from the [small switch palette](docs/images/small-switch-palette.png)), to show what page the user is about to navigate to.
+- The footer consists of a headline encouraging users to connect with the website's Instagram page, followed by a font awesome icon underneath of the recognisable Instagram logo. When the icon is clicked on, this opens up in a separate browser to www.instgram.com. When hovered over, this link displays the beige colour again, keeping in theme with the small switch palette. There is copyright centered beneath the icon in a small font size.
+- Both header and footer contain a natural green/brown colour, pulled from the small switch palette as well.
