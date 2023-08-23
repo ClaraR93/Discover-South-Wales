@@ -133,11 +133,11 @@ The quiz heading instructs  the user to take a short quiz on where to go. This i
 - When the next button is hovered over, this too changes to a green/brown colour signifying to the user to click next.
 - Over the next set of questions, the initial instructions are removed. At the last question the user is greeted with a submit button, styled in the same way as the next button.
 - When the user submits their answers, the quiz questions are replaced all together with one of eleven possible results. These results are structured in the following order:
-    - A title featuring “Based on your recommendations, we recommend…”
-    - Place name title
-    - A brief description of what to expect
-    - An accompanying image of the location
-    - A link that opens up an external website in a separate window, giving the user more in depth detail about the hike and navigation. When the link is hovered over the background colour changes to white.
+  - A title featuring “Based on your recommendations, we recommend…”
+  - Place name title
+  - A brief description of what to expect
+  - An accompanying image of the location
+  - A link that opens up an external website in a separate window, giving the user more in depth detail about the hike and navigation. When the link is hovered over the background colour changes to white.
 - Beneath the results there are two short, but informative headlines. These signify to the user that if they're not happy with their recommended result they can navigate over to the maps page to explore more options. The navigation link is represented by a font awesome icon of a map/marker, which when hovered over changes from green to green/brown.
 - This is separated by a line divider, and underneath this there is an option for the user to start the quiz over if they wish to do so. This is represented in the familiar button style marked as 'Start over', keeping in theme with the rest of the website. By clicking this button, the user is taken to the first mutliple choice question again.
 
@@ -151,3 +151,9 @@ The quiz heading instructs  the user to take a short quiz on where to go. This i
 *404 Error Page:*
 
 - The 404 page Features a print of a figure walking through the hills with a couple of trees. This image is sandwiched between two informative headings reassuring the user that they can navigate back to the home page (featured at the bottom), to continue using the website.
+
+*Future Implementations:*
+
+- Future goals include creating an Instagram page that allows users to share images of where they have been, tagging @DiscoverSouthWales or #DiscoverSouthWales, for a chance to get their photo featured on the official Instagram page. This will encourage new users to stumble across the Instagram page, in turn leading them to this website to participate in the quiz.
+- I want to add more place results, and potentially replace old ones, so that returning users can continue exploring other places to go.
+- I want to be able to extend the quiz, asking further questions, so that the user gets an even more specified result, tailoring to their outdoor wants and desires.
