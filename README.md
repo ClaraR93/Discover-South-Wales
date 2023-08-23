@@ -8,10 +8,7 @@ This website aims to provide information on what stunning landscape to explore w
 
 - - -
 
-## Content
-
 - [Discover South Wales, Unveiling Nature's Treasures](#discover-south-wales-unveiling-natures-treasures)
-  - [Content](#content)
   - [User Experience (UX)](#user-experience-ux)
     - [Initial Discussion](#initial-discussion)
       - [Key Information for the site](#key-information-for-the-site)
@@ -23,6 +20,7 @@ This website aims to provide information on what stunning landscape to explore w
   - [Design](#design)
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
+    - [Imagery](#imagery)
 
 ## User Experience (UX)
 
@@ -81,3 +79,8 @@ I used Google Fonts for the following font:
 
 - 'Lato' for all text content across the website. This is a sans serif font.
 I picked this particular font as it was suggested on [Figma](https://www.figma.com/google-fonts/josefin-sans-font-pairings/#:~:text=Josefin%20Sans%20is%20an%20elegant>,One%2C%20Lato%2C%20and%20Playfair). The website states that 'Lato' would pair nicely with Josefins sans font, which is the primary font used for the logo on the home page. I wanted to keep it simple and consistent throughout the website, so opted for one style only to portray this.
+
+### Imagery
+
+All digital images in the results section, (excluding two images referenced in the [credit](#credits) section), were taken by Clara Reynolds.
+The [Seamless Pattern Leaves](assets/images/background-print-image-compressed.webp) for the left and right border across all pages, and the [Hiking Trail Sketch](assets/images/background-hiking.webp) featured in the 404 error page, were both downloaded from [Pixabay](https://pixabay.com/). Content License allows users to use content for free and modify or adapt the content into new works.
