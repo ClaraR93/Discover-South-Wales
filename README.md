@@ -15,6 +15,11 @@ This website aims to provide information on what stunning landscape to explore w
   - [User Experience (UX)](#user-experience-ux)
     - [Initial Discussion](#initial-discussion)
       - [Key Information for the site](#key-information-for-the-site)
+    - [User Stories](#user-stories)
+      - [Client Goals](#client-goals)
+      - [First Time Visitor Goals](#first-time-visitor-goals)
+      - [Returning Visitor Goals](#returning-visitor-goals)
+      - [Frequent Visitor Goals](#frequent-visitor-goals)
 
 ## User Experience (UX)
 
@@ -29,3 +34,26 @@ There is an additional Map page, which gives the user an overall view of the sug
 - A user friendly quiz with a set of 5 simple questions with 3 possible answers each, to determine where may be a good place to visit whilst in South Wales.
 - An interactive map, allowing the user to select other locations of their choice in the area.
 - An external link to an instagram page within the footer, encouraging users to share places they have been and follow the website's instagram page.
+
+### User Stories
+
+#### Client Goals
+
+- To be able to view the site on a range of device sizes.
+- To provide a simple start up guide for first time visitors in South Wales, encouraging users to explore suggested locations based on their quiz answers.
+- To encourage users to share their stories and connect on the websites' instagram page, with an aim to increase website traffic and encourage tourism in South Wales.
+
+#### First Time Visitor Goals
+
+- I want to visit South Wales for the first time and don't know where to start looking.
+- I want to be able to find other places to explore in South Wales if I want more recommendations.
+- I want to be able to access additional information on the locations offered.
+- I want to be able to navigate through the website with ease and efficiency.
+
+#### Returning Visitor Goals
+
+- I want to be able to share my experiences with other users by following the website's Instagram page.
+
+#### Frequent Visitor Goals
+
+- I want to be able to see other recommendations pop up from time to time, so that I can continue exploring South Wales and share this with others.
