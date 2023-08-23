@@ -593,11 +593,23 @@ footer a:hover {
     }
 }
 
+/*-------------------------Media Queries 400px*/
+
+@media screen and (max-width: 400px) {
+    #quiz-answers {
+        padding: 0 5px;
+    }
+}
+
 /*-------------------------Media Queries 350px*/
 
 @media screen and (max-width: 350px) {
     #south-wales-logo {
-    width: 300px;
-    height: 150px;
-}
+        width: 300px;
+        height: 150px;
+    }
+
+    #answer-image {
+        width: 350px;
+    }
 }
