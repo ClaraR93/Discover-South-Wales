@@ -139,4 +139,11 @@ The quiz heading instructs  the user to take a short quiz on where to go. This i
     - An accompanying image of the location
     - A link that opens up an external website in a separate window, giving the user more in depth detail about the hike and navigation. When the link is hovered over the background colour changes to white.
 - Beneath the results there are two short, but informative headlines. These signify to the user that if they're not happy with their recommended result they can navigate over to the maps page to explore more options. The navigation link is represented by a font awesome icon of a map/marker, which when hovered over changes from green to green/brown.
-- This is separated by a line divider, and underneath this there is an option for the user to start the quiz over if they wish to do so. This is represented in the familiar button style marked as 'Start over', keeping in theme with the rest of the website. By clicking this button, the user is taken to the first mutliple choice question again. 
+- This is separated by a line divider, and underneath this there is an option for the user to start the quiz over if they wish to do so. This is represented in the familiar button style marked as 'Start over', keeping in theme with the rest of the website. By clicking this button, the user is taken to the first mutliple choice question again.
+
+*Map Page:*
+
+- The Map page can be accessed via the navigation link Map, or the font awesome map icon when the user receives their recommended results on the quiz page.
+- This page features Google Maps, centered on South Wales with eleven markers numbered 1 - 11. Each marker, when clicked on once will display the name of the marker's location. When double clicked, this also takes the user to an external website in a separate window, with more details on the location. The user is able to zoom in and out, and move around the maps, to explore each marker available.
+- If, due to poor internet connection, the maps are loading slowly, I've implemented simple loading dots just below the navigation bar, to indicate to the user that the maps are loading.
+- Above the Google Maps are simple instructions, represented with an 'information' font awesome icon ('i'), telling the user to “Click the map markers to view place names, and double click them for more information”. This gives the user clarity on how to navigate through Google Maps.
