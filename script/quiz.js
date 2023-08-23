@@ -94,7 +94,7 @@ const quizAnswers = [
         image: "assets/images/results/horseshoe-ridge-walk.webp",
         url: "https://www.nationaltrust.org.uk/visit/wales/brecon-beacons/brecon-beacons-horseshoe-ridge-walk"
     }
-]
+];
 
 //Add event listener to next button
 const nextButton = document.getElementById("next-button");
@@ -227,8 +227,8 @@ function showResults(score) {
     const answerNameElement = document.getElementById("answer-name");
     const answerDescriptionElement = document.getElementById("answer-description");
     const answerImageElement = document.getElementById("answer-image");
-    const urlAnswers = document.getElementById("answer-url")
-    const urlContainer = document.getElementById("url-info")
+    const urlAnswers = document.getElementById("answer-url");
+    const urlContainer = document.getElementById("url-info");
     const topHeading = document.getElementById("top-heading-results");
     const bottomHeadings = document.getElementById("bottom-heading-results");
 
