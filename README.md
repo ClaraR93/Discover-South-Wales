@@ -20,6 +20,8 @@ This website aims to provide information on what stunning landscape to explore w
       - [First Time Visitor Goals](#first-time-visitor-goals)
       - [Returning Visitor Goals](#returning-visitor-goals)
       - [Frequent Visitor Goals](#frequent-visitor-goals)
+  - [Design](#design)
+    - [Colour Scheme](#colour-scheme)
 
 ## User Experience (UX)
 
@@ -57,3 +59,17 @@ There is an additional Map page, which gives the user an overall view of the sug
 #### Frequent Visitor Goals
 
 - I want to be able to see other recommendations pop up from time to time, so that I can continue exploring South Wales and share this with others.
+
+- - -
+
+## Design
+
+### Colour Scheme
+
+![Small switch palette from ColorSpace](docs/images/small-switch-palette.png)
+
+Discover South Wales uses this small switch palette, pulled from [ColorSpace](https://mycolor.space/?hex=%23096A2E&sub=1), and generated from #096A2E, pulled from the logo colour chart below.
+
+![Logo color chart from Logo.com](docs/images/logo-colour-chart.png)
+
+I picked this colour scheme as it went with the colour theme of my customized logo, and has strong connotations to the rural outdoors; keeping in theme with websites function.
