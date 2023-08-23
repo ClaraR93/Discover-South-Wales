@@ -22,6 +22,7 @@ This website aims to provide information on what stunning landscape to explore w
       - [Frequent Visitor Goals](#frequent-visitor-goals)
   - [Design](#design)
     - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
 
 ## User Experience (UX)
 
@@ -73,3 +74,10 @@ Discover South Wales uses this small switch palette, pulled from [ColorSpace](ht
 ![Logo color chart from Logo.com](docs/images/logo-colour-chart.png)
 
 I picked this colour scheme as it went with the colour theme of my customized logo, and has strong connotations to the rural outdoors; keeping in theme with websites function.
+
+### Typography
+
+I used Google Fonts for the following font:
+
+- 'Lato' for all text content across the website. This is a sans serif font.
+I picked this particular font as it was suggested on [Figma](https://www.figma.com/google-fonts/josefin-sans-font-pairings/#:~:text=Josefin%20Sans%20is%20an%20elegant>,One%2C%20Lato%2C%20and%20Playfair). The website states that 'Lato' would pair nicely with Josefins sans font, which is the primary font used for the logo on the home page. I wanted to keep it simple and consistent throughout the website, so opted for one style only to portray this.
