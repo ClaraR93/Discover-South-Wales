@@ -301,3 +301,21 @@ User score | Assigned Result
 13 | 9
 14 | 10
 15 | 11
+
+2. *Radio Input buttons:*
+
+- When testing the radio buttons for the multiple choice questions, the user was able to select all three buttons, which was not my expected result. I did some research on [Stack Overflow](https://stackoverflow.com/questions/5419459/how-to-allow-only-one-radio-button-to-be-checked), and found that I had given individual names to each input, when I should have grouped these under one name. After amending this the radio buttons worked as intended, allowing one selection at a time.
+
+3. *Radio Input Checked:*
+
+- I wanted to get the radio button element from the html file in its checked state to create an if else statement, ensuring a user is prompted to click on the radio button if they hit next without selecting anything. [Stack overflow](https://stackoverflow.com/questions/1423777/how-can-i-check-whether-a-radio-button-is-selected-with-javascript) helped me here, as I wasn’t sure how to select a radio input that had been checked. ![Checked radio button selection](docs/images/radio-button-checked.png)
+
+4. *Clear radio function 1/2:*
+
+- I noticed when I ran through the quiz the radio button always remained checked on the last users input. I wanted to ensure the radio buttons were cleared every time a user started a new question. I used code from [Tutorial Point](https://www.tutorialspoint.com/how-to-uncheck-a-radio-button-using-javascript-jquery#:~:text=In%20the%20clearRadio()%20function,to%20uncheck%20the%20radio%20button) to assist me with this.
+- Within this code I made sure to assign the checked radio button with a false boolean, which would be called as an event listener after the user hits the next button. 
+
+5. *Clear radio button function 2/2*
+
+- After creating the clearRadio function to ensure the radio button was deselected for the next question in the quiz, I encountered a problem where the function wasn’t working, despite using code from Tutorials Point as stated in the last problem.
+- I realized that this was because I wasn’t iterating through each question so that the radio buttons were always unchecked, so I used the forEach method to iterate through each question, ensuring that the radio buttons were always unchecked to start off with. ![clearRadio function with forEach method](docs/images/clear-radio-function.png)
