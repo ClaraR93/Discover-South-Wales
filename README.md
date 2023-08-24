@@ -319,3 +319,24 @@ User score | Assigned Result
 
 - After creating the clearRadio function to ensure the radio button was deselected for the next question in the quiz, I encountered a problem where the function wasn’t working, despite using code from Tutorials Point as stated in the last problem.
 - I realized that this was because I wasn’t iterating through each question so that the radio buttons were always unchecked, so I used the forEach method to iterate through each question, ensuring that the radio buttons were always unchecked to start off with. ![clearRadio function with forEach method](docs/images/clear-radio-function.png)
+
+6. *Problem with logging multiple array answers:*
+
+- I ran a test anticipating what would happen if a user changed their mind and selected a diff radio button before moving onto the next question. Unfortunately this resulted in all user selections being pushed into an empty userAnswers array. This would result in more values being pushed into the array, which would lead to incorrect or non-existent results at the end of the quiz.
+- I resolved this by adding an event listener for the next and submit button, to restrict users' selections to only being logged once they clicked these buttons. I did this by calling the validateUserInput function in the event listener when clicked, which would then call the storeUserAnswers function, logging the user input into the userAnswers array.
+- See image of final console log below- including a calculateScore function implemented at the end with a total sum of the userAnswers array.
+![Console log of userAnswers array and calculateScore funtion](docs/images/console-log-userAnswers.png)
+
+7. *Quiz flow error before submission:*
+
+- When testing what would happen if a user didn’t click the submit button and the alert was flagged up, I noticed that once the user clicked off the alert the code below would be triggered anyway and the user would be presented with the results display before they even had a chance to select the final radio button.
+
+![Quiz flow error code](docs/images/quiz-flow-error.png)
+
+- To rectify this, I encompassed the previous code in an if statement so that the classList.add events were only triggered once a user selected their final radio button.
+
+![Quiz flow fixed](docs/images/quiz-flow-ammended.png)
+
+- To tidy this code up further, I created a separate function called hideQuiz and called this within an event listener when a user clicks on the submit button. See final code of hideQuiz function:
+
+![hideQuiz function](docs/images/hide-quiz-function.png)
