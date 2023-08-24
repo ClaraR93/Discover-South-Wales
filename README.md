@@ -23,6 +23,7 @@ This website aims to provide information on what stunning landscape to explore w
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
     - [Features](#features)
+    - [Accessibility](#accessibility)
 
 ## User Experience (UX)
 
@@ -157,3 +158,13 @@ The quiz heading instructs  the user to take a short quiz on where to go. This i
 - Future goals include creating an Instagram page that allows users to share images of where they have been, tagging @DiscoverSouthWales or #DiscoverSouthWales, for a chance to get their photo featured on the official Instagram page. This will encourage new users to stumble across the Instagram page, in turn leading them to this website to participate in the quiz.
 - I want to add more place results, and potentially replace old ones, so that returning users can continue exploring other places to go.
 - I want to be able to extend the quiz, asking further questions, so that the user gets an even more specified result, tailoring to their outdoor wants and desires.
+
+### Accessibility
+
+I have ensure that this website is as accessible friendly as possible, I have done the following to achieve this:
+
+- Used semantic HTML.
+- Used visually hidden text to describe background images in CSS, where an alt attribute cannot be supplied.
+- Included aria-label for website navigation to describe to the screen reader where the user is being taken to.
+- Used alt attributes to images in HTML to describe them.
+- Using the [WebAIM](https://webaim.org/resources/contrastchecker/) colour contrast checker to ensure all body text is legible with sufficient contrast.
