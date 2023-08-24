@@ -24,6 +24,9 @@ This website aims to provide information on what stunning landscape to explore w
     - [Wireframes](#wireframes)
     - [Features](#features)
     - [Accessibility](#accessibility)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
 
 ## User Experience (UX)
 
@@ -168,3 +171,45 @@ I have ensure that this website is as accessible friendly as possible, I have do
 - Included aria-label for website navigation to describe to the screen reader where the user is being taken to.
 - Used alt attributes to images in HTML to describe them.
 - Using the [WebAIM](https://webaim.org/resources/contrastchecker/) colour contrast checker to ensure all body text is legible with sufficient contrast.
+
+- - -
+
+## Technologies Used
+
+### Languages Used
+
+HTML, CSS and Javascript were used to create this website.
+
+### Frameworks, Libraries & Programs Used
+
+- Pencil - Used to create wireframes.
+
+- Git - For version control.
+
+- Github - To save and store the files for the website.
+
+- Logo.com - Used to design and create a logo
+
+- Pixabay.com - used to download image artwork for website
+
+- [My Color Space](https://mycolor.space/) - To choose the colours used for the website.
+
+- [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
+
+- [Google Fonts](https://fonts.google.com/) - To import and use the fonts from the website.
+
+- [Flexbox Library](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-tricks) - Used as a prompt and guidance for website structure and display.
+
+- [Contrast Checker](https://webaim.org/resources/contrastchecker/) - Ran tests on all text against background colour to ensure contrast checker past.
+
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - Used for inserting a dropdown menu in mobile responsive design.
+
+- [BIRME](https://www.birme.net/) - To convert images from jpeg to webp images to improve lighthouse performance.
+
+- [TinyPNG](https://tinypng.com/) - To compress large image files on website.
+
+- [Am I Responsive](https://ui.dev/amiresponsive?url=https://clarar93.github.io/paddle-adventures/index.html) - To show the website on a range of devices.
+
+- Google Dev Tools - To troubleshoot and test various features, and solve issues with responsiveness and styling.
+
+- [Color Hex](https://www.color-hex.com/color/79804f) to find a lighter colour tint for the header and footer to pass the contrast checker.
