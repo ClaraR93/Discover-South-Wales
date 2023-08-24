@@ -420,6 +420,30 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 ### Code Used
 
+- [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/components/dropdowns/) - Code used to implement a dropdown menu bar when viewed on a mobile device.
+  
+- [Tutorials Point](https://www.tutorialspoint.com/how-to-uncheck-a-radio-button-using-javascript-jquery#:~:text=In%20the%20clearRadio()%20function,to%20uncheck%20the%20radio%20button.) - Code used when researching how to uncheck a radio button when the user arrives at a new question within the quiz.
+
+- [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-add-numbers-in-javascript-arrays/ ) - Code used to add and get the total sum of the numbers in userAnswer array.
+
+- [W3schools HTML DOM Element classList](https://www.w3schools.com/jsref/prop_element_classlist.asp) - Code used to hide quiz questions div and display quiz answers div.
+
+- [Stack Overflow, min/max value](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value) - Code logic applied to quiz scores, I converted the range of 5 to 15 to an index from 0 - 10 for easier accessibility.
+
+- [Google maps API documentation](https://developers.google.com/maps/documentation/javascript/markers 
+) - Code used for importing map and markers.
+
+- [Stack Overflow, window.open method](https://stackoverflow.com/questions/4373212/open-google-map-in-new-window) - Code used for window.open method, applied to google maps API.
+
+- [Stack Overflow, replace radio buttons and style](https://stackoverflow.com/questions/4641752/css-how-to-style-a-selected-radio-buttons-label) - Used code to remove radio buttons and replace with stylised highlighted questions which a user can select and submit instead.
+
+- [Stack Overflow, Loading dots](https://stackoverflow.com/questions/4639716/dot-dotdot-dotdotdot-as-loading
+) - Used code to create and customise loading dots before google maps api loads.
+
+- [Design Shack](https://designshack.net/articles/css/inner-shadows-in-css-images-text-and-beyond/) - Used code to assist with correct box shadow placement.
+
+- [Accessiblity Developer Guide](https://www.accessibility-developer-guide.com/knowledge/aria/bad-practices/) - Used visually hidden code to replace aria-label. I used this code in my first milestone project, which proved effective for the background images in style.css
+
 ### Content
 
 ### Media
