@@ -27,6 +27,11 @@ This website aims to provide information on what stunning landscape to explore w
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
+  - [Deployment \& Local Development](#deployment--local-development)
+    - [Deployment](#deployment)
+    - [Local Development](#local-development)
+      - [How to Fork](#how-to-fork)
+      - [How to Clone](#how-to-clone)
 
 ## User Experience (UX)
 
@@ -213,3 +218,38 @@ HTML, CSS and Javascript were used to create this website.
 - Google Dev Tools - To troubleshoot and test various features, and solve issues with responsiveness and styling.
 
 - [Color Hex](https://www.color-hex.com/color/79804f) to find a lighter colour tint for the header and footer to pass the contrast checker.
+
+## Deployment & Local Development
+
+### Deployment
+
+Github Pages was used to deploy the live website. The instructions are as followed:
+
+1. Log in (sign up) to Github.
+2. Search for this repository, Discover-South-Wales.
+3. Navigate to the settings tab.
+4. On the left hand menu click on the pages link.
+5. In the source section, select main from the drop down menu under Branch.
+6. Select root from the drop down folder and click save.
+7. Your live Github pages site is now deployed at the following: [ClaraR93]()
+
+### Local Development
+
+#### How to Fork
+
+To fork the paddle-adventures repository:
+
+1. Go to the GitHub repository.
+2. Click on Fork button in the upper right-hand corner.
+
+#### How to Clone
+
+To clone the Discover-South-Wales repository:
+
+1. Log in (sign up) to Github.
+2. Search for this repository, Discover-South-Wales.
+3. Select the code button and choose whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown to your clipboard.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied. Select enter.
+
+- - -
