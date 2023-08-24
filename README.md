@@ -107,7 +107,7 @@ I picked this particular font as it was suggested on [Figma](https://www.figma.c
 
 ### Imagery
 
-All digital images in the results section, (excluding two images referenced in the [credit](#credits) section), were taken by Clara Reynolds.
+All digital images in the results section, (excluding two images referenced in the [credit](#media) section), were taken by Clara Reynolds.
 The [Seamless Pattern Leaves](assets/images/background-print-image-compressed.webp) for the left and right border across all pages, and the [Hiking Trail Sketch](assets/images/background-hiking.webp) featured in the 404 error page, were both downloaded from [Pixabay](https://pixabay.com/). Content License allows users to use content for free and modify or adapt the content into new works.
 
 ### Wireframes
@@ -430,7 +430,7 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 - [Stack Overflow, min/max value](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value) - Code logic applied to quiz scores, I converted the range of 5 to 15 to an index from 0 - 10 for easier accessibility.
 
-- [Google maps API documentation](https://developers.google.com/maps/documentation/javascript/markers 
+- [Google maps API documentation](https://developers.google.com/maps/documentation/javascript/markers
 ) - Code used for importing map and markers.
 
 - [Stack Overflow, window.open method](https://stackoverflow.com/questions/4373212/open-google-map-in-new-window) - Code used for window.open method, applied to google maps API.
@@ -447,5 +447,13 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 ### Content
 
 ### Media
+
+Special thanks to:
+
+- [Yulie1](https://pixabay.com/users/yulie1-2071715/) for allowing me to download and use the *Seamless Pattern Leaves* image.
+
+- [StarGladeVintage](https://pixabay.com/users/stargladevintage-17411787/) for allowing me to download and use the *Hiking Trail Sketch* image.
+
+- Nathan Coogan for giving me permission to use the [waterfall](assets/images/results/sgwd-ddwli-uchaf-waterfall.webp) and [hike](assets/images/results/pen-y-fan.webp) photo for the results section.
 
 ### Acknowledgement
