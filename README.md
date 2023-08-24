@@ -178,7 +178,7 @@ The quiz heading instructs  the user to take a short quiz on where to go. This i
 *Future Implementations:*
 
 - Future goals include creating an Instagram page that allows users to share images of where they have been, tagging @DiscoverSouthWales or #DiscoverSouthWales, for a chance to get their photo featured on the official Instagram page. This will encourage new users to stumble across the Instagram page, in turn leading them to this website to participate in the quiz.
-- I want to add more place results, and potentially replace old ones, so that returning users can continue exploring other places to go.
+- I want to add more place results, and potentially replace old ones, so that returning users can continue exploring other places to go. In order to decide which places are to be replaced, I would collect the quiz results data and determine which results were coming up the least, replacing these with new suggestions.
 - I want to be able to extend the quiz, asking further questions, so that the user gets an even more specified result, tailoring to their outdoor wants and desires.
 
 ### Accessibility
@@ -414,6 +414,28 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 ### Testing User Stories
 
 #### First Time Visitors
+
+*I want to visit South Wales for the first time and don't know where to start looking.*
+
+- Discover South Wales provides an easily accessible website that addresses the users wants directly on the home page. The headings are clear and to the point, asking the user directly if they are visiting for the first time and if they are ready to start exploring. The quiz button and tagline are obvious enough to the user to take part in to help them find a suited location.
+
+![Home page](docs/images/home-page.png)
+
+*I want to be able to find other places to explore in South Wales if I want more recommendations.*
+
+- The website offers a Map page which gives the user access to Google Maps with 11 markers of all possible results generated from the quiz. The markers provide the name of the location, and access to an external page if the user wants to find out more.
+
+![Map page, mobile](docs/images/map-page.png)
+
+*I want to be able to access additional information on the locations offered.*
+
+- As well as having map markers that when clicked on, navigate the user to an external information page, the user can access these after taking the quiz and getting a suggestion result.
+  
+![Quiz page - 'click here for more info'](docs/images/additional-info-quiz-answers.png)
+
+*I want to be able to navigate through the website with ease and efficiency.*
+
+- On desktop and tablet, the navigation links are displayed clearly, separated by two dots. Each page has direct instructions, prompting the user to access certain information. Each button has a matching style element, with clear and concise instructions within. Font awesome icons are used where appropriate and are familiar to a user on what they do.
 
 #### Returning Visitors
 
