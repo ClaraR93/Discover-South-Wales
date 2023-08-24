@@ -35,6 +35,17 @@ This website aims to provide information on what stunning landscape to explore w
   - [Testing](#testing)
     - [W3C Validator](#w3c-validator)
     - [Solved Bugs](#solved-bugs)
+    - [Testing User Stories](#testing-user-stories)
+      - [First Time Visitors](#first-time-visitors)
+      - [Returning Visitors](#returning-visitors)
+      - [Frequent Visitor Goals](#frequent-visitor-goals-1)
+    - [Lighthouse](#lighthouse)
+    - [Full Testing](#full-testing)
+  - [Credits](#credits)
+    - [Code Used](#code-used)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgement](#acknowledgement)
 
 ## User Experience (UX)
 
@@ -275,7 +286,7 @@ Testing was implemented throughout the entire build of this project. I used Chro
 
 ### Solved Bugs
 
-1. *Logic of interactive quiz:*
+**Logic of interactive quiz:**
 
 - When drafting up the quiz logic prior to coding, I  assigned each multiple choice answer to one of 11 possible results at the end for the user. This resulted in a very unique set of answers tailored to each result, which would restrict the quiz; given that a user would have to match their answers perfectly to a specific result. This would limit the user experience as it would be likely that based on their input, they wouldn't always get an exact match.
 - Instead I opted for a simpler quiz logic where I graded each multiple choice answer from 1-3. With 5 questions and 3 answers for each, these points would generate any number between 5 and 15. Based on this, I assigned each number to one of 11 results tailored to the user's input.
@@ -302,32 +313,32 @@ User score | Assigned Result
 14 | 10
 15 | 11
 
-2. *Radio Input buttons:*
+**Radio Input buttons:**
 
 - When testing the radio buttons for the multiple choice questions, the user was able to select all three buttons, which was not my expected result. I did some research on [Stack Overflow](https://stackoverflow.com/questions/5419459/how-to-allow-only-one-radio-button-to-be-checked), and found that I had given individual names to each input, when I should have grouped these under one name. After amending this the radio buttons worked as intended, allowing one selection at a time.
 
-3. *Radio Input Checked:*
+**Radio Input Checked:**
 
 - I wanted to get the radio button element from the html file in its checked state to create an if else statement, ensuring a user is prompted to click on the radio button if they hit next without selecting anything. [Stack overflow](https://stackoverflow.com/questions/1423777/how-can-i-check-whether-a-radio-button-is-selected-with-javascript) helped me here, as I wasn’t sure how to select a radio input that had been checked. ![Checked radio button selection](docs/images/radio-button-checked.png)
 
-4. *Clear radio function 1/2:*
+**Clear radio function - part 1:**
 
 - I noticed when I ran through the quiz the radio button always remained checked on the last users input. I wanted to ensure the radio buttons were cleared every time a user started a new question. I used code from [Tutorial Point](https://www.tutorialspoint.com/how-to-uncheck-a-radio-button-using-javascript-jquery#:~:text=In%20the%20clearRadio()%20function,to%20uncheck%20the%20radio%20button) to assist me with this.
-- Within this code I made sure to assign the checked radio button with a false boolean, which would be called as an event listener after the user hits the next button. 
+- Within this code I made sure to assign the checked radio button with a false boolean, which would be called as an event listener after the user hits the next button.
 
-5. *Clear radio button function 2/2*
+**Clear radio button function - Part 2**
 
 - After creating the clearRadio function to ensure the radio button was deselected for the next question in the quiz, I encountered a problem where the function wasn’t working, despite using code from Tutorials Point as stated in the last problem.
 - I realized that this was because I wasn’t iterating through each question so that the radio buttons were always unchecked, so I used the forEach method to iterate through each question, ensuring that the radio buttons were always unchecked to start off with. ![clearRadio function with forEach method](docs/images/clear-radio-function.png)
 
-6. *Problem with logging multiple array answers:*
+**Problem with logging multiple array answers:**
 
 - I ran a test anticipating what would happen if a user changed their mind and selected a diff radio button before moving onto the next question. Unfortunately this resulted in all user selections being pushed into an empty userAnswers array. This would result in more values being pushed into the array, which would lead to incorrect or non-existent results at the end of the quiz.
 - I resolved this by adding an event listener for the next and submit button, to restrict users' selections to only being logged once they clicked these buttons. I did this by calling the validateUserInput function in the event listener when clicked, which would then call the storeUserAnswers function, logging the user input into the userAnswers array.
 - See image of final console log below- including a calculateScore function implemented at the end with a total sum of the userAnswers array.
 ![Console log of userAnswers array and calculateScore funtion](docs/images/console-log-userAnswers.png)
 
-7. *Quiz flow error before submission:*
+**Quiz flow error before submission:**
 
 - When testing what would happen if a user didn’t click the submit button and the alert was flagged up, I noticed that once the user clicked off the alert the code below would be triggered anyway and the user would be presented with the results display before they even had a chance to select the final radio button.
 
@@ -341,47 +352,47 @@ User score | Assigned Result
 
 ![hideQuiz function](docs/images/hide-quiz-function.png)
 
-8. *Replacing if else statement with math.min/math.max method:*
+**Replacing if else statement with math.min/math.max method:**
 
-- When drafting up the logic for how the quiz results would be generated, I initially decided to go with an if else statement, whereby if the final results were equal to 5 this would produce the first answer, else if they were equal to 6 it would produce the second answer, and so on. 
-- I found that this would result in a very lengthy if else statement and wanted to come up with something simpler and cleaner. I started by googling how to convert a range of numbers, as I had a set of 11 answers ranging from a score point of 5 to 15. I wanted to convert these points to an index from 0 through to 10, making it easier to iterate through the object answers array and assign their given calculated score. 
+- When drafting up the logic for how the quiz results would be generated, I initially decided to go with an if else statement, whereby if the final results were equal to 5 this would produce the first answer, else if they were equal to 6 it would produce the second answer, and so on.
+- I found that this would result in a very lengthy if else statement and wanted to come up with something simpler and cleaner. I started by googling how to convert a range of numbers, as I had a set of 11 answers ranging from a score point of 5 to 15. I wanted to convert these points to an index from 0 through to 10, making it easier to iterate through the object answers array and assign their given calculated score.
 - For this I used [Stack Overflow](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value), which suggested using the math.min and math.max method in javascript to achieve this. I passed the score in, making sure to take away 5, creating the minimum index of 0 and setting the maximum number to 10. This would give me 11 indexes which I could assign to the 11 possible results generated. ![math.min and math.max method used on answerIndex](docs/images/answerIndex-converted.png)
 
-9. *Misplacement of alt image display:*
+**Misplacement of alt image display:**
 
 ![Misplacement of alt image under quiz questions](docs/images/image-display-issue-screenshot.png)
 
 - In the image above, the icon with the placeholder alt tag was showing below the next button during the quiz, even though the quiz answers title and description were displayed once the showResults function was called. I quickly fixed this by setting the answer-image div display to none initially, and setting it back to block within the showResults function.
 
-10. *Clicking on map markers in mobile responsive design:*
+**Clicking on map markers in mobile responsive design:**
 
-- Originally, when a user was to hover over a map marker, the place name would pop up, and when clicked on, the user would navigate to a separate web page with additional information. I tested this on my mobile phone too, and noticed that a user was unable to hover over the map markers to view the info window displaying the place name. Instead, they were limited to clicking on any one of the markers leading them to an external website. 
-- This would result in a poor user experience as the user wouldn’t know which marker they were clicking on without the aid of an information window, before deciding to open up a new tab. 
+- Originally, when a user was to hover over a map marker, the place name would pop up, and when clicked on, the user would navigate to a separate web page with additional information. I tested this on my mobile phone too, and noticed that a user was unable to hover over the map markers to view the info window displaying the place name. Instead, they were limited to clicking on any one of the markers leading them to an external website.
+- This would result in a poor user experience as the user wouldn’t know which marker they were clicking on without the aid of an information window, before deciding to open up a new tab.
 - To ensure this was compatible on mobile devices as well, I altered the event listeners by having a user click on a marker to view their name, and then double click on this to view an external tab with more information. Additionally, I placed some brief instructions above the map, to make it clear on how to navigate through this. See image below:
 
 ![Map marker instructions](docs/images/map-page.png)
 
-11. *Quiz container style:*
+**Quiz container style:**
 
 - I wasn’t happy with the div container boxes storing the quiz questions and answer results, and wanted to style these differently.
   
-![Old design of quiz containers](docs/images/quiz-container-old-design.png) 
+![Old design of quiz containers](docs/images/quiz-container-old-design.png)
 
 - The original design above felt too garish, almost stealing the spotlight from the quiz content.
 I considered using a box shadow effect instead, and used [Design Shack](https://designshack.net/articles/css/inner-shadows-in-css-images-text-and-beyond/) to assist me with its placement. The results achieved were far more stylish and elegant, and gracefully complemented the foreground quiz content.
 
 ![New design of quiz contianers](docs/images/quiz-container-design-new.png)
 
-12. *Contrast fail:*
-    
+**Contrast fail:**
+
 ![Failed contrast checker for header and footer](docs/images/contrast-checker-fail.png)
 
-- The contrast in header and footer wasn’t strong enough for lighter weight font, so I tried changing the font colours to something lighter, such as beige or white to match with a consistent colour theme. Unfortunately this didn’t pass the contrast checker either, so I went on [color-hex](https://www.color-hex.com/color/79804f) and found a lighter tint of the original background colour and replaced it with [#939972](https://www.color-hex.com/color/939972). 
-- This passed the contrast checker test, also meaning I could keep in theme with the colour palette, only dropping a couple of tint’s lighter for better legibility. 
+- The contrast in header and footer wasn’t strong enough for lighter weight font, so I tried changing the font colours to something lighter, such as beige or white to match with a consistent colour theme. Unfortunately this didn’t pass the contrast checker either, so I went on [color-hex](https://www.color-hex.com/color/79804f) and found a lighter tint of the original background colour and replaced it with [#939972](https://www.color-hex.com/color/939972).
+- This passed the contrast checker test, also meaning I could keep in theme with the colour palette, only dropping a couple of tint’s lighter for better legibility.
   
 ![Passed contrast checker for header and footer](docs/images/contrast-checker-pass.png)
 
-13. *Quiz answer layout:*
+**Quiz answer layout:**
 
 - In my original wireframe design as shown below, I included a location pin of the tailored result.
 
@@ -390,3 +401,27 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 - I decided not to include this in my final design as it would have appeared too cluttered, and given that there was already a page for maps, with a direct link below the results, I didn’t see the need to include both. See final design below:
   
 ![Final design for quiz answers](docs/images/quiz-answers-final.png)
+
+### Testing User Stories
+
+#### First Time Visitors
+
+#### Returning Visitors
+
+#### Frequent Visitor Goals
+
+### Lighthouse
+
+### Full Testing
+
+- - -
+
+## Credits
+
+### Code Used
+
+### Content
+
+### Media
+
+### Acknowledgement
