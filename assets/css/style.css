@@ -388,6 +388,7 @@ footer a:hover {
     font-size: 30px;
     color: #096A2E;
     margin: 15px;
+    transition: 0.3s;
 }
 
 #bottom-heading-results i:hover {   
