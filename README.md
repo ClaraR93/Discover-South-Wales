@@ -383,7 +383,7 @@ Possible user score | Assigned Result
 
 **Quiz container style:**
 
-- I wasn’t happy with the div container boxes storing the quiz questions and answer results, and wanted to style these differently.
+- I wasn't happy with the div container boxes storing the quiz questions and answer results, and wanted to style these differently.
   
 ![Old design of quiz containers](docs/images/quiz-container-old-design.png)
 
@@ -407,7 +407,7 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 ![Wireframe of quiz answers](docs/wireframes/quiz/quiz_answers_desktop_.png)
 
-- I decided not to include this in my final design as it would have appeared too cluttered, and given that there was already a page for maps, with a direct link below the results, I didn’t see the need to include both. See final design below:
+- I decided not to include this in my final design as it would have appeared too cluttered, and given that there was already a page for maps, with a direct link below the results, I didn't see the need to include both. See final design below:
   
 ![Final design for quiz answers](docs/images/quiz-answers-final.png)
 
@@ -439,7 +439,18 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 #### Returning Visitors
 
+*I want to be able to share my experiences with other users by following the website's Instagram page.*
+
+- Across all pages, the footer displays an instagram icon, with accompanying text telling the user to connect and share.
+
+![Instagram footer](docs/images/instagram-footer.png)
+
 #### Frequent Visitor Goals
+
+*I want to be able to see other recommendations pop up from time to time, so that I can continue exploring South Wales and share this with others.*
+
+- As mentioned in future implementations, I want to be able to create a working instagram page which encourages users to share images of where they have been and tagging Discover Wales' within.
+- The Map page will host additional markers with other places to go, potentially replacing some old ones that pop up the least when users take the quiz.
 
 ### Lighthouse
 
