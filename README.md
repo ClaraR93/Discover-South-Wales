@@ -32,6 +32,7 @@ This website aims to provide information on what stunning landscape to explore w
     - [Local Development](#local-development)
       - [How to Fork](#how-to-fork)
       - [How to Clone](#how-to-clone)
+  - [Testing](#testing)
 
 ## User Experience (UX)
 
@@ -253,3 +254,18 @@ To clone the Discover-South-Wales repository:
 5. Type 'git clone' into the terminal and then paste the link you copied. Select enter.
 
 - - -
+
+## Testing
+
+Testing was implemented throughout the entire build of this project. I used Chrome Developer tools to identify and troubleshoot problems along the way.
+
+*The following issues were identified during my mid mentor meeting:*
+
+*The following suggestions were recommended when I showed a friend the site for review:* 
+
+- Tom Roberts informed me that once a user lands on the submit page, the following text should be a more obvious button that takes the user to the maps page, rather than just a small map icon. See image: ![Quiz answers, further suggestions, old version](docs/images/further-suggestions-old.png)
+- Tom also suggested that this page should include an additional button which gives the user the option to navigate back to the home page to restart the quiz if they want to. Final result with peer review implemented:
+![Quiz answers with peer suggestions implemented](docs/images/further-suggestions-new.png)
+
+*The following suggestions were recommended when I submitted my site to peer code review on slack:*
+
