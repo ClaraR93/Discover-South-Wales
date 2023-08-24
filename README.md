@@ -340,3 +340,23 @@ User score | Assigned Result
 - To tidy this code up further, I created a separate function called hideQuiz and called this within an event listener when a user clicks on the submit button. See final code of hideQuiz function:
 
 ![hideQuiz function](docs/images/hide-quiz-function.png)
+
+8. *Replacing if else statement with math.min/math.max method:*
+
+- When drafting up the logic for how the quiz results would be generated, I initially decided to go with an if else statement, whereby if the final results were equal to 5 this would produce the first answer, else if they were equal to 6 it would produce the second answer, and so on. 
+- I found that this would result in a very lengthy if else statement and wanted to come up with something simpler and cleaner. I started by googling how to convert a range of numbers, as I had a set of 11 answers ranging from a score point of 5 to 15. I wanted to convert these points to an index from 0 through to 10, making it easier to iterate through the object answers array and assign their given calculated score. 
+- For this I used [Stack Overflow](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value), which suggested using the math.min and math.max method in javascript to achieve this. I passed the score in, making sure to take away 5, creating the minimum index of 0 and setting the maximum number to 10. This would give me 11 indexes which I could assign to the 11 possible results generated. ![math.min and math.max method used on answerIndex](docs/images/answerIndex-converted.png)
+
+9. *Misplacement of alt image display:*
+
+![Misplacement of alt image under quiz questions](docs/images/image-display-issue-screenshot.png)
+
+- In the image above, the icon with the placeholder alt tag was showing below the next button during the quiz, even though the quiz answers title and description were displayed once the showResults function was called. I quickly fixed this by setting the answer-image div display to none initially, and setting it back to block within the showResults function.
+
+10. *Clicking on map markers in mobile responsive design:*
+
+- Originally, when a user was to hover over a map marker, the place name would pop up, and when clicked on, the user would navigate to a separate web page with additional information. I tested this on my mobile phone too, and noticed that a user was unable to hover over the map markers to view the info window displaying the place name. Instead, they were limited to clicking on any one of the markers leading them to an external website. 
+- This would result in a poor user experience as the user wouldn’t know which marker they were clicking on without the aid of an information window, before deciding to open up a new tab. 
+- To ensure this was compatible on mobile devices as well, I altered the event listeners by having a user click on a marker to view their name, and then double click on this to view an external tab with more information. Additionally, I placed some brief instructions above the map, to make it clear on how to navigate through this. See image below:
+
+![Map marker instructions](docs/images/map-page.png)
