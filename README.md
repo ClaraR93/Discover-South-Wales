@@ -33,6 +33,8 @@ This website aims to provide information on what stunning landscape to explore w
       - [How to Fork](#how-to-fork)
       - [How to Clone](#how-to-clone)
   - [Testing](#testing)
+    - [W3C Validator](#w3c-validator)
+    - [Solved Bugs](#solved-bugs)
 
 ## User Experience (UX)
 
@@ -261,7 +263,7 @@ Testing was implemented throughout the entire build of this project. I used Chro
 
 *The following issues were identified during my mid mentor meeting:*
 
-*The following suggestions were recommended when I showed a friend the site for review:* 
+*The following suggestions were recommended when I showed a friend the site for review:*
 
 - Tom Roberts informed me that once a user lands on the submit page, the following text should be a more obvious button that takes the user to the maps page, rather than just a small map icon. See image: ![Quiz answers, further suggestions, old version](docs/images/further-suggestions-old.png)
 - Tom also suggested that this page should include an additional button which gives the user the option to navigate back to the home page to restart the quiz if they want to. Final result with peer review implemented:
@@ -269,3 +271,33 @@ Testing was implemented throughout the entire build of this project. I used Chro
 
 *The following suggestions were recommended when I submitted my site to peer code review on slack:*
 
+### W3C Validator
+
+### Solved Bugs
+
+1. *Logic of interactive quiz:*
+
+- When drafting up the quiz logic prior to coding, I  assigned each multiple choice answer to one of 11 possible results at the end for the user. This resulted in a very unique set of answers tailored to each result, which would restrict the quiz; given that a user would have to match their answers perfectly to a specific result. This would limit the user experience as it would be likely that based on their input, they wouldn't always get an exact match.
+- Instead I opted for a simpler quiz logic where I graded each multiple choice answer from 1-3. With 5 questions and 3 answers for each, these points would generate any number between 5 and 15. Based on this, I assigned each number to one of 11 results tailored to the user's input.
+As a result, it was easier to visualise how I would create a function that would calculate the score, i.e: By taking the final sum of the user's 5 answers, and returning a given result.
+
+*Draft plan of function before implemented in code:*
+
+- 5 questions | 3 answers | Value assigned to each answer:
+  - Answer A = 1 point
+  - Answer B = 2 points
+  - Answer C = 3 points
+
+User score | Assigned Result
+---|---
+5 | 1
+6 | 2
+7 | 3
+8 | 4
+9 | 5
+10 | 6
+11 | 7
+12 | 8
+13 | 9
+14 | 10
+15 | 11
