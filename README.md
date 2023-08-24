@@ -299,7 +299,7 @@ As a result, it was easier to visualise how I would create a function that would
   - Answer B = 2 points
   - Answer C = 3 points
 
-User score | Assigned Result
+Possible user score | Assigned Result
 ---|---
 5 | 1
 6 | 2
@@ -319,7 +319,9 @@ User score | Assigned Result
 
 **Radio Input Checked:**
 
-- I wanted to get the radio button element from the html file in its checked state to create an if else statement, ensuring a user is prompted to click on the radio button if they hit next without selecting anything. [Stack overflow](https://stackoverflow.com/questions/1423777/how-can-i-check-whether-a-radio-button-is-selected-with-javascript) helped me here, as I wasn’t sure how to select a radio input that had been checked. ![Checked radio button selection](docs/images/radio-button-checked.png)
+- I wanted to get the radio button element from the html file in its checked state to create an if else statement, ensuring a user is prompted to click on the radio button if they hit next without selecting anything. [Stack overflow](https://stackoverflow.com/questions/1423777/how-can-i-check-whether-a-radio-button-is-selected-with-javascript) helped me here, as I wasn’t sure how to select a radio input that had been checked. 
+
+![Checked radio button selection](docs/images/radio-button-checked.png)
 
 **Clear radio function - part 1:**
 
@@ -329,18 +331,21 @@ User score | Assigned Result
 **Clear radio button function - Part 2**
 
 - After creating the clearRadio function to ensure the radio button was deselected for the next question in the quiz, I encountered a problem where the function wasn’t working, despite using code from Tutorials Point as stated in the last problem.
-- I realized that this was because I wasn’t iterating through each question so that the radio buttons were always unchecked, so I used the forEach method to iterate through each question, ensuring that the radio buttons were always unchecked to start off with. ![clearRadio function with forEach method](docs/images/clear-radio-function.png)
+- I realized that this was because I wasn’t iterating through each question so that the radio buttons were always unchecked, so I used the forEach method to iterate through each question, ensuring that the radio buttons were always unchecked to start off with. 
+
+![clearRadio function with forEach method](docs/images/clear-radio-function.png)
 
 **Problem with logging multiple array answers:**
 
 - I ran a test anticipating what would happen if a user changed their mind and selected a diff radio button before moving onto the next question. Unfortunately this resulted in all user selections being pushed into an empty userAnswers array. This would result in more values being pushed into the array, which would lead to incorrect or non-existent results at the end of the quiz.
 - I resolved this by adding an event listener for the next and submit button, to restrict users' selections to only being logged once they clicked these buttons. I did this by calling the validateUserInput function in the event listener when clicked, which would then call the storeUserAnswers function, logging the user input into the userAnswers array.
 - See image of final console log below- including a calculateScore function implemented at the end with a total sum of the userAnswers array.
+
 ![Console log of userAnswers array and calculateScore funtion](docs/images/console-log-userAnswers.png)
 
 **Quiz flow error before submission:**
 
-- When testing what would happen if a user didn’t click the submit button and the alert was flagged up, I noticed that once the user clicked off the alert the code below would be triggered anyway and the user would be presented with the results display before they even had a chance to select the final radio button.
+- When testing what would happen if a user didn't click the submit button and the alert was flagged up, I noticed that once the user clicked off the alert the code below would be triggered anyway and the user would be presented with the results display before they even had a chance to select the final radio button.
 
 ![Quiz flow error code](docs/images/quiz-flow-error.png)
 
@@ -356,7 +361,9 @@ User score | Assigned Result
 
 - When drafting up the logic for how the quiz results would be generated, I initially decided to go with an if else statement, whereby if the final results were equal to 5 this would produce the first answer, else if they were equal to 6 it would produce the second answer, and so on.
 - I found that this would result in a very lengthy if else statement and wanted to come up with something simpler and cleaner. I started by googling how to convert a range of numbers, as I had a set of 11 answers ranging from a score point of 5 to 15. I wanted to convert these points to an index from 0 through to 10, making it easier to iterate through the object answers array and assign their given calculated score.
-- For this I used [Stack Overflow](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value), which suggested using the math.min and math.max method in javascript to achieve this. I passed the score in, making sure to take away 5, creating the minimum index of 0 and setting the maximum number to 10. This would give me 11 indexes which I could assign to the 11 possible results generated. ![math.min and math.max method used on answerIndex](docs/images/answerIndex-converted.png)
+- For this I used [Stack Overflow](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value), which suggested using the math.min and math.max method in javascript to achieve this. I passed the score in, making sure to take away 5, creating the minimum index of 0 and setting the maximum number to 10. This would give me 11 indexes which I could assign to the 11 possible results generated. 
+
+![math.min and math.max method used on answerIndex](docs/images/answerIndex-converted.png)
 
 **Misplacement of alt image display:**
 
@@ -366,8 +373,10 @@ User score | Assigned Result
 
 **Clicking on map markers in mobile responsive design:**
 
+![Map marker when hovered over](docs/images/map-markers.png)
+
 - Originally, when a user was to hover over a map marker, the place name would pop up, and when clicked on, the user would navigate to a separate web page with additional information. I tested this on my mobile phone too, and noticed that a user was unable to hover over the map markers to view the info window displaying the place name. Instead, they were limited to clicking on any one of the markers leading them to an external website.
-- This would result in a poor user experience as the user wouldn’t know which marker they were clicking on without the aid of an information window, before deciding to open up a new tab.
+- This would result in a poor user experience as the user wouldn't know which marker they were clicking on without the aid of an information window, before deciding to open up a new tab.
 - To ensure this was compatible on mobile devices as well, I altered the event listeners by having a user click on a marker to view their name, and then double click on this to view an external tab with more information. Additionally, I placed some brief instructions above the map, to make it clear on how to navigate through this. See image below:
 
 ![Map marker instructions](docs/images/map-page.png)
@@ -387,8 +396,8 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 ![Failed contrast checker for header and footer](docs/images/contrast-checker-fail.png)
 
-- The contrast in header and footer wasn’t strong enough for lighter weight font, so I tried changing the font colours to something lighter, such as beige or white to match with a consistent colour theme. Unfortunately this didn’t pass the contrast checker either, so I went on [color-hex](https://www.color-hex.com/color/79804f) and found a lighter tint of the original background colour and replaced it with [#939972](https://www.color-hex.com/color/939972).
-- This passed the contrast checker test, also meaning I could keep in theme with the colour palette, only dropping a couple of tint’s lighter for better legibility.
+- In the above image, the contrast in header and footer wasn't strong enough for lighter weight font, so I tried changing the font colours to something lighter, such as beige or white to match with a consistent colour theme. Unfortunately this didn't pass the contrast checker either, so I went on [color-hex](https://www.color-hex.com/color/79804f) and found a lighter tint of the original background colour and replaced it with [#939972](https://www.color-hex.com/color/939972).
+- This passed the contrast checker test, also meaning I could keep in theme with the colour palette, only dropping a couple of tint's lighter for better legibility. See passed contrast checker below:
   
 ![Passed contrast checker for header and footer](docs/images/contrast-checker-pass.png)
 
