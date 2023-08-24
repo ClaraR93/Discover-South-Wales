@@ -360,3 +360,23 @@ User score | Assigned Result
 - To ensure this was compatible on mobile devices as well, I altered the event listeners by having a user click on a marker to view their name, and then double click on this to view an external tab with more information. Additionally, I placed some brief instructions above the map, to make it clear on how to navigate through this. See image below:
 
 ![Map marker instructions](docs/images/map-page.png)
+
+11. *Quiz container style:*
+
+- I wasn’t happy with the div container boxes storing the quiz questions and answer results, and wanted to style these differently.
+  
+![Old design of quiz containers](docs/images/quiz-container-old-design.png) 
+
+- The original design above felt too garish, almost stealing the spotlight from the quiz content.
+I considered using a box shadow effect instead, and used [Design Shack](https://designshack.net/articles/css/inner-shadows-in-css-images-text-and-beyond/) to assist me with its placement. The results achieved were far more stylish and elegant, and gracefully complemented the foreground quiz content.
+
+![New design of quiz contianers](docs/images/quiz-container-design-new.png)
+
+12. *Contrast fail:*
+    
+![Failed contrast checker for header and footer](docs/images/contrast-checker-fail.png)
+
+- The contrast in header and footer wasn’t strong enough for lighter weight font, so I tried changing the font colours to something lighter, such as beige or white to match with a consistent colour theme. Unfortunately this didn’t pass the contrast checker either, so I went on [color-hex](https://www.color-hex.com/color/79804f) and found a lighter tint of the original background colour and replaced it with [#939972](https://www.color-hex.com/color/939972). 
+- This passed the contrast checker test, also meaning I could keep in theme with the colour palette, only dropping a couple of tint’s lighter for better legibility. 
+  
+![Passed contrast checker for header and footer](docs/images/contrast-checker-pass.png)
