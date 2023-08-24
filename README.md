@@ -380,3 +380,13 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 - This passed the contrast checker test, also meaning I could keep in theme with the colour palette, only dropping a couple of tint’s lighter for better legibility. 
   
 ![Passed contrast checker for header and footer](docs/images/contrast-checker-pass.png)
+
+13. *Quiz answer layout:*
+
+- In my original wireframe design as shown below, I included a location pin of the tailored result.
+
+![Wireframe of quiz answers](docs/wireframes/quiz/quiz_answers_desktop_.png)
+
+- I decided not to include this in my final design as it would have appeared too cluttered, and given that there was already a page for maps, with a direct link below the results, I didn’t see the need to include both. See final design below:
+  
+![Final design for quiz answers](docs/images/quiz-answers-final.png)
