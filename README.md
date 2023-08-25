@@ -496,7 +496,6 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 - [Github](https://github.com/jshint/jshint/issues/3324) - I used code from Github to resolve a JSHint warning issue by adding an inline directive at the top of my source code file: /* jshint esversion: 2015 */
 
-
 ### Content
 
 ### Media
