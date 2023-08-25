@@ -419,6 +419,14 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 - I researched online how to rectify this, and came across [Github’s](https://github.com/jshint/jshint/issues/3324) issue resolved on the same problem. I followed one of their suggested solutions; letting JSHint know that I am using ES2015 syntax in my project. By adding an inline directive at the top of my source code file: /* jshint esversion: 2015 */ , this removed all the warnings within my code.
 
+**W3C HTML Validator issue:**
+
+- I came across the following issue when running the quiz.html code through it:
+
+![W3C HTML Validator empty source issue](docs/w3c/w3c-html-empty-src-issue.png)
+
+- I researched this issue and came across [Stack Overflow's](https://stackoverflow.com/questions/30658663/bad-value-for-attribute-src-on-element-img-must-be-non-empty-for-dynamically) suggested solution of setting the image src attribute to '#' as a temporary placeholder, before being filled with the result image at the end of the quiz. This seemed to work, and cleared the error all together. 
+
 ### Testing User Stories
 
 #### First Time Visitors
