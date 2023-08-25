@@ -34,6 +34,7 @@ This website aims to provide information on what stunning landscape to explore w
       - [How to Clone](#how-to-clone)
   - [Testing](#testing)
     - [W3C Validator](#w3c-validator)
+    - [JSHint](#jshint)
     - [Solved Bugs](#solved-bugs)
     - [Testing User Stories](#testing-user-stories)
       - [First Time Visitors](#first-time-visitors)
@@ -283,6 +284,12 @@ Testing was implemented throughout the entire build of this project. I used Chro
 *The following suggestions were recommended when I submitted my site to peer code review on slack:*
 
 ### W3C Validator
+
+I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS content.
+
+### JSHint 
+
+I used JShint on all javascript content.
 
 ### Solved Bugs
 

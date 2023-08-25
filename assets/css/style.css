@@ -349,6 +349,14 @@ footer a:hover {
     text-align: center;
 }
 
+#answer-name {
+    display: none;
+}
+
+#answer-description {
+    display: none;
+}
+
 #answer-image {
     display: none;
     width: 450px;

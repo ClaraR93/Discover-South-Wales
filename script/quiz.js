@@ -247,6 +247,12 @@ function showResults(score) {
     //Populate the anchor tag element with url values 
     urlAnswers.href = finalResult.url;
 
+    //Display answer name after submitting quiz
+    answerNameElement.style.display = "block";
+
+    //Display answer description after submitting quiz
+    answerDescriptionElement.style.display = "block";
+
     //Display answer image after submitting quiz
     answerImageElement.style.display = "block";
 
