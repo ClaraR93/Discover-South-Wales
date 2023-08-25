@@ -428,11 +428,17 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 **W3C HTML Validator issues:**
 
-- I came across the following issue when running the quiz.html code through it:
+- I came across the following issues when running the quiz.html code through it:
 
 ![W3C HTML Validator empty source issue](docs/w3c/w3c-html-empty-src-issue.png)
 
 - I researched this issue and came across [Stack Overflow's](https://stackoverflow.com/questions/30658663/bad-value-for-attribute-src-on-element-img-must-be-non-empty-for-dynamically) suggested solution of setting the image src attribute to '#' as a temporary placeholder, before being filled with the result image at the end of the quiz. This seemed to work, and cleared the error all together.
+
+- A similar issue cropped up regarding some of the empty heading content:
+
+![W3C HTML Validator empty heading issue](docs/w3c/w3c-html-empty-heading-warning.png)
+
+- I tackled this issue again by placing '#' as placeholders. However this caused them to appear beneath the quiz questions. I ammended this as well by targeting their ID's in style.css, and setting their display to none. I then set their display to block within the showResults function, to ensure these are displayed once the quiz results are displayed. 
 
 ### Testing User Stories
 
