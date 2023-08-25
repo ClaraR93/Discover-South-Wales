@@ -470,6 +470,20 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 ### Lighthouse
 
+I used Lighthouse in Chrome Developer tools so I could test the performance, accessibility, best practices and SEO of the website.
+
+**Home Page - Desktop:**
+
+![Lighthouse test for home page, desktop](docs/lighthouse/lighthouse-home-desktop.png)
+
+**Home Page - Mobile:**
+
+![Lighthouse test for home page, mobile](docs/lighthouse/lighthouse-home-mobile.png)
+
+I was very pleased with my lighthouse results for the home page on both desktop and mobile. 
+
+**Quiz Page - Desktop:**
+
 ### Full Testing
 
 - - -
