@@ -486,13 +486,19 @@ I was very pleased with my lighthouse results for the home page on both desktop 
 
 ![Original lighthouse test for quiz page, desktop](docs/lighthouse/lighthouse-quiz-desktop-old.png)
 
-After my initial lighthouse testing for the quiz page, I wanted to improve accessibiity to achieve a top score of 100 and found the following issue: 
+After my initial lighthouse testing for the quiz page I wanted to improve accessibiity to achieve a top score of 100 and found the following issue: 
 
 ![Lighthouse accessibility issue for quiz page, desktop](docs/lighthouse/lighthouse-quiz-accessibility-issue.png)
 
 By ammending the h4 heading in the footer to a h3 element in the quiz page, so that the heading elements were all in a sequentially descending order, this resolved the issue. See final lighthouse below: 
 
 ![Final lighthouse test for quiz page, desktop](docs/lighthouse/lighthouse-quiz-desktop-new.png)
+
+**Quiz Page - Mobile:**
+
+![Lighthouse test for quiz page, mobile](docs/lighthouse/lighthouse-quiz-mobile.png)
+
+I was happy with the mobile lighthouse results for the quiz page. There was definitely room for improvement with performance, but as this was in the green, I felt that I could revisit this another time.
 
 ### Full Testing
 
