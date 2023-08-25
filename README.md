@@ -287,7 +287,7 @@ Testing was implemented throughout the entire build of this project. I used Chro
 
 I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS content.
 
-### JSHint 
+### JSHint
 
 I used JShint on all javascript content.
 
@@ -326,7 +326,7 @@ Possible user score | Assigned Result
 
 **Radio Input Checked:**
 
-- I wanted to get the radio button element from the html file in its checked state to create an if else statement, ensuring a user is prompted to click on the radio button if they hit next without selecting anything. [Stack overflow](https://stackoverflow.com/questions/1423777/how-can-i-check-whether-a-radio-button-is-selected-with-javascript) helped me here, as I wasn’t sure how to select a radio input that had been checked. 
+- I wanted to get the radio button element from the html file in its checked state to create an if else statement, ensuring a user is prompted to click on the radio button if they hit next without selecting anything. [Stack overflow](https://stackoverflow.com/questions/1423777/how-can-i-check-whether-a-radio-button-is-selected-with-javascript) helped me here, as I wasn’t sure how to select a radio input that had been checked.
 
 ![Checked radio button selection](docs/images/radio-button-checked.png)
 
@@ -337,8 +337,8 @@ Possible user score | Assigned Result
 
 **Clear radio button function - Part 2**
 
-- After creating the clearRadio function to ensure the radio button was deselected for the next question in the quiz, I encountered a problem where the function wasn’t working, despite using code from Tutorials Point as stated in the last problem.
-- I realized that this was because I wasn’t iterating through each question so that the radio buttons were always unchecked, so I used the forEach method to iterate through each question, ensuring that the radio buttons were always unchecked to start off with. 
+- After creating the clearRadio function to ensure the radio button was deselected for the next question in the quiz, I encountered a problem where the function wasn't working, despite using code from Tutorials Point as stated in the last problem.
+- I realized that this was because I wasn't iterating through each question so that the radio buttons were always unchecked, so I used the forEach method to iterate through each question, ensuring that the radio buttons were always unchecked to start off with.
 
 ![clearRadio function with forEach method](docs/images/clear-radio-function.png)
 
@@ -368,7 +368,7 @@ Possible user score | Assigned Result
 
 - When drafting up the logic for how the quiz results would be generated, I initially decided to go with an if else statement, whereby if the final results were equal to 5 this would produce the first answer, else if they were equal to 6 it would produce the second answer, and so on.
 - I found that this would result in a very lengthy if else statement and wanted to come up with something simpler and cleaner. I started by googling how to convert a range of numbers, as I had a set of 11 answers ranging from a score point of 5 to 15. I wanted to convert these points to an index from 0 through to 10, making it easier to iterate through the object answers array and assign their given calculated score.
-- For this I used [Stack Overflow](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value), which suggested using the math.min and math.max method in javascript to achieve this. I passed the score in, making sure to take away 5, creating the minimum index of 0 and setting the maximum number to 10. This would give me 11 indexes which I could assign to the 11 possible results generated. 
+- For this I used [Stack Overflow](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value), which suggested using the math.min and math.max method in javascript to achieve this. I passed the score in, making sure to take away 5, creating the minimum index of 0 and setting the maximum number to 10. This would give me 11 indexes which I could assign to the 11 possible results generated.
 
 ![math.min and math.max method used on answerIndex](docs/images/answerIndex-converted.png)
 
@@ -424,7 +424,7 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 ![JSHint warnings in maps.js](docs/images/jshint-warnings.png)
 
-- I researched online how to rectify this, and came across [Github's](https://github.com/jshint/jshint/issues/3324) issue resolved on the same problem. I followed one of their suggested solutions; letting JSHint know that I am using ES2015 syntax in my project. By adding an inline directive at the top of my source code file: /* jshint esversion: 2015 */ , this removed all the warnings within my code.
+- I researched online how to rectify this, and came across [Github's](https://github.com/jshint/jshint/issues/3324) issue resolved on the same problem. I followed one of their suggested solutions; letting JSHint know that I am using ES2015 syntax in my project. By adding an inline directive at the top of my source code file: /*jshint esversion: 2015*/ , this removed all the warnings within my code.
 
 **W3C HTML Validator issues:**
 
@@ -438,7 +438,7 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 ![W3C HTML Validator empty heading issue](docs/w3c/w3c-html-empty-heading-warning.png)
 
-- I tackled this issue again by placing '#' as placeholders. However this caused them to appear beneath the quiz questions. I ammended this as well by targeting their ID's in style.css, and setting their display to none. I then set their display to block within the showResults function, to ensure these are displayed once the quiz results are displayed. 
+- I tackled this issue again by placing '#' as placeholders. However this caused them to appear beneath the quiz questions. I ammended this as well by targeting their ID's in style.css, and setting their display to none. I then set their display to block within the showResults function, to ensure these are displayed once the quiz results are displayed.
 
 ### Testing User Stories
 
@@ -493,17 +493,17 @@ I used Lighthouse in Chrome Developer tools so I could test the performance, acc
 
 ![Lighthouse test for home page, mobile](docs/lighthouse/lighthouse-home-mobile.png)
 
-I was very pleased with my lighthouse results for the home page on both desktop and mobile. 
+I was very pleased with my lighthouse results for the home page on both desktop and mobile.
 
 **Quiz Page - Desktop:**
 
 ![Original lighthouse test for quiz page, desktop](docs/lighthouse/lighthouse-quiz-desktop-old.png)
 
-After my initial lighthouse testing for the quiz page I wanted to improve accessibiity to achieve a top score of 100 and found the following issue: 
+After my initial lighthouse testing for the quiz page I wanted to improve accessibiity to achieve a top score of 100 and found the following issue:
 
 ![Lighthouse accessibility issue for quiz page, desktop](docs/lighthouse/lighthouse-quiz-accessibility-issue.png)
 
-By ammending the h4 heading in the footer to a h3 element in the quiz page, so that the heading elements were all in a sequentially descending order, this resolved the issue. See final lighthouse below: 
+By ammending the h4 heading in the footer to a h3 element in the quiz page, so that the heading elements were all in a sequentially descending order, this resolved the issue. See final lighthouse below:
 
 ![Final lighthouse test for quiz page, desktop](docs/lighthouse/lighthouse-quiz-desktop-new.png)
 
@@ -545,7 +545,7 @@ I was happy with the mobile lighthouse results for the quiz page. There was defi
 
 - [Accessiblity Developer Guide](https://www.accessibility-developer-guide.com/knowledge/aria/bad-practices/) - Used visually hidden code to replace aria-label. I used this code in my first milestone project, which proved effective for the background images in style.css
 
-- [Github](https://github.com/jshint/jshint/issues/3324) - I used code from Github to resolve a JSHint warning issue by adding an inline directive at the top of my source code file: /* jshint esversion: 2015 */
+- [Github](https://github.com/jshint/jshint/issues/3324) - I used code from Github to resolve a JSHint warning issue by adding an inline directive at the top of my source code file: /*jshint esversion: 2015*/
 
 ### Content
 
