@@ -1,3 +1,7 @@
+//Let JSHint know that the use of ES2015 is appropriate 
+//Code used from Github resolved issues - See readme credits
+/* jshint esversion: 2015 */
+
 //Wait for the DOM to finish loading before running quiz
 document.addEventListener("DOMContentLoaded", runQuiz);
 
