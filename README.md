@@ -51,7 +51,7 @@ This website aims to provide information on what stunning landscape to explore w
 
 ### Initial Discussion
 
-Discover South Wales is a website designed for potential first time visitors with limited knowledge of rural areas to explore. It's a simple design, centered round a short quiz, and it aims to give users a quick guide on where to go. By asking a set of 5 questions based on what the user’s preferences are, the website acts as a personal guide, presenting one of eleven locations based on the user's results, that would be well suited to the answers the user gives.
+Discover South Wales is a website designed for potential first time visitors with limited knowledge of rural areas to explore. It's a simple design, centered round a short quiz, and it aims to give users a quick guide on where to go. By asking a set of 5 questions based on what the user's preferences are, the website acts as a personal guide, presenting one of eleven locations based on the user's results, that would be well suited to the answers the user gives.
 
 There is an additional Map page, which gives the user an overall view of the suggested locations within South Wales. This also allows the user to explore more options if they are not satisfied with the recommendation from taking the quiz.
 
@@ -411,6 +411,14 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
   
 ![Final design for quiz answers](docs/images/quiz-answers-final.png)
 
+**JSHint warnings**
+
+- When I ran my Javascript code through JSHint, several warnings cropped up, depicting the following below:
+
+![JSHint warnings in maps.js](docs/images/jshint-warnings.png)
+
+- I researched online how to rectify this, and came across [Github’s](https://github.com/jshint/jshint/issues/3324) issue resolved on the same problem. I followed one of their suggested solutions; letting JSHint know that I am using ES2015 syntax in my project. By adding an inline directive at the top of my source code file: /* jshint esversion: 2015 */ , this removed all the warnings within my code.
+
 ### Testing User Stories
 
 #### First Time Visitors
@@ -485,6 +493,9 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 - [Design Shack](https://designshack.net/articles/css/inner-shadows-in-css-images-text-and-beyond/) - Used code to assist with correct box shadow placement.
 
 - [Accessiblity Developer Guide](https://www.accessibility-developer-guide.com/knowledge/aria/bad-practices/) - Used visually hidden code to replace aria-label. I used this code in my first milestone project, which proved effective for the background images in style.css
+
+- [Github](https://github.com/jshint/jshint/issues/3324) - I used code from Github to resolve a JSHint warning issue by adding an inline directive at the top of my source code file: /* jshint esversion: 2015 */
+
 
 ### Content
 
