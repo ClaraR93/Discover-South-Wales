@@ -275,6 +275,16 @@ Testing was implemented throughout the entire build of this project. I used Chro
 
 *The following issues were identified during my mid mentor meeting:*
 
+- During my mid mentor meeting, I addressed a console log issue with my mentor, Sheryl Goldberg, who was kind enough to go through the problem with me and come up with a solution. See initial problem below:
+  
+![Console log error in quiz page](docs/images/console-log-error-quiz-page.png)
+
+- She suggested that I pass an event parameter through the validateUserInput function and nest an additional if statement within the primary else statement. Within this if statement I used the event.target method to target both the next and submit button separately. This would ensure that once a user clicks on the submit button, the askQuestions function is no longer called, as it is no longer required. This eliminated the original console log error and rectified the issue. See updated function below:
+
+![Ammended validateUserInput function](docs/images/updated-validateUserInput-function.png)
+  
+- Sheryl also informed me to ensure that I pass the event parameter within my event listener in the runQuiz function, using [Plain English](https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb) as guidance. I also removed the submit button event listener that called the hideQuiz function, as this was already being called within the validateUserInput function.
+
 *The following suggestions were recommended when I showed a friend the site for review:*
 
 - Tom Roberts informed me that once a user lands on the submit page, the following text should be a more obvious button that takes the user to the maps page, rather than just a small map icon. See image: ![Quiz answers, further suggestions, old version](docs/images/further-suggestions-old.png)
