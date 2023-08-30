@@ -547,6 +547,10 @@ I was happy with the mobile lighthouse results for the quiz page. There was defi
 
 - [Github](https://github.com/jshint/jshint/issues/3324) - I used code from Github to resolve a JSHint warning issue by adding an inline directive at the top of my source code file: /*jshint esversion: 2015*/
 
+- [Plain English](https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb) -
+I used code from Plain English as a guide to amending an event listener and passing an argument within.
+
+
 ### Content
 
 ### Media

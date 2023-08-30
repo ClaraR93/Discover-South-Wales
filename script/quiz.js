@@ -280,7 +280,9 @@ function runQuiz() {
     nextButton.addEventListener("click", hideInstructions);
 
     //Event listener for next button to check if user has submitted an input
-    nextButton.addEventListener("click", validateUserInput);
+    nextButton.addEventListener("click", (e) => {
+        validateUserInput(e);
+    });
 
     //Event listener for next button to clear radio selection after each question is submitted 
     nextButton.addEventListener("click", clearRadio);
