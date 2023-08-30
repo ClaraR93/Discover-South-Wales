@@ -130,7 +130,7 @@ function askQuestions() {
 
 //Function to check if user has selected a radio button before proceeding to next question
 //Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing
-function validateUserInput () {
+function validateUserInput (e) {
     //Add event listener for checked radio buttons
     const radioAnswer = document.querySelector("input[type='radio']:checked");
     //If no question is selected alert user to select answer
@@ -139,8 +139,13 @@ function validateUserInput () {
     //Else store user inputs into an array and call next question (askQuestion function)
     } else {
         const selectedValue = radioAnswer.value;
-        storeUserAnswers(selectedValue);
-        askQuestions();
+        if (e.target.id === "next-button") {
+            storeUserAnswers(selectedValue);
+            askQuestions();
+        } else if (e.target.id === "submit-button") {
+            storeUserAnswers(selectedValue);
+            hideQuiz();
+        }
     }
 }
 
@@ -282,9 +287,8 @@ function runQuiz() {
     askQuestions();
 
     //Event listener for submit button to check if user has submitted an input and store user answers in an array
-    submitButton.addEventListener("click", validateUserInput);
-
-    // Event listener for submit button to check if user has submitted an input before hiding quiz form and revealing quiz results
-    submitButton.addEventListener("click", hideQuiz);
+    submitButton.addEventListener("click", (e) => {
+        validateUserInput(e)
+    });
 
 }
