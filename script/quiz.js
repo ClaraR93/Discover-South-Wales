@@ -136,12 +136,14 @@ function validateUserInput (e) {
     //If no question is selected alert user to select answer
     if (!radioAnswer) {
         alert("Please select an answer!");
-    //Else store user inputs into an array and call next question (askQuestion function)
+    //Else call nested if statement
     } else {
         const selectedValue = radioAnswer.value;
+        //Call storeUserAnswers and askQuestions if next button is selected
         if (e.target.id === "next-button") {
             storeUserAnswers(selectedValue);
             askQuestions();
+        //Call storeUserAnswers and hideQuiz if submit button is selected
         } else if (e.target.id === "submit-button") {
             storeUserAnswers(selectedValue);
             hideQuiz();
