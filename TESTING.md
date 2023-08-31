@@ -30,7 +30,7 @@ I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS con
 
 I used JSLint on all javascript content.
 
-### Solved Bugs
+### Issues resolved during development 
 
 **Logic of interactive quiz:**
 
@@ -170,6 +170,16 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 ![W3C HTML Validator empty heading issue](docs/w3c/w3c-html-empty-heading-warning.png)
 
 - I tackled this issue again by placing '#' as placeholders. However this caused them to appear beneath the quiz questions. I ammended this as well by targeting their ID's in style.css, and setting their display to none. I then set their display to block within the showResults function, to ensure these are displayed once the quiz results are displayed.
+
+**JSLint Warnings**
+
+- When I ran the quiz.js file through the JSLint validator, a few issues arose which I did my best to rectify. Some examples below:
+
+Warning | Details | Fix
+---|---|---
+Line is longer than 80 characters. | As I had a lot of information contained within object arrays, I decided to opt into allowing longer than 80 charcters, as this would be very restrictive for my code. | In [JSLint](https://www.jslint.com/), within the optional directives I added /*jslint long*/ to allow long lines.
+Undeclared 'document.' | This issue was flagging up whenever I was accessing the document. | I Used the optional directives to fix this again, by adding /*jslint browser*/ so that JSLint would assume browser environment.
+Unexpected '++' | This issue was flagging up on line 123 containing 'currentQuestionIndex ++;' | I did some research on [JSLint Error Explanations](http://linterrors.com/js/unexpected-plus-plus), and found that although this used the correct syntax, JSLint threw this error as a violation of specific coding style. A quick fix was to use the normal addition operator instead.
 
 ### Testing User Stories
 
