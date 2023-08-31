@@ -171,6 +171,14 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 - I tackled this issue again by placing '#' as placeholders. However this caused them to appear beneath the quiz questions. I ammended this as well by targeting their ID's in style.css, and setting their display to none. I then set their display to block within the showResults function, to ensure these are displayed once the quiz results are displayed.
 
+**initMap is not a function error:**
+
+- The following issue was being logged to the console on the Map page:
+  
+![initMap is not a function error](docs/images/initMap-error.png)
+
+- After researching the initMap is not a function error, I cam across [Yahya Elharony's](https://elharony.com/initmap-is-not-a-function/) article on solving this issue. I atttempted the second suggested fix; moving the map script to the bottom of the html page, after the maps/js script. This resolved the issue, removing the console error.
+
 **JSLint Warnings:**
 
 - When I ran the quiz.js file through the JSLint validator, a few issues arose which I did my best to rectify. Some examples below:
