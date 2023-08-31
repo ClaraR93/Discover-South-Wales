@@ -297,7 +297,6 @@ For all testing, please refer to [TESTING.md](TESTING.md)
 - [Plain English](https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb) -
 I used code from Plain English as a guide to amending an event listener and passing an argument within.
 
-
 ### Content
 
 ### Media

@@ -1,4 +1,4 @@
-## Testing
+# Testing
 
 Testing was implemented throughout the entire build of this project. I used Chrome Developer tools to identify and troubleshoot problems along the way.
 
@@ -30,7 +30,7 @@ I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS con
 
 I used JSLint on all javascript content.
 
-### Issues resolved during development 
+### Issues resolved during development
 
 **Logic of interactive quiz:**
 
@@ -74,7 +74,7 @@ Possible user score | Assigned Result
 - I noticed when I ran through the quiz the radio button always remained checked on the last users input. I wanted to ensure the radio buttons were cleared every time a user started a new question. I used code from [Tutorial Point](https://www.tutorialspoint.com/how-to-uncheck-a-radio-button-using-javascript-jquery#:~:text=In%20the%20clearRadio()%20function,to%20uncheck%20the%20radio%20button) to assist me with this.
 - Within this code I made sure to assign the checked radio button with a false boolean, which would be called as an event listener after the user hits the next button.
 
-**Clear radio button function - Part 2**
+**Clear radio button function - Part 2:**
 
 - After creating the clearRadio function to ensure the radio button was deselected for the next question in the quiz, I encountered a problem where the function wasn't working, despite using code from Tutorials Point as stated in the last problem.
 - I realized that this was because I wasn't iterating through each question so that the radio buttons were always unchecked, so I used the forEach method to iterate through each question, ensuring that the radio buttons were always unchecked to start off with.
@@ -171,7 +171,7 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 - I tackled this issue again by placing '#' as placeholders. However this caused them to appear beneath the quiz questions. I ammended this as well by targeting their ID's in style.css, and setting their display to none. I then set their display to block within the showResults function, to ensure these are displayed once the quiz results are displayed.
 
-**JSLint Warnings**
+**JSLint Warnings:**
 
 - When I ran the quiz.js file through the JSLint validator, a few issues arose which I did my best to rectify. Some examples below:
 
