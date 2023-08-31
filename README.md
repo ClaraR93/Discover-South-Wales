@@ -428,14 +428,6 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
   
 ![Final design for quiz answers](docs/images/quiz-answers-final.png)
 
-**JSHint warnings**
-
-- When I ran my Javascript code through JSHint, several warnings cropped up, depicting the following below:
-
-![JSHint warnings in maps.js](docs/images/jshint-warnings.png)
-
-- I researched online how to rectify this, and came across [Github's](https://github.com/jshint/jshint/issues/3324) issue resolved on the same problem. I followed one of their suggested solutions; letting JSHint know that I am using ES2015 syntax in my project. By adding an inline directive at the top of my source code file: /*jshint esversion: 2015*/ , this removed all the warnings within my code.
-
 **W3C HTML Validator issues:**
 
 - I came across the following issues when running the quiz.html code through it:
