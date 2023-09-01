@@ -2,26 +2,6 @@
 
 Testing was implemented throughout the entire build of this project. I used Chrome Developer tools to identify and troubleshoot problems along the way.
 
-*The following issues were identified during my mid mentor meeting:*
-
-- During my mid mentor meeting, I addressed a console log issue with my mentor, Sheryl Goldberg, who was kind enough to go through the problem with me and come up with a solution. See initial problem below:
-  
-![Console log error in quiz page](docs/images/console-log-error-quiz-page.png)
-
-- She suggested that I pass an event parameter through the validateUserInput function and nest an additional if statement within the primary else statement. Within this if statement I used the event.target method to target both the next and submit button separately. This would ensure that once a user clicks on the submit button, the askQuestions function is no longer called, as it is no longer required. This eliminated the original console log error and rectified the issue. See updated function below:
-
-![Ammended validateUserInput function](docs/images/updated-validateUserInput-function.png)
-  
-- Sheryl also informed me to ensure that I pass the event parameter within my event listener in the runQuiz function, using [Plain English](https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb) as guidance. I also removed the submit button event listener that called the hideQuiz function, as this was already being called within the validateUserInput function.
-
-*The following suggestions were recommended when I showed a friend the site for review:*
-
-- Tom Roberts informed me that once a user lands on the submit page, the following text should be a more obvious button that takes the user to the maps page, rather than just a small map icon. See image: ![Quiz answers, further suggestions, old version](docs/images/further-suggestions-old.png)
-- Tom also suggested that this page should include an additional button which gives the user the option to navigate back to the home page to restart the quiz if they want to. Final result with peer review implemented:
-![Quiz answers with peer suggestions implemented](docs/images/further-suggestions-new.png)
-
-*The following suggestions were recommended when I submitted my site to peer code review on slack:*
-
 ### W3C Validator
 
 I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS content.
@@ -177,7 +157,7 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
   
 ![initMap is not a function error](docs/images/initMap-error.png)
 
-- After researching the initMap is not a function error, I cam across [Yahya Elharony's](https://elharony.com/initmap-is-not-a-function/) article on solving this issue. I atttempted the second suggested fix; moving the map script to the bottom of the html page, after the maps/js script. This resolved the issue, removing the console error.
+- After researching the initMap is not a function error, I cam across [Yahya Elharony's](https://elharony.com/initmap-is-not-a-function/) article on solving this issue. I atttempted the second suggested fix; moving the map script to the bottom of the html page, after the maps.js script. This resolved the issue, removing the console error.
 
 **JSLint Warnings:**
 
@@ -188,6 +168,28 @@ Warning | Details | Fix
 Line is longer than 80 characters. | As I had a lot of information contained within object arrays, I decided to opt into allowing longer than 80 charcters, as this would be very restrictive for my code. | In [JSLint](https://www.jslint.com/), within the optional directives I added /*jslint long*/ to allow long lines.
 Undeclared 'document.' | This issue was flagging up whenever I was accessing the document. | I Used the optional directives to fix this again, by adding /*jslint browser*/ so that JSLint would assume browser environment.
 Unexpected '++' | This issue was flagging up on line 123 containing 'currentQuestionIndex ++;' | I did some research on [JSLint Error Explanations](http://linterrors.com/js/unexpected-plus-plus), and found that although this used the correct syntax, JSLint threw this error as a violation of specific coding style. A quick fix was to use the normal addition operator instead.
+
+### Mentor and Peer Feedback
+
+*The following issues were identified during my mid mentor meeting:*
+
+- During my mid mentor meeting, I addressed a console log issue with my mentor, Sheryl Goldberg, who was kind enough to go through the problem with me and come up with a solution. See initial problem below:
+  
+![Console log error in quiz page](docs/images/console-log-error-quiz-page.png)
+
+- She suggested that I pass an event parameter through the validateUserInput function and nest an additional if statement within the primary else statement. Within this if statement I used the event.target method to target both the next and submit button separately. This would ensure that once a user clicks on the submit button, the askQuestions function is no longer called, as it is no longer required. This eliminated the original console log error and rectified the issue. See updated function below:
+
+![Ammended validateUserInput function](docs/images/updated-validateUserInput-function.png)
+  
+- Sheryl also informed me to ensure that I pass the event parameter within my event listener in the runQuiz function, using [Plain English](https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb) as guidance. I also removed the submit button event listener that called the hideQuiz function, as this was already being called within the validateUserInput function.
+
+*The following suggestions were recommended when I showed a friend the site for review:*
+
+- Tom Roberts informed me that once a user lands on the submit page, the following text should be a more obvious button that takes the user to the maps page, rather than just a small map icon. See image: ![Quiz answers, further suggestions, old version](docs/images/further-suggestions-old.png)
+- Tom also suggested that this page should include an additional button which gives the user the option to navigate back to the home page to restart the quiz if they want to. Final result with peer review implemented:
+![Quiz answers with peer suggestions implemented](docs/images/further-suggestions-new.png)
+
+*The following suggestions were recommended when I submitted my site to peer code review on slack:*
 
 ### Testing User Stories
 
