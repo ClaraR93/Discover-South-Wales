@@ -60,7 +60,7 @@ function initMap() {
     const infoWindow = new google.maps.InfoWindow();
 
     // Create the markers.
-    southWalesLocations.forEach(([position, title, url], i) => {
+    southWalesLocations.forEach(function([position, title, url], i) {
         const marker = new google.maps.Marker({
             position,
             map,

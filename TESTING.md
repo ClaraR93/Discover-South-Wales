@@ -161,13 +161,22 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 **JSLint Warnings:**
 
-- When I ran the quiz.js file through the JSLint validator, a few issues arose which I did my best to rectify. Some examples below:
+- When I ran both quiz.js and map.js through the JSLint validator, a few issues arose which I did my best to rectify. Some examples below:
+
+*quiz.js:*
 
 Warning | Details | Fix
 ---|---|---
 Line is longer than 80 characters. | As I had a lot of information contained within object arrays, I decided to opt into allowing longer than 80 charcters, as this would be very restrictive for my code. | In [JSLint](https://www.jslint.com/), within the optional directives I added /*jslint long*/ to allow long lines.
 Undeclared 'document.' | This issue was flagging up whenever I was accessing the document. | I Used the optional directives to fix this again, by adding /*jslint browser*/ so that JSLint would assume browser environment.
 Unexpected '++' | This issue was flagging up on line 123 containing 'currentQuestionIndex ++;' | I did some research on [JSLint Error Explanations](http://linterrors.com/js/unexpected-plus-plus), and found that although this used the correct syntax, JSLint threw this error as a violation of specific coding style. A quick fix was to use the normal addition operator instead.
+
+*maps.js:*
+
+Warning | Details | Fix
+---|---|---
+JS lint was unable to finish | expected '{' and instead saw 'wait' on line 25 | I made sure to put curly brackets for all 'if else' statements within the function, resoliving the issue.
+Use regular function instead of arrow function | Prompted me to change this as suggested function was too complex for the use of an arrow function | Followed instructions as told
 
 ### Unresolved issues
 
