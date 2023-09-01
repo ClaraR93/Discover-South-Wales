@@ -171,7 +171,7 @@ Unexpected '++' | This issue was flagging up on line 123 containing 'currentQues
 
 ### Unresolved issues
 
-- Once my site was live on github, the warning below was showing on all pages: 
+- Once my site was live on github, the warning below was showing on all pages:
   
 ![Interest-cohort warning error](docs/images/console-log-warning-interest-cohort.png)
 

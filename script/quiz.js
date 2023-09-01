@@ -1,7 +1,12 @@
 //Allow long lines
 /*jslint long*/
+
 //Assume Browswer environment
 /*jslint browser*/
+
+//Allow unodered cases, params, properties, variables, and exports.
+/*jslint unordered*/
+
 //Wait for the DOM to finish loading before running quiz
 document.addEventListener("DOMContentLoaded", runQuiz);
 
@@ -95,8 +100,7 @@ const quizAnswers = [{
     description: "If you're after a challenging but rewarding walk across wild Welsh moorland and up steep rocky peaks, offering commanding views over the Brecon Beacons, the Horseshoe Ridge hike is for you. At every step of the circular walk around the U-shaped Neuadd Valley and up the four peaks of Corn Du, Pen y Fan (the highest peak in southern Britain), Cribyn and Fan y Big, you'll be swept away by magnificent views stretching for miles in all directions.",
     image: "assets/images/results/horseshoe-ridge-walk.webp",
     url: "https://www.nationaltrust.org.uk/visit/wales/brecon-beacons/brecon-beacons-horseshoe-ridge-walk"
-}
-];
+}];
 
 //Add event listener to next button
 const nextButton = document.getElementById("next-button");
