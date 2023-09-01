@@ -1,3 +1,12 @@
+//Allow long lines
+/*jslint long*/
+
+//Assume Browswer environment
+/*jslint browser*/
+
+//Allow unodered cases, params, properties, variables, and exports.
+/*jslint unordered*/
+
 //Wait for the DOM to finish loading before running maps
 document.addEventListener("DOMContentLoaded", function () {
     // Hide the loading span
@@ -12,22 +21,24 @@ document.addEventListener("DOMContentLoaded", function () {
 window.dotsGoingUp = true;
 window.setInterval(function () {
     const wait = document.getElementById("loading");
-    if (window.dotsGoingUp)
+    if (window.dotsGoingUp) {
         wait.innerHTML += ".";
-    else {
+    } else {
         wait.innerHTML = wait.innerHTML.substring(1, wait.innerHTML.length);
-        if (wait.innerHTML === "")
+        if (wait.innerHTML === "") {
             window.dotsGoingUp = true;
+        }
+        if (wait.innerHTML.length > 5) {
+            window.dotsGoingUp = false;
+        }
     }
-    if (wait.innerHTML.length > 5)
-        window.dotsGoingUp = false;
 }, 400);
 
-// Google maps function, including 11 markers corresponding to each quiz result 
+// Google maps function, including 11 markers corresponding to each quiz result
 function initMap() {
     const map = new google.maps.Map(document.getElementById("maps-container"), {
         zoom: 8,
-        center: { lat: 51.80044850212119, lng: -3.7944135216672383 },
+        center: { lat: 51.80044850212119, lng: -3.7944135216672383 }
     });
     // Set LatLng and title text for the markers. The first marker (Rhossili)
     // receives the initial focus when tab is pressed. Use arrow keys to
@@ -55,11 +66,11 @@ function initMap() {
             map,
             title: `${i + 1}. ${title}`,
             label: `${i + 1}`,
-            optimized: false,
+            optimized: false
         });
 
         // Add a click listener for each marker, and set up the info window.
-        marker.addListener("click", () => {
+        marker.addListener("click", function () {
             infoWindow.close();
             infoWindow.setContent(marker.getTitle());
             infoWindow.open(marker.getMap(), marker);
@@ -67,7 +78,7 @@ function initMap() {
 
         // Add a click listener to open the specified URL when the marker is clicked.
         //Used window.open() method as explained in Stack overflows - See readme credits
-        marker.addListener("dblclick", () => {
+        marker.addListener("dblclick", function () {
             window.open(url, "_blank");
         });
     });
