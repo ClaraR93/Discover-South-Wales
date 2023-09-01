@@ -30,9 +30,7 @@ const questions = [{
 {
     question: "What do you enjoy the most during outdoor activities? ",
     answer: ["Taking in the scenery and enjoying the surroundings", "A mix of physical activity and sightseeing", "The physical challenge"]
-}
-
-];
+}];
 
 //Define 11 possible results as objects containing name, description and accompanied image
 const quizAnswers = [{
