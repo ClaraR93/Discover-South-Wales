@@ -169,6 +169,14 @@ Line is longer than 80 characters. | As I had a lot of information contained wit
 Undeclared 'document.' | This issue was flagging up whenever I was accessing the document. | I Used the optional directives to fix this again, by adding /*jslint browser*/ so that JSLint would assume browser environment.
 Unexpected '++' | This issue was flagging up on line 123 containing 'currentQuestionIndex ++;' | I did some research on [JSLint Error Explanations](http://linterrors.com/js/unexpected-plus-plus), and found that although this used the correct syntax, JSLint threw this error as a violation of specific coding style. A quick fix was to use the normal addition operator instead.
 
+### Unresolved issues
+
+- Once my site was live on github, the warning below was showing on all pages: 
+  
+![Interest-cohort warning error](docs/images/console-log-warning-interest-cohort.png)
+
+- After looking at [Stack overflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) for guidance, I attempted adding a 'permission policy' meta tag to resolve the issue, however this didn't work. The warning wasn't causing the website to malfunction and everything was working fine. I will revisit this issue at a later date.
+  
 ### Mentor and Peer Feedback
 
 *The following issues were identified during my mid mentor meeting:*
