@@ -190,7 +190,7 @@ Use regular function instead of arrow function | Prompted me to change this as s
 
 **JSLint 'space' warnings:**
 
-- When testing my code in JSLint, I encountered several warnings in quiz.js, indicating that there is an expected space between object syntax: 
+- When testing my code in JSLint, I encountered several warnings in quiz.js, indicating that there is an expected space between object syntax:
 
 ![JSlint space warning](docs/images/jslint-warning-space-required.png)
 

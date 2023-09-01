@@ -2,9 +2,9 @@
 
 This website aims to provide information on what stunning landscape to explore within South Wales. This is particularly targeted at new visitors. It is centered around an interactive multiple choice quiz, aimed to tailor the users experiences to match them with their preferences and desires. It aims to be responsive across multiple devices, particularly focusing on mobile first design.
 
-[View Discover South Wales on Github]()
+[View Discover South Wales on Github](https://github.com/ClaraR93/Discover-South-Wales)
 
-[View the live website here]()
+[View the live website here](https://clarar93.github.io/Discover-South-Wales/index.html)
 
 - - -
 
@@ -237,7 +237,7 @@ Github Pages was used to deploy the live website. The instructions are as follow
 4. On the left hand menu click on the pages link.
 5. In the source section, select main from the drop down menu under Branch.
 6. Select root from the drop down folder and click save.
-7. Your live Github pages site is now deployed at the following: [ClaraR93]()
+7. Your live Github pages site is now deployed at the following: [ClaraR93](https://clarar93.github.io/Discover-South-Wales/index.html)
 
 ### Local Development
 
