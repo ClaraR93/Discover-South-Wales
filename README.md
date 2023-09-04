@@ -7,6 +7,8 @@
 ![Github languages](https://img.shields.io/badge/languages-3-yellow
 )
 
+![Am I Responsive](docs/images/am-i-responsive.png)
+
 This website aims to provide information on what stunning landscape to explore within South Wales. This is particularly targeted at new visitors. It is centered around an interactive multiple choice quiz, aimed to tailor the users experiences to match them with their preferences and desires. It aims to be responsive across multiple devices, particularly focusing on mobile first design.
 
 [View Discover South Wales on Github](https://github.com/ClaraR93/Discover-South-Wales)
@@ -226,7 +228,7 @@ HTML, CSS and Javascript were used to create this website.
 
 - [TinyPNG](https://tinypng.com/) - To compress large image files on website.
 
-- [Am I Responsive](https://ui.dev/amiresponsive?url=https://clarar93.github.io/paddle-adventures/index.html) - To show the website on a range of devices.
+- [Am I Responsive](https://ui.dev/amiresponsive?url=https://clarar93.github.io/Discover-South-Wales/index.html) - To show the website on a range of devices.
 
 - Google Dev Tools - To troubleshoot and test various features, and solve issues with responsiveness and styling.
 
