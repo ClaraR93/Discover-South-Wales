@@ -210,6 +210,7 @@ Warning | Details | Fix
 ---|---|---
 JS lint was unable to finish | expected '{' and instead saw 'wait' on line 25 | I made sure to put curly brackets for all 'if else' statements within the function, resoliving the issue.
 Use regular function instead of arrow function | Prompted me to change this as suggested function was too complex for the use of an arrow function | Followed instructions as told
+JSLint undeclared 'google' | See [image](docs/images/undeclared-google.png) for further details | I embedded the global directive to specify google as a global variable, as the google API script is within maps.html and not included in maps.js.
 
 ## Unresolved issues
 
@@ -233,13 +234,6 @@ Use regular function instead of arrow function | Prompted me to change this as s
 
 - Although this was frustrating as I couldn't seem to remove the errors, I moved on with my work, as this wasn't an overall concern for the project.
 
-**JSLint undeclared 'google':**
-
-![Undeclared 'google' in JSLint](docs/images/undeclared-google.png)
-
-
-- In the undeclared 'google' warnings above, 
-  
 ### Mentor and Peer Feedback
 
 *The following issues were identified during my mid mentor meeting:*
