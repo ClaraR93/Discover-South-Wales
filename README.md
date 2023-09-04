@@ -1,5 +1,12 @@
 # Discover South Wales, Unveiling Nature's Treasures
 
+![Github last commit](https://img.shields.io/badge/last_commit-september-red
+)
+![Github contributers](https://img.shields.io/badge/contributors-1-orange
+)
+![Github languages](https://img.shields.io/badge/languages-3-yellow
+)
+
 This website aims to provide information on what stunning landscape to explore within South Wales. This is particularly targeted at new visitors. It is centered around an interactive multiple choice quiz, aimed to tailor the users experiences to match them with their preferences and desires. It aims to be responsive across multiple devices, particularly focusing on mobile first design.
 
 [View Discover South Wales on Github](https://github.com/ClaraR93/Discover-South-Wales)
