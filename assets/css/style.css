@@ -321,7 +321,7 @@ footer a:hover {
     height: 700px;
     margin: 15px;
     align-items: center;
-    /*Code used from Design Shack to assist with box shadow placement - See readme Credits*/
+    /* Code used from Design Shack to assist with box shadow placement - See readme Credits */
     box-shadow: 0px 0px 10px 10px #939972;
 }
 
@@ -408,7 +408,7 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     margin: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #start-over {
@@ -416,7 +416,7 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     margin: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #start-over-button {

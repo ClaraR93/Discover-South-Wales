@@ -2,7 +2,7 @@
 
 Testing was implemented throughout the entire build of this project. I used Chrome Developer tools to identify and troubleshoot problems along the way.
 
-## Code Validation 
+## Code Validation
 
 ### W3C Validator
 
@@ -14,14 +14,15 @@ I used JSLint on all javascript content.
 
 ## Browswer compatibility
 
-I have tested the site on various desktop browsers and mobile devices ensuring the website is fully functional with no issues. The following devices worked with no errors on any pages: 
+I have tested the site on various desktop browsers and mobile devices ensuring the website is fully functional with no issues. The following devices worked with no errors on any pages:
 
-### Desktop:
+**Desktop:**
+
 - Google Chrome
 - Mozilla Firefox
-- Microsoft Edge 
+- Microsoft Edge
 
-### Mobile:
+**Mobile:**
 
 - Samsung Galaxy A52
 - Iphone 13 mini
@@ -235,7 +236,7 @@ Use regular function instead of arrow function | Prompted me to change this as s
 
 - To rectify this, I added further instructions below the initial quiz question, direting the user to select an answer, then click the next button to move on.
 
-- My mentor finally suggested changing the syntax for block commented code within my script file. She suggested encompassing multiline code with '/*  */' as instructed in [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-write-comments-in-javascript), on how to write comments in javascript. 
+- My mentor finally suggested changing the syntax for block commented code within my script file. She suggested encompassing multiline code with '/**/' as instructed in [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-write-comments-in-javascript), on how to write comments in javascript.
 
 ![User instructions for taking quiz](docs/images/select-answer-next-button-instructions.png)
 
