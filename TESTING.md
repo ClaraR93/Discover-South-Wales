@@ -261,6 +261,7 @@ JSLint undeclared 'google' | See [image](docs/images/undeclared-google.png) for 
 *The following suggestions were recommended when I submitted my site to peer code review on slack:*
 
 - Allen Gleeson suggested changing the font weight of the content below the quiz results as it was coming up a little thin on his side. I changed the weight of the 'Lato' font from 300 to 400 to resolve this.
+- Allen also suggested putting all sections within all html files within a main html structure to keep consistency with the header and footer.
 
 ## Testing User Stories
 
