@@ -25,7 +25,15 @@ I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS con
 
 ### JSLint
 
-I used JSLint on all javascript content.
+I used JSLint on all javascript content. No errors reported on final javascript files.
+
+*quiz.js:*
+
+![quiz.js](docs/jslint/jslint-quiz.png)
+
+*maps.js:*
+
+![maps.js](docs/jslint/jslint-maps.png)
 
 ## Browswer compatibility
 
