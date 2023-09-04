@@ -359,9 +359,26 @@ Next button directs user to next question when clicked | Clicked through next bu
 If a radio button isn't selected and the user attemps to click next, an alert pops up alerting the user to select an answer | Clicked through each question as if no radio button was selected | Pass
 When a user lands on the final question the next button is replaced with a submit button | Clicked through each quetion before arriving at the final one, displaying a submit button instead | Pass
 On submission, 1 of 11 results are displayed as an individual card with the following included: A heading, description, photograph and external link | Submitted the quiz 11 times, making sure to generate all possible score outcomes to view all possible results produced | Pass
+Within the results card the 'more info' link takes a user to an external website with more infomation on specific result | Clicked on each link from 11 generated results | Pass
 Once a user reaches the results card, below this they can redirect to maps.html by clicking the map icon | Clicked on map icon | Pass
 Oncer a user reaches the results card, below this they can click on the 'Start over' button to restart the quiz | Clicked on 'Start over' button to take user back to first quiz question | Pass
 
 **Maps Page:**
 
+Expected result | Testing | Pass/Fail
+---|---|---
+Header navigation links to direct user to other pages (including mobile dropdown navigation) | Clicked through each nav link | Pass
+Footer Intagram icon takes user to external webpage | Clicked instagram icon | Pass
+Google maps loads showing 11 markers on the screen over South Wales | Clicked on maps page and viewed content | Pass
+Google Map functions such as zoom in/out and move around page functioning as expected | Clicked on zoom in/out button and dragged screen around to explore maps | Pass
+When clicked on, Google markers display place name | Clicked on each 11 markers to display place name | Pass
+When Google markers are double clicked, this takes a user to an external webpage, displaying more information on the location | Double clicked on each marker to open external web page | Pass
+
 **404 Error Page:**
+
+Expected result | Testing | Pass/Fail
+---|---|---
+Header navigation links to direct user to other pages (including mobile dropdown navigation) | Clicked through each nav link | Pass
+Footer Intagram icon takes user to external webpage | Clicked instagram icon | Pass
+The 404 webpage is displayed when the URL subdirectory is inputted incorrectly | Modified subdiretory of URL to something nonexistent to display 404 error | Pass
+'Return home' button takes user back to home page of website | Clicked on 'home page' button and was redicted to home page | Pass
