@@ -1,5 +1,20 @@
 # Testing
 
+- [Testing](#testing)
+  - [Code Validation](#code-validation)
+    - [W3C Validator](#w3c-validator)
+    - [JSLint](#jslint)
+  - [Browswer compatibility](#browswer-compatibility)
+  - [Issues resolved during development](#issues-resolved-during-development)
+  - [Unresolved issues](#unresolved-issues)
+    - [Mentor and Peer Feedback](#mentor-and-peer-feedback)
+  - [Testing User Stories](#testing-user-stories)
+    - [First Time Visitors](#first-time-visitors)
+    - [Returning Visitors](#returning-visitors)
+    - [Frequent Visitor Goals](#frequent-visitor-goals)
+  - [Lighthouse](#lighthouse)
+  - [Full Testing](#full-testing)
+
 Testing was implemented throughout the entire build of this project. I used Chrome Developer tools to identify and troubleshoot problems along the way.
 
 ## Code Validation
@@ -250,9 +265,9 @@ Use regular function instead of arrow function | Prompted me to change this as s
 
 - Allen Gleeson suggested changing the font weight of the content below the quiz results as it was coming up a little thin on his side. I changed the weight of the 'Lato' font from 300 to 400 to resolve this.
 
-### Testing User Stories
+## Testing User Stories
 
-#### First Time Visitors
+### First Time Visitors
 
 *I want to visit South Wales for the first time and don't know where to start looking.*
 
@@ -276,7 +291,7 @@ Use regular function instead of arrow function | Prompted me to change this as s
 
 - On desktop and tablet, the navigation links are displayed clearly, separated by two dots. Each page has direct instructions, prompting the user to access certain information. Each button has a matching style element, with clear and concise instructions within. Font awesome icons are used where appropriate and are familiar to a user on what they do.
 
-#### Returning Visitors
+### Returning Visitors
 
 *I want to be able to share my experiences with other users by following the website's Instagram page.*
 
@@ -284,14 +299,14 @@ Use regular function instead of arrow function | Prompted me to change this as s
 
 ![Instagram footer](docs/images/instagram-footer.png)
 
-#### Frequent Visitor Goals
+### Frequent Visitor Goals
 
 *I want to be able to see other recommendations pop up from time to time, so that I can continue exploring South Wales and share this with others.*
 
 - As mentioned in future implementations, I want to be able to create a working instagram page which encourages users to share images of where they have been and tagging Discover Wales' within.
 - The Map page will host additional markers with other places to go, potentially replacing some old ones that pop up the least when users take the quiz.
 
-### Lighthouse
+## Lighthouse
 
 I used Lighthouse in Chrome Developer tools so I could test the performance, accessibility, best practices and SEO of the website.
 
@@ -323,4 +338,4 @@ By ammending the h4 heading in the footer to a h3 element in the quiz page, so t
 
 I was happy with the mobile lighthouse results for the quiz page. There was definitely room for improvement with performance, but as this was in the green, I felt that I could revisit this another time.
 
-### Full Testing
+## Full Testing
