@@ -190,7 +190,7 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
   
 ![initMap is not a function error](docs/images/initMap-error.png)
 
-- After researching the initMap is not a function error, I cam across [Yahya Elharony's](https://elharony.com/initmap-is-not-a-function/) article on solving this issue. I atttempted the second suggested fix; moving the map script to the bottom of the html page, after the maps.js script. This resolved the issue, removing the console error.
+- After researching the initMap is not a function error, I cam across [Yahya Elharony's](https://elharony.com/initmap-is-not-a-function/) article on solving this issue. I atttempted the second suggested fix; moving the map script to the bottom of the html page, after maps.js script. This resolved the issue, removing the console error.
 
 **JSLint Warnings:**
 
@@ -232,6 +232,13 @@ Use regular function instead of arrow function | Prompted me to change this as s
 ![JSlint unexpected trailing spaces](docs/images/js-lint-warning-trailing-space.png)
 
 - Although this was frustrating as I couldn't seem to remove the errors, I moved on with my work, as this wasn't an overall concern for the project.
+
+**JSLint undeclared 'google':**
+
+![Undeclared 'google' in JSLint](docs/images/undeclared-google.png)
+
+
+- In the undeclared 'google' warnings above, 
   
 ### Mentor and Peer Feedback
 

@@ -7,6 +7,9 @@
 //Allow unodered cases, params, properties, variables, and exports.
 /*jslint unordered*/
 
+//A directive is used to specify a set of globals
+/*global google*/
+
 //Wait for the DOM to finish loading before running maps
 document.addEventListener("DOMContentLoaded", function () {
     // Hide the loading span
@@ -60,7 +63,7 @@ function initMap() {
     const infoWindow = new google.maps.InfoWindow();
 
     // Create the markers.
-    southWalesLocations.forEach(function([position, title, url], i) {
+    southWalesLocations.forEach(function ([position, title, url], i) {
         const marker = new google.maps.Marker({
             position,
             map,
