@@ -248,6 +248,8 @@ Use regular function instead of arrow function | Prompted me to change this as s
 
 *The following suggestions were recommended when I submitted my site to peer code review on slack:*
 
+- Allen Gleeson suggested changing the font weight of the content below the quiz results as it was coming up a little thin on his side. I changed the weight of the 'Lato' font from 300 to 400 to resolve this.
+
 ### Testing User Stories
 
 #### First Time Visitors
