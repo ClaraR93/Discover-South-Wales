@@ -13,7 +13,7 @@
     - [Returning Visitors](#returning-visitors)
     - [Frequent Visitor Goals](#frequent-visitor-goals)
   - [Lighthouse](#lighthouse)
-  - [Full Testing](#full-testing)
+  - [Full manual testing](#full-manual-testing)
 
 Testing was implemented throughout the entire build of this project. I used Chrome Developer tools to identify and troubleshoot problems along the way.
 
@@ -336,4 +336,32 @@ By ammending the h4 heading in the footer to a h3 element in the quiz page, so t
 
 I was happy with the mobile lighthouse results for the quiz page. There was definitely room for improvement with performance, but as this was in the green, I felt that I could revisit this another time.
 
-## Full Testing
+## Full manual testing
+
+I performed rigorous manual testing on all pages to make sure all internal, external links, quiz functionality and, Google maps worked as expected.
+
+**Home Page:**
+
+Expected result | Testing | Pass/Fail
+---|---|---
+Header navigation links to direct user to other pages (including mobile dropdown navigation) | Clicked through each nav link | Pass
+Footer Intagram icon takes user to external webpage | Clicked instagram icon | Pass
+'Start Quiz' button redirects user to quiz.html viewing mutliple choice questions| Clicked on buttons | Pass
+
+**Quiz Page:**
+
+Expected result | Testing | Pass/Fail
+---|---|---
+Header navigation links to direct user to other pages (including mobile dropdown navigation) | Clicked through each nav link | Pass
+Footer Intagram icon takes user to external webpage | Clicked instagram icon | Pass
+Allow only one radio button selection at a time | Clicked through radio buttons, highlighting each selection | Pass
+Next button directs user to next question when clicked | Clicked through next button every time a radio button was selected until submit button was reached | Pass
+If a radio button isn't selected and the user attemps to click next, an alert pops up alerting the user to select an answer | Clicked through each question as if no radio button was selected | Pass
+When a user lands on the final question the next button is replaced with a submit button | Clicked through each quetion before arriving at the final one, displaying a submit button instead | Pass
+On submission, 1 of 11 results are displayed as an individual card with the following included: A heading, description, photograph and external link | Submitted the quiz 11 times, making sure to generate all possible score outcomes to view all possible results produced | Pass
+Once a user reaches the results card, below this they can redirect to maps.html by clicking the map icon | Clicked on map icon | Pass
+Oncer a user reaches the results card, below this they can click on the 'Start over' button to restart the quiz | Clicked on 'Start over' button to take user back to first quiz question | Pass
+
+**Maps Page:**
+
+**404 Error Page:**
