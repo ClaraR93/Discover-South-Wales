@@ -2,6 +2,8 @@
 
 Testing was implemented throughout the entire build of this project. I used Chrome Developer tools to identify and troubleshoot problems along the way.
 
+## Code Validation 
+
 ### W3C Validator
 
 I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS content.
@@ -10,7 +12,22 @@ I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS con
 
 I used JSLint on all javascript content.
 
-### Issues resolved during development
+## Browswer compatibility
+
+I have tested the site on various desktop browsers and mobile devices ensuring the website is fully functional with no issues. The following devices worked with no errors on any pages: 
+
+### Desktop:
+- Google Chrome
+- Mozilla Firefox
+
+
+### Mobile:
+
+- Samsung Galaxy A52 
+
+
+
+## Issues resolved during development
 
 **Logic of interactive quiz:**
 
