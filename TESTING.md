@@ -222,18 +222,6 @@ JSLint undeclared 'google' | See [image](docs/images/undeclared-google.png) for 
 
 - After looking at [Stack overflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) for guidance, I attempted adding a 'permission policy' meta tag to resolve the issue, however this didn't work. The warning wasn't causing the website to malfunction and everything was working fine. I will revisit this issue at a later date.
 
-**JSLint 'space' warnings:**
-
-- When testing my code in JSLint, I encountered several warnings in quiz.js, indicating that there is an expected space between object syntax:
-
-![JSlint space warning](docs/images/jslint-warning-space-required.png)
-
-- Once I followed JSLint guidance and added the spaces required, JSLint greeted me with new erros of unexpected trailing spaces:
-
-![JSlint unexpected trailing spaces](docs/images/js-lint-warning-trailing-space.png)
-
-- Although this was frustrating as I couldn't seem to remove the errors, I moved on with my work, as this wasn't an overall concern for the project.
-
 ### Mentor and Peer Feedback
 
 *The following issues were identified during my mid mentor meeting:*
