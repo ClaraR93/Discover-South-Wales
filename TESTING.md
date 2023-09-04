@@ -23,7 +23,9 @@ I have tested the site on various desktop browsers and mobile devices ensuring t
 
 ### Mobile:
 
-- Samsung Galaxy A52 
+- Samsung Galaxy A52
+- Iphone 13 mini
+- Google Pixel 6
 
 ## Issues resolved during development
 
@@ -232,6 +234,8 @@ Use regular function instead of arrow function | Prompted me to change this as s
 - Sheryl also pointed out that my 'next' button in the quiz section could only be seen on her monitor when she scrolled down a little. This could be confusing for users as it may not be so obvious on what to do next once an answer is selected.
 
 - To rectify this, I added further instructions below the initial quiz question, direting the user to select an answer, then click the next button to move on.
+
+- My mentor finally suggested changing the syntax for block commented code within my script file. She suggested encompassing multiline code with '/*  */' as instructed in [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-write-comments-in-javascript), on how to write comments in javascript. 
 
 ![User instructions for taking quiz](docs/images/select-answer-next-button-instructions.png)
 
