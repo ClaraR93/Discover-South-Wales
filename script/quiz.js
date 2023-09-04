@@ -128,8 +128,8 @@ function askQuestions() {
     updateButtonLabel();
 }
 
-//Function to check if user has selected a radio button before proceeding to next question
-//Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing
+/* Function to check if user has selected a radio button before proceeding to next question
+Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing */
 function validateUserInput(e) {
     //Add event listener for checked radio buttons
     const radioAnswer = document.querySelector("input[type='radio']:checked");
@@ -157,8 +157,8 @@ function hideInstructions() {
     instructions.style.display = "none";
 }
 
-//Function to clear radio button after user moves onto next question
-//Used code from Tutorials Point - See readme credits
+/* Function to clear radio button after user moves onto next question
+Used code from Tutorials Point - See readme credits */
 function clearRadio() {
     let radio = document.querySelectorAll("input[type='radio']");
     radio.forEach(function (button) {
@@ -189,8 +189,8 @@ function storeUserAnswers(selectedValue) {
     userAnswers.push(parseInt(selectedValue));
 }
 
-//Function to tally up user selection points
-// Used code from FreeCodeCamp - See readme credits
+/* Function to tally up user selection points
+Used code from FreeCodeCamp - See readme credits */
 function calculateScore() {
     // create a variable for the sum and initialize it
     let sum = 0;
@@ -209,8 +209,8 @@ function hideQuiz() {
     // Check if the user has selected a radio button
     const selectedRadio = document.querySelector("input[type='radio']:checked");
     if (selectedRadio) {
-        // Hide quiz form and show quiz results div
-        //Code used from w3schools - See readme credits
+        /* Hide quiz form and show quiz results div
+        Code used from w3schools - See readme credits */
         const revealQuizResults = document.getElementById("quiz-answers");
         const hideQuizForm = document.getElementById("quiz-form");
         revealQuizResults.classList.add("show-quiz-answers");
@@ -227,8 +227,8 @@ function hideQuiz() {
 
 //Function to display results on score outcome
 function showResults(score) {
-    // Determine the index of the answer based on the score
-    //Source and code inspired from stack overflow - See readme credits
+    /* Determine the index of the answer based on the score
+    Source and code inspired from stack overflow - See readme credits */
     const answerIndex = Math.min(Math.max(score - 5), 10);
 
     // Get the corresponding answer object based on the index
@@ -290,8 +290,8 @@ function runQuiz() {
     //Call function to start quiz
     askQuestions();
 
-    //Event listener for submit button to check if user has submitted an input and store user answers in an array
-    //As a guide I used code from Plain English javascript guide - See readme credits
+    /* Event listener for submit button to check if user has submitted an input and store user answers in an array
+    As a guide I used code from Plain English javascript guide - See readme credits */
     submitButton.addEventListener("click", function (e) {
         validateUserInput(e);
     });

@@ -19,13 +19,11 @@ I have tested the site on various desktop browsers and mobile devices ensuring t
 ### Desktop:
 - Google Chrome
 - Mozilla Firefox
-
+- Microsoft Edge 
 
 ### Mobile:
 
 - Samsung Galaxy A52 
-
-
 
 ## Issues resolved during development
 
@@ -195,7 +193,7 @@ Warning | Details | Fix
 JS lint was unable to finish | expected '{' and instead saw 'wait' on line 25 | I made sure to put curly brackets for all 'if else' statements within the function, resoliving the issue.
 Use regular function instead of arrow function | Prompted me to change this as suggested function was too complex for the use of an arrow function | Followed instructions as told
 
-### Unresolved issues
+## Unresolved issues
 
 **Console log warning:**
 
