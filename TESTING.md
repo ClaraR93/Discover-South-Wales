@@ -214,6 +214,12 @@ Use regular function instead of arrow function | Prompted me to change this as s
   
 - Sheryl also informed me to ensure that I pass the event parameter within my event listener in the runQuiz function, using [Plain English](https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb) as guidance. I also removed the submit button event listener that called the hideQuiz function, as this was already being called within the validateUserInput function.
 
+- Sheryl also pointed out that my 'next' button in the quiz section could only be seen on her monitor when she scrolled down a little. This could be confusing for users as it may not be so obvious on what to do next once an answer is selected.
+
+- To rectify this, I added further instructions below the initial quiz question, direting the user to select an answer, then click the next button to move on.
+
+![User instructions for taking quiz](docs/images/select-answer-next-button-instructions.png)
+
 *The following suggestions were recommended when I showed a friend the site for review:*
 
 - Tom Roberts informed me that once a user lands on the submit page, the following text should be a more obvious button that takes the user to the maps page, rather than just a small map icon. See image: ![Quiz answers, further suggestions, old version](docs/images/further-suggestions-old.png)
