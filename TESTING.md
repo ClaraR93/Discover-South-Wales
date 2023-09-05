@@ -220,6 +220,14 @@ JS lint was unable to finish | expected '{' and instead saw 'wait' on line 25 | 
 Use regular function instead of arrow function | Prompted me to change this as suggested function was too complex for the use of an arrow function | Followed instructions as told
 JSLint undeclared 'google' | See [image](docs/images/undeclared-google.png) for further details | I embedded the global directive to specify google as a global variable, as the google API script is within maps.html and not included in maps.js.
 
+**'Google is not defined' in maps:**
+
+When making the final checks on my website, I noticed that the following error was showing up, when it had previously not:
+
+![Google is not defined console error](docs/images/google-is-not-defined.png)
+
+I did some research on [Stack overflow](https://stackoverflow.com/questions/14229695/google-maps-api-throws-uncaught-referenceerror-google-is-not-defined-only-whe), and Sohan Jangid's comment, *'Uncaught ReferenceError: google is not defined error will be gone when removed the async defer from the map API script tag'*, helped with this issue, as I simply removed async from the script tag in maps.html.
+
 ## Unresolved issues
 
 **Console log warning:**
