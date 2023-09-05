@@ -348,7 +348,7 @@ I was happy with the mobile lighthouse results for the quiz page. There was defi
 
 ![Lighthouse test for map page](docs/lighthouse/lighthouse-maps-desktop.png)
   
-Overall I was happy with the lighthouse results for the Maps page. Best practices could have been better, as detailed below. However, I was unable to find a solution to rectifing the marker resolution. Perhaps I will revisit this at a later stage in my developent. 
+Overall I was happy with the lighthouse results for the Maps page. Best practices could have been better, as detailed below. However, I was unable to find a solution to rectifing the marker resolution. Perhaps I will revisit this at a later stage in my developent.
 
 ![Mrrker resolution error](docs/lighthouse/service-image-with-low-resolution.png)
 

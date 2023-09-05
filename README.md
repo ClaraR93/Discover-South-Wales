@@ -308,7 +308,7 @@ I used code from Plain English as a guide to amending an event listener and pass
 
 ### Content
 
-Content was written by me, with some assistance from 11 external websites accesible through the results card on the Quiz page, and Markers on the Maps page. The following list of websites are as followed: 
+Content was written by me, with some assistance from 11 external websites accesible through the results card on the Quiz page, and Markers on the Maps page. The following list of websites are as followed:
 
 - <https://www.visitswanseabay.com/inspirations/beach-guide/rhossili-bay-beach/>
   
@@ -316,9 +316,9 @@ Content was written by me, with some assistance from 11 external websites accesi
   
 - <http://edtechie.net/tonwalks/castell-coch/castell-coch-taff-trail/>
   
-- https://www.visitpembrokeshire.com/explore-pembrokeshire/beaches/monkstone
+- <https://www.visitpembrokeshire.com/explore-pembrokeshire/beaches/monkstone>
   
-- https://www.waymarking.com/waymarks/WMA9ZE_Sgwd_Ddwli_Uchaf_Upper_Gushing_Falls_Pontneddfechan_Powys_Wales
+- <https://www.waymarking.com/waymarks/WMA9ZE_Sgwd_Ddwli_Uchaf_Upper_Gushing_Falls_Pontneddfechan_Powys_Wales>
   
 - <https://www.walkmyworld.com/posts/fan-y-big>
   
@@ -344,6 +344,6 @@ Special thanks to:
 
 ### Acknowledgement
 
-I would like to acknowledge the following people who helped and guided me in completing my second milestone project: 
+I would like to acknowledge the following people who helped and guided me in completing my second milestone project:
 
 - Sheryl Goldberg - My mentor
