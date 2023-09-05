@@ -326,7 +326,7 @@ After my initial lighthouse testing for the quiz page I wanted to improve access
 
 ![Lighthouse accessibility issue for quiz page, desktop](docs/lighthouse/lighthouse-quiz-accessibility-issue.png)
 
-By ammending the h4 heading in the footer to a h3 element in the quiz page, so that the heading elements were all in a sequentially descending order, this resolved the issue. See final lighthouse below:
+By ammending the h3 heading in the footer to a h2 element in the quiz page, so that the heading elements were all in a sequentially descending order, this resolved the issue. See final lighthouse below:
 
 ![Final lighthouse test for quiz page, desktop](docs/lighthouse/lighthouse-quiz-desktop-new.png)
 
