@@ -343,3 +343,7 @@ Special thanks to:
 - Nathan Coogan for giving me permission to use the [waterfall](assets/images/results/sgwd-ddwli-uchaf-waterfall.webp) and [hike](assets/images/results/pen-y-fan.webp) photo for the results section.
 
 ### Acknowledgement
+
+I would like to acknowledge the following people who helped and guided me in completing my second milestone project: 
+
+- Sheryl Goldberg - My mentor
