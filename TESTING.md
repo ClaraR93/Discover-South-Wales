@@ -344,6 +344,14 @@ By ammending the h3 heading in the footer to a h2 element in the quiz page, so t
 
 I was happy with the mobile lighthouse results for the quiz page. There was definitely room for improvement with performance, but as this was in the green, I felt that I could revisit this another time.
 
+**Map Page:**
+
+![Lighthouse test for map page](docs/lighthouse/lighthouse-maps-desktop.png)
+  
+Overall I was happy with the lighthouse results for the Maps page. Best practices could have been better, as detailed below. However, I was unable to find a solution to rectifing the marker resolution. Perhaps I will revisit this at a later stage in my developent. 
+
+![Mrrker resolution error](docs/lighthouse/service-image-with-low-resolution.png)
+
 ## Full manual testing
 
 I performed rigorous manual testing on all pages to make sure all internal, external links, quiz functionality and, Google maps worked as expected.
