@@ -1,4 +1,4 @@
-//Allow long lines
+/Allow long lines
 /*jslint long*/
 
 //Assume Browswer environment

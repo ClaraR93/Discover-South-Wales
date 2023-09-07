@@ -1,16 +1,16 @@
-//Allow long lines
+/*Allow long lines*/
 /*jslint long*/
 
-//Assume Browswer environment
+/*Assume Browswer environment*/
 /*jslint browser*/
 
-//Allow unodered cases, params, properties, variables, and exports.
+/*Allow unodered cases, params, properties, variables, and exports.*/
 /*jslint unordered*/
 
-//Wait for the DOM to finish loading before running quiz
+/*Wait for the DOM to finish loading before running quiz*/
 document.addEventListener("DOMContentLoaded", runQuiz);
 
-//Define questions and multiple choice answers in an array container question/answer objects
+/*Define questions and multiple choice answers in an array container question/answer objects*/
 const questions = [{
     question: "What is your preferred activity level?",
     answer: ["Easy and leisurely", "Moderate with some challenges", "Strenuous and adventurous"]
@@ -28,7 +28,7 @@ const questions = [{
     answer: ["Taking in the scenery and enjoying the surroundings", "A mix of physical activity and sightseeing", "The physical challenge"]
 }];
 
-//Define 11 possible results as objects containing name, description and accompanied image
+/*Define 11 possible results as objects containing name, description and accompanied image*/
 const quizAnswers = [{
     name: "Rhossili Bay Beach",
     description: "3 miles of sandy shore, encompassing one of Gower's most famous landmarks, Worms Head. The views are incomparable and are best enjoyed from one of the many walking routes, which feature the beach, Worm's Head and the cliffs, you may even see some basking seals or dolphins playing in the surf. And of course, Rhossili Bay is part of the Gower Coast Path.",
@@ -86,50 +86,50 @@ const quizAnswers = [{
     url: "https://www.nationaltrust.org.uk/visit/wales/brecon-beacons/brecon-beacons-horseshoe-ridge-walk"
 }];
 
-//Add event listener to next button
+/*Add event listener to next button*/
 const nextButton = document.getElementById("next-button");
 
-//Set question index to 0 at start of quiz
+/*Set question index to 0 at start of quiz*/
 let currentQuestionIndex = 0;
 
-//Function to run through questions and answers
+/*Function to run through questions and answers*/
 function askQuestions() {
 
-    // Get current question and answers from questions array
+    /*Get current question and answers from questions array*/
     const currentQuestion = questions[currentQuestionIndex];
     const answerA = currentQuestion.answer[0];
     const answerB = currentQuestion.answer[1];
     const answerC = currentQuestion.answer[2];
 
-    //Update the form with new questions and answers
+    /*Update the form with new questions and answers*/
     document.getElementById("question").textContent = currentQuestion.question;
     document.getElementById("label-a").textContent = answerA;
     document.getElementById("label-b").textContent = answerB;
     document.getElementById("label-c").textContent = answerC;
 
-    //Increment through question index by one
+    /*Increment through question index by one*/
     currentQuestionIndex = currentQuestionIndex + 1;
 
-    //Call this function to replace the 'Next' button content with 'Submit
+    /*Call this function to replace the 'Next' button content with 'Submit'*/
     updateButtonLabel();
 }
 
 /* Function to check if user has selected a radio button before proceeding to next question
 Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing */
 function validateUserInput(e) {
-    //Add event listener for checked radio buttons
+    /*Add event listener for checked radio buttons*/
     const radioAnswer = document.querySelector("input[type='radio']:checked");
-    //If no question is selected alert user to select answer
+    /*If no question is selected alert user to select answer*/
     if (!radioAnswer) {
         window.alert("Please select an answer!");
-        //Else call nested if statement - code suggestion and guidance below from Sheryl Goldberg during mid mentor meeting
+        /*Else call nested if statement - code suggestion and guidance below from Sheryl Goldberg during mid mentor meeting*/
     } else {
         const selectedValue = radioAnswer.value;
-        //Call storeUserAnswers and askQuestions if next button is selected
+        /*Call storeUserAnswers and askQuestions if next button is selected*/
         if (e.target.id === "next-button") {
             storeUserAnswers(selectedValue);
             askQuestions();
-            //Call storeUserAnswers and hideQuiz if submit button is selected
+            /*Call storeUserAnswers and hideQuiz if submit button is selected*/
         } else if (e.target.id === "submit-button") {
             storeUserAnswers(selectedValue);
             hideQuiz();
@@ -137,14 +137,14 @@ function validateUserInput(e) {
     }
 }
 
-//Function to hide quiz instructions after first question
+/*Function to hide quiz instructions after first question*/
 function hideInstructions() {
     const instructions = document.getElementById("select-answer");
     instructions.style.display = "none";
 }
 
-/* Function to clear radio button after user moves onto next question
-Used code from Tutorials Point - See readme credits */
+/*Function to clear radio button after user moves onto next question
+Used code from Tutorials Point - See readme credits*/
 function clearRadio() {
     let radio = document.querySelectorAll("input[type='radio']");
     radio.forEach(function (button) {
@@ -153,23 +153,23 @@ function clearRadio() {
 
 }
 
-// Create a new button element for submission
+/*Create a new button element for submission*/
 const submitButton = document.createElement("button");
 submitButton.setAttribute("type", "button");
 submitButton.setAttribute("id", "submit-button");
 submitButton.textContent = "Submit!";
 
-//Function to change text content of next button to 'Submit'
+/*Function to change text content of next button to 'Submit'*/
 function updateButtonLabel() {
     if (currentQuestionIndex === questions.length) {
         nextButton.replaceWith(submitButton);
     }
 }
 
-//Empty array to store user answers
+/*Empty array to store user answers*/
 let userAnswers = [];
 
-//Function to store user inputs into an array
+/*Function to store user inputs into an array*/
 function storeUserAnswers(selectedValue) {
     //Convert user selection values to intergers and push to empty userAnswers array
     userAnswers.push(parseInt(selectedValue));
@@ -178,49 +178,49 @@ function storeUserAnswers(selectedValue) {
 /* Function to tally up user selection points
 Used code from FreeCodeCamp - See readme credits */
 function calculateScore() {
-    // create a variable for the sum and initialize it
+    /*Create a variable for the sum and initialize it*/
     let sum = 0;
 
-    // calculate sum using forEach() method
+    /*Calculate sum using forEach() method*/
     userAnswers.forEach(function (num) {
         sum += num;
     });
 
-    // Return the calculated sum
+    /*Return the calculated sum*/
     return sum;
 }
 
-//Function to hide quiz form and reveal quiz results container
+/*Function to hide quiz form and reveal quiz results container*/
 function hideQuiz() {
-    // Check if the user has selected a radio button
+    /*Check if the user has selected a radio button*/
     const selectedRadio = document.querySelector("input[type='radio']:checked");
     if (selectedRadio) {
-        /* Hide quiz form and show quiz results div
-        Code used from w3schools - See readme credits */
+        /*Hide quiz form and show quiz results div
+        Code used from w3schools - See readme credits*/
         const revealQuizResults = document.getElementById("quiz-answers");
         const hideQuizForm = document.getElementById("quiz-form");
         revealQuizResults.classList.add("show-quiz-answers");
         hideQuizForm.classList.add("hidden-quiz-container");
 
-        //Hide submit button when quiz results are displayed
+        /*Hide submit button when quiz results are displayed*/
         submitButton.style.display = "none";
 
-        // Proceed to calculate score and show results
+        /*Proceed to calculate score and show results*/
         const score = calculateScore();
         showResults(score);
     }
 }
 
-//Function to display results on score outcome
+/*Function to display results on score outcome*/
 function showResults(score) {
-    /* Determine the index of the answer based on the score
-    Source and code inspired from stack overflow - See readme credits */
+    /*Determine the index of the answer based on the score
+    Source and code inspired from stack overflow - See readme credits*/
     const answerIndex = Math.min(Math.max(score - 5), 10);
 
-    // Get the corresponding answer object based on the index
+    /*Get the corresponding answer object based on the index*/
     const finalResult = quizAnswers[answerIndex];
 
-    // Get the elements by their IDs
+    /*Get the elements by their IDs*/
     const answerNameElement = document.getElementById("answer-name");
     const answerDescriptionElement = document.getElementById("answer-description");
     const answerImageElement = document.getElementById("answer-image");
@@ -229,55 +229,55 @@ function showResults(score) {
     const topHeading = document.getElementById("top-heading-results");
     const bottomHeadings = document.getElementById("bottom-heading-results");
 
-    // Populate the elements with values from the answer object
+    /*Populate the elements with values from the answer object*/
     answerNameElement.textContent = finalResult.name;
     answerDescriptionElement.textContent = finalResult.description;
 
-    // Set the alt text and source for the image
+    /*Set the alt text and source for the image*/
     answerImageElement.src = finalResult.image;
     answerImageElement.alt = finalResult.name;
 
-    //Populate the anchor tag element with url values
+    /*Populate the anchor tag element with url values*/
     urlAnswers.href = finalResult.url;
 
-    //Display answer name after submitting quiz
+    /*Display answer name after submitting quiz*/
     answerNameElement.style.display = "block";
 
-    //Display answer description after submitting quiz
+    /*Display answer description after submitting quiz*/
     answerDescriptionElement.style.display = "block";
 
-    //Display answer image after submitting quiz
+    /*Display answer image after submitting quiz*/
     answerImageElement.style.display = "block";
 
-    //Display 'more info' url after submitting quiz
+    /*Display 'more info' url after submitting quiz*/
     urlContainer.style.display = "block";
 
-    //Display top heading after submitting quiz
+    /*Display top heading after submitting quiz*/
     topHeading.style.display = "block";
 
-    //Display bottom headings after submitting quiz
+    /*Display bottom headings after submitting quiz*/
     bottomHeadings.style.display = "block";
 }
 
-//Function to run quiz, calling other functions when required
+/*Function to run quiz, calling other functions when required*/
 function runQuiz() {
 
-    //Event listener for next button to hide quiz instructions after first question is submitted
+    /*Event listener for next button to hide quiz instructions after first question is submitted*/
     nextButton.addEventListener("click", hideInstructions);
 
-    //Event listener for next button to check if user has submitted an input
+    /*Event listener for next button to check if user has submitted an input*/
     nextButton.addEventListener("click", function (e) {
         validateUserInput(e);
     });
 
-    //Event listener for next button to clear radio selection after each question is submitted
+    /*Event listener for next button to clear radio selection after each question is submitted*/
     nextButton.addEventListener("click", clearRadio);
 
-    //Call function to start quiz
+    /*Call function to start quiz*/
     askQuestions();
 
-    /* Event listener for submit button to check if user has submitted an input and store user answers in an array
-    As a guide I used code from Plain English javascript guide - See readme credits */
+    /*Event listener for submit button to check if user has submitted an input and store user answers in an array
+    As a guide I used code from Plain English javascript guide - See readme credits*/
     submitButton.addEventListener("click", function (e) {
         validateUserInput(e);
     });
