@@ -1,26 +1,26 @@
-/Allow long lines
+/*Allow long lines*/
 /*jslint long*/
 
-//Assume Browswer environment
+/*Assume Browswer environment*/
 /*jslint browser*/
 
-//Allow unodered cases, params, properties, variables, and exports.
+/*Allow unodered cases, params, properties, variables, and exports.*/
 /*jslint unordered*/
 
-//A directive is used to specify a set of globals
+/*A directive is used to specify a set of globals*/
 /*global google*/
 
-//Wait for the DOM to finish loading before running maps
+/*Wait for the DOM to finish loading before running maps*/
 document.addEventListener("DOMContentLoaded", function () {
-    // Hide the loading span
+    /*Hide the loading span*/
     const loadingSpan = document.getElementById("loading");
     loadingSpan.style.display = "none";
 
-    // Initialize Google Maps
+    /*Initialize Google Maps*/
     initMap();
 });
 
-//Loading dots initiated if Google maps takes some time to load - Code used from stack overflow - See readme credits
+/*Loading dots initiated if Google maps takes some time to load - Code used from stack overflow - See readme credits*/
 window.dotsGoingUp = true;
 window.setInterval(function () {
     const wait = document.getElementById("loading");
@@ -37,15 +37,15 @@ window.setInterval(function () {
     }
 }, 400);
 
-// Google maps function, including 11 markers corresponding to each quiz result
+/*Google maps function, including 11 markers corresponding to each quiz result*/
 function initMap() {
     const map = new google.maps.Map(document.getElementById("maps-container"), {
         zoom: 8,
         center: {lat: 51.80044850212119, lng: -3.7944135216672383}
     });
-    // Set LatLng and title text for the markers. The first marker (Rhossili)
-    // receives the initial focus when tab is pressed. Use arrow keys to
-    // move between markers; press tab again to cycle through the map controls.
+    /*Set LatLng and title text for the markers. The first marker (Rhossili)
+    receives the initial focus when tab is pressed. Use arrow keys to
+    move between markers; press tab again to cycle through the map controls.*/
     const southWalesLocations = [
         [{lat: 51.579958806850016, lng: -4.291999384202944}, "Rhossili", "https://www.visitswanseabay.com/inspirations/beach-guide/rhossili-bay-beach/"],
         [{lat: 51.418522478498495, lng: -3.576441918485766}, "Monknash", "https://discovertheoutdoors.co.uk/monknash-beach/"],
@@ -59,10 +59,10 @@ function initMap() {
         [{lat: 51.86396709184166, lng: -3.4991761782958357}, "Fan Fawr", "https://www.alltrails.com/en-gb/trail/wales/powys/fan-fawr-and-beacons-reservoir"],
         [{lat: 51.840222514942944, lng: -3.382304129256682}, "Horseshow Ridge", "https://www.nationaltrust.org.uk/visit/wales/brecon-beacons/brecon-beacons-horseshoe-ridge-walk"]
     ];
-    // Create an info window to share between markers.
+    /*Create an info window to share between markers.*/
     const infoWindow = new google.maps.InfoWindow();
 
-    // Create the markers.
+    /*Create the markers.*/
     southWalesLocations.forEach(function ([position, title, url], i) {
         const marker = new google.maps.Marker({
             position,
@@ -72,15 +72,15 @@ function initMap() {
             optimized: false
         });
 
-        // Add a click listener for each marker, and set up the info window.
+        /*Add a click listener for each marker, and set up the info window.*/
         marker.addListener("click", function () {
             infoWindow.close();
             infoWindow.setContent(marker.getTitle());
             infoWindow.open(marker.getMap(), marker);
         });
 
-        // Add a click listener to open the specified URL when the marker is clicked.
-        //Used window.open() method as explained in Stack overflows - See readme credits
+        /*Add a click listener to open the specified URL when the marker is clicked.
+        Used window.open() method as explained in Stack overflows - See readme credits*/
         marker.addListener("dblclick", function () {
             window.open(url, "_blank");
         });
