@@ -7,6 +7,12 @@
 ![Github languages](https://img.shields.io/badge/languages-3-yellow
 )
 
+![Github html](https://img.shields.io/badge/html-40.2%25-green
+)
+
+![Github w3c](https://img.shields.io/badge/w3c-validated-blue
+)
+
 ![Am I Responsive](docs/images/am-i-responsive.png)
 
 This website aims to provide information on what stunning landscape to explore within South Wales. This is particularly targeted at new visitors. It is centered around an interactive multiple choice quiz, aimed to tailor the users experiences to match them with their preferences and desires. It aims to be responsive across multiple devices, particularly focusing on mobile first design.
