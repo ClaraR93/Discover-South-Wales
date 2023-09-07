@@ -21,7 +21,13 @@ Testing was implemented throughout the entire build of this project. I used Chro
 
 ### W3C Validator
 
-I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS content.
+I used W3C HTML Validator on all pages created, and W3C CSS Validator on CSS content to make sure there were no errors found. 
+
+- [index.html](docs/w3c/w3c-html-validator-home.png)
+- [quiz.html](docs/w3c/w3c-html-validator-quiz.png)
+- [maps.html](docs/w3c/w3c-html-validator-maps.png)
+- [404.html](docs/w3c/w3c-html-validator-404.png)
+- [style.css](docs/w3c/s3c-css-validator-results.png)
 
 ### JSLint
 
