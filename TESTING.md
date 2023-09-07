@@ -238,7 +238,11 @@ I did some research on [Stack overflow](https://stackoverflow.com/questions/1422
 
 - After looking at [Stack overflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) for guidance, I attempted adding a 'permission policy' meta tag to resolve the issue, however this didn't work. The warning wasn't causing the website to malfunction and everything was working fine. I will revisit this issue at a later date.
 
-- I noticed an issue, as shown in the image below, that highlighted audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform, within Google maps javascript code. I researched how to rectify this, and found that [Stack Overflow](https://stackoverflow.com/questions/68982181/issue-audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-p) suggested a few things, inclding to wait for the authors of the library to fix the issue and update it, or disable the extension all together. [Google Chrome Help](https://support.google.com/chrome/thread/137261347/audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-platform?hl=en) also pointed out that the web app should continue to work normally, since this message is not actually an error, but a warning message to make developers aware that talls to those API's will no longer return accurate information in the future.
+- I noticed an issue, as shown in the image below, that highlighted audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform, within Google maps javascript code. 
+
+![Usage audit warning](docs/images/audit-usage-chrome-dev-warning.png)
+
+- I researched how to rectify this, and found that [Stack Overflow](https://stackoverflow.com/questions/68982181/issue-audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-p) suggested a few things, inclding to wait for the authors of the library to fix the issue and update it, or disable the extension all together. [Google Chrome Help](https://support.google.com/chrome/thread/137261347/audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-platform?hl=en) also pointed out that the web app should continue to work normally, since this message is not actually an error, but a warning message to make developers aware that talls to those API's will no longer return accurate information in the future.
 
 ### Mentor and Peer Feedback
 
