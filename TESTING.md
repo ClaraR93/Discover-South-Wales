@@ -7,7 +7,7 @@
   - [Browswer compatibility](#browswer-compatibility)
   - [Issues resolved during development](#issues-resolved-during-development)
   - [Unresolved issues](#unresolved-issues)
-    - [Mentor and Peer Feedback](#mentor-and-peer-feedback)
+  - [Mentor and Peer Feedback](#mentor-and-peer-feedback)
   - [Testing User Stories](#testing-user-stories)
     - [First Time Visitors](#first-time-visitors)
     - [Returning Visitors](#returning-visitors)
@@ -250,7 +250,7 @@ I did some research on [Stack overflow](https://stackoverflow.com/questions/1422
 
 - I researched how to rectify this, and found that [Stack Overflow](https://stackoverflow.com/questions/68982181/issue-audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-p) suggested a few things, inclding to wait for the authors of the library to fix the issue and update it, or disable the extension all together. [Google Chrome Help](https://support.google.com/chrome/thread/137261347/audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-platform?hl=en) also pointed out that the web app should continue to work normally, since this message is not actually an error, but a warning message to make developers aware that talls to those API's will no longer return accurate information in the future.
 
-### Mentor and Peer Feedback
+## Mentor and Peer Feedback
 
 *The following issues were identified during my mid mentor meeting:*
 
