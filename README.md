@@ -238,7 +238,9 @@ HTML, CSS and Javascript were used to create this website.
 
 - Google Dev Tools - To troubleshoot and test various features, and solve issues with responsiveness and styling.
 
-- [Color Hex](https://www.color-hex.com/color/79804f) to find a lighter colour tint for the header and footer to pass the contrast checker.
+- [Color Hex](https://www.color-hex.com/color/79804f) - To find a lighter colour tint for the header and footer to pass the contrast checker.
+
+- [Favicon](https://favicon.io/emoji-favicons/evergreen-tree) - Used evergreen tree emoji favicon for website.
 
 ## Deployment & Local Development
 
