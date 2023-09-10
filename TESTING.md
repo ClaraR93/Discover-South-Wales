@@ -136,7 +136,7 @@ Possible user score | Assigned Result
 - I found that this would result in a very lengthy if else statement and wanted to come up with something simpler and cleaner. I started by googling how to convert a range of numbers, as I had a set of 11 answers ranging from a score point of 5 to 15. I wanted to convert these points to an index from 0 through to 10, making it easier to iterate through the object answers array and assign their given calculated score.
 - For this I used [Stack Overflow](https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value), which suggested using the math.min and math.max method in javascript to achieve this. I passed the score in, making sure to take away 5, creating the minimum index of 0 and setting the maximum number to 10. This would give me 11 indexes which I could assign to the 11 possible results generated.
 
-![math.min and math.max method used on answerIndex](docs/images/answerIndex-converted.png)
+![math.min and math.max method used on answerIndex](docs/images/answer-index-converted.png)
 
 **Misplacement of alt image display:**
 
@@ -202,7 +202,7 @@ I considered using a box shadow effect instead, and used [Design Shack](https://
 
 - The following issue was being logged to the console on the Map page:
   
-![initMap is not a function error](docs/images/initMap-error.png)
+![initMap is not a function error](docs/images/initmap-error.png)
 
 - After researching the initMap is not a function error, I cam across [Yahya Elharony's](https://elharony.com/initmap-is-not-a-function/) article on solving this issue. I atttempted the second suggested fix; moving the map script to the bottom of the html page, after maps.js script. This resolved the issue, removing the console error.
 
