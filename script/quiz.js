@@ -114,8 +114,8 @@ function askQuestions() {
     updateButtonLabel();
 }
 
-/* Function to check if user has selected a radio button before proceeding to next question
-Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing */
+/*Function to check if user has selected a radio button before proceeding to next question
+Used Stack overflow to assist with selecting a checked radio button from the DOM - See readme testing*/
 function validateUserInput(e) {
     /*Add event listener for checked radio buttons*/
     const radioAnswer = document.querySelector("input[type='radio']:checked");
@@ -158,6 +158,7 @@ const submitButton = document.createElement("button");
 submitButton.setAttribute("type", "button");
 submitButton.setAttribute("id", "submit-button");
 submitButton.textContent = "Submit!";
+submitButton.ariaLabel = "User is navigated to the start of quiz page when the start over button is cicked";
 
 /*Function to change text content of next button to 'Submit'*/
 function updateButtonLabel() {
