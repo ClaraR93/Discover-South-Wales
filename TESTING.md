@@ -244,11 +244,21 @@ I did some research on [Stack overflow](https://stackoverflow.com/questions/1422
 
 - After looking at [Stack overflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) for guidance, I attempted adding a 'permission policy' meta tag to resolve the issue, however this didn't work. The warning wasn't causing the website to malfunction and everything was working fine. I will revisit this issue at a later date.
 
-- I noticed an issue, as shown in the image below, that highlighted audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform, within Google maps javascript code. 
+- I noticed an issue, as shown in the image below, that highlighted audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform, within Google maps javascript code.
 
 ![Usage audit warning](docs/images/audit-usage-chrome-dev-warning.png)
 
 - I researched how to rectify this, and found that [Stack Overflow](https://stackoverflow.com/questions/68982181/issue-audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-p) suggested a few things, inclding to wait for the authors of the library to fix the issue and update it, or disable the extension all together. [Google Chrome Help](https://support.google.com/chrome/thread/137261347/audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-platform?hl=en) also pointed out that the web app should continue to work normally, since this message is not actually an error, but a warning message to make developers aware that talls to those API's will no longer return accurate information in the future.
+
+- A further warning on the maps page displyaed the following:
+
+![No label warning](docs/images/no-label-chrome-dev-tools.png)
+
+- I tried to fix the issue of *No label associated with a form field* by following the chrome developer instructions. I started by locating the label element within chrome developer tools:
+
+![Label element in chrome def tools](docs/images/google-label-console-log.png)
+
+- However, since I couldn't access the googl API html elements within codeanywheres IDE, I couldn't make any changes to this to remove the chrome developer warning.
 
 ## Mentor and Peer Feedback
 
